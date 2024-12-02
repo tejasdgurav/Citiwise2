@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citiwise - Smarter Pre-Construction</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Base Styles for a Clean, Magical Look */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #2f3437;
+      background-color: #fafbfc;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    /* Headers with Soft and Refined Color */
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #2f3437;
+      margin: 0;
+      padding: 0;
+      letter-spacing: -0.5px;
+    }
+
+    /* Text with Gentle Contrast */
+    p, li {
+      color: #555;
+      margin: 0;
+      padding: 0;
+      letter-spacing: -0.2px;
+    }
+
+    /* Button with Soft and Minimal Hover Effect */
+    .btn-primary {
+      background-color: #2f3437;
+      color: #ffffff;
+      padding: 12px 26px;
+      font-weight: 500;
+      border-radius: 6px;
+      font-size: 1rem;
+      border: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-primary:hover {
+      background-color: #3f4a4f;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Layout with Enhanced Padding for a Soft Look */
+    .hero, .section, .footer {
+      padding: 3rem 1.5rem;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .subtle-headline {
+      font-size: 1rem;
+      color: #7d7d7d;
+      margin-top: 1rem;
+      letter-spacing: 0.1px;
+    }
+
+    .section-title {
+      font-size: 2.15rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-top: 0.75rem;
+      color: #2f3437;
+      transition: color 0.5s ease-in-out;
+    }
+
+    .description {
+      font-size: 1.125rem;
+      color: #555;
+      margin-top: 1rem;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+      .btn-primary {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+      .hero, .section, .footer {
+        padding: 2.5rem 1rem;
+      }
+    }
+
+    /* Card Styling with Floating Effect and Subtle Glow */
+    .shadow-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+    }
+
+    .shadow-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer Link Hover Effect with Soft Transition */
+    .footer a {
+      color: #555;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #2f3437;
+    }
+
+    /* Restored Dark Mode Styling */
+    body.dark-mode {
+      background-color: #1c1c1e;
+      color: #e4e4e4;
+    }
+
+    .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+      color: #f0f0f3;
+    }
+
+    .dark-mode p, .dark-mode li {
+      color: #cccccc;
+    }
+
+    .dark-mode .btn-primary {
+      background-color: #ffffff;
+      color: #2f3437;
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+    }
+
+    .dark-mode .btn-primary:hover {
+      background-color: #e0e0e0;
+      color: #2f3437;
+      box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .dark-mode .shadow-card {
+      background-color: #2a2a2c;
+      box-shadow: none;
+    }
+
+    .dark-mode header {
+      background-color: #1e1e1f;
+      color: #f0f0f3;
+    }
+
+    /* Minimalist Dark Mode Toggle */
+    .dark-mode-toggle {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      background-color: transparent;
+      transition: transform 0.3s ease;
+    }
+
+    .dark-mode-toggle svg {
+      fill: #2f3437;
+      transition: fill 0.3s ease-in-out;
+    }
+    .dark-mode .dark-mode-toggle svg {
+      fill: #eaeaea;
+    }
+  </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+  <!-- Dark Mode Toggle Button -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()" id="darkModeToggle">
+    <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 2a1 1 0 1 1 0 2 8 8 0 1 0 8 8 1 1 0 0 1 2 0 10 10 0 1 1-10-10z"/>
+    </svg>
+  </div>
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow-sm">
+    <div class="text-2xl font-bold">Citiwise</div>
+    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">Get a Demo</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero text-center mt-8">
+    <p class="subtle-headline">AI-Powered Pre-Construction Platform</p> <!-- First, smaller headline -->
+    <h1 class="section-title">Get Your Project Approved and Ready to Build 50% Faster.</h1> <!-- Second, larger and focused headline -->
+    <p class="description">Citiwise simplifies pre-construction, guiding you from land to project approval with clarity, accuracy, and speed.</p>
+    <a href="https://tejasdgurav.github.io/Citiwise/" class="btn-primary mt-8" target="_blank" rel="noopener noreferrer">Start Your Project</a>
+  </section>
+
+  <!-- Core Benefits Section -->
+  <section class="section mt-16">
+    <h2 class="section-title text-center">Everything You Need, Streamlined</h2>
+    <p class="text-center description">From the first site check to the final approval, Citiwise provides the essentials without the hassle.</p>
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="shadow-card">
+        <h3 class="text-xl font-semibold">Site Analysis</h3>
+        <p class="mt-2">Quickly check if the land meets legal and regulatory standards.</p>
+      </div>
+      <div class="shadow-card">
+        <h3 class="text-xl font-semibold">Market Fit</h3>
+        <p class="mt-2">Guidance on designing to meet local market demand.</p>
+      </div>
+      <div class="shadow-card">
+        <h3 class="text-xl font-semibold">Approval Pathway</h3>
+        <p class="mt-2">Clear steps to get all required approvals without missing a beat.</p>
+      </div>
+      <div class="shadow-card">
+        <h3 class="text-xl font-semibold">Financial Clarity</h3>
+        <p class="mt-2">Know your costs and potential profit with clarity.</p>
+      </div>
+      <div class="shadow-card">
+        <h3 class="text-xl font-semibold">Regulatory Compliance</h3>
+        <p class="mt-2">Stay aligned with UDCPR and any local city-specific rules.</p>
+      </div>
+      <div class="shadow-card">
+        <h3 class="text-xl font-semibold">Simple Project Roadmap</h3>
+        <p class="mt-2">A high-level roadmap guiding you from start to approval.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="section text-center mt-16">
+    <h2 class="section-title">Let’s Get Started</h2>
+    <p class="description">Citiwise is designed to make pre-construction simple, clear, and fast. Let’s get your project moving.</p>
+    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary mt-6" target="_blank" rel="noopener noreferrer">Schedule a Demo</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center mt-12">
+    <p class="text-sm">Citiwise - The Smart Way to Start</p>
+    <div class="mt-4 space-x-4">
+      <a href="https://www.linkedin.com/company/citiwise/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-700">LinkedIn</a>
+      <a href="mailto:support@citiwise.in" class="hover:text-gray-700">Contact Us</a>
+    </div>
+    <p class="text-sm mt-4">© 2024 Citiwise.in</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
