@@ -1,0 +1,209 @@
+{
+    "zone": [
+        {
+            "id": 1,
+            "name": "Purely Residential Zone(R1)",
+            "landuserId": 1
+        },
+        {
+            "id": 2,
+            "name": "Residential Zone(R2)",
+            "landuserId": 1
+        },
+        {
+            "id": 3,
+            "name": "Residential Zone with Shop line. (R-2) ",
+            "landuserId": 1
+        },
+        {
+            "id": 4,
+            "name": "General Residential Zone.",
+            "landuserId": 1
+        },
+        {
+            "id": 5,
+            "name": "Residential Zone - R-2, R-3.",
+            "landuserId": 1
+        },
+        {
+            "id": 6,
+            "name": "Residential Zone - R-4 with payment of premium. ",
+            "landuserId": 1
+        },
+        {
+            "id": 7,
+            "name": "Urbanisable Zone.",
+            "landuserId": 1
+        },
+        {
+            "id": 8,
+            "name": "Special Residential Zone.",
+            "landuserId": 1
+        },
+        {
+            "id": 9,
+            "name": "Pre-dominantly Residential Zone.",
+            "landuserId": 1
+        },
+        {
+            "id": 10,
+            "name": "Slum Improvement Zone.",
+            "landuserId": 1
+        },
+        {
+            "id": 11,
+            "name": "Low Density Residential Zone in Development Plan of Jalgaon. ",
+            "landuserId": 1
+        },
+        {
+            "id": 12,
+            "name": "Low Density Residential Zone.",
+            "landuserId": 2
+        },
+        {
+            "id": 13,
+            "name": "Future Urbanizable Zone. ",
+            "landuserId": 3
+        },
+        {
+            "id": 14,
+            "name": "Commercial Zone",
+            "landuserId": 4
+        },
+        {
+            "id": 15,
+            "name": "Local Commercial - (C-1)",
+            "landuserId": 4
+        },
+        {
+            "id": 16,
+            "name": "Commercial Zone ",
+            "landuserId": 4
+        },
+        {
+            "id": 17,
+            "name": "Commercial Zone - (C-2) ",
+            "landuserId": 4
+        },
+        {
+            "id": 18,
+            "name": "Industrial Zone",
+            "landuserId": 5
+        },
+        {
+            "id": 19,
+            "name": "Service Industries - (I-1)",
+            "landuserId": 5
+        },
+        {
+            "id": 20,
+            "name": "General Industries - (I-2)",
+            "landuserId": 5
+        },
+        {
+            "id": 21,
+            "name": "Special Industries (I-3) ",
+            "landuserId": 5
+        },
+        {
+            "id": 22,
+            "name": "Loom Industry cum Residential Zone. ",
+            "landuserId": 6
+        },
+        {
+            "id": 23,
+            "name": "Public Semi-public Zone.",
+            "landuserId": 7
+        },
+        {
+            "id": 24,
+            "name": "Agricultural Zone",
+            "landuserId": 8
+        },
+        {
+            "id": 25,
+            "name": "Horticultural Zone.",
+            "landuserId": 8
+        },
+        {
+            "id": 26,
+            "name": "Plantation Zone.",
+            "landuserId": 8
+        },
+        {
+            "id": 27,
+            "name": "No Development Zone.",
+            "landuserId": 8
+        },
+        {
+            "id": 28,
+            "name": "Green Zone - 1. / Green Zone. ",
+            "landuserId": 8
+        },
+        {
+            "id": 29,
+            "name": "Cattle Shed Zone. ",
+            "landuserId": 8
+        },
+        {
+            "id": 30,
+            "name": "Green Belt / Green Belt Zone.",
+            "landuserId": 9
+        },
+        {
+            "id": 31,
+            "name": "Traffic and Transportation Zone.",
+            "landuserId": 10
+        },
+        {
+            "id": 32,
+            "name": "Regional Park Zone. ",
+            "landuserId": 11
+        },
+        {
+            "id": 33,
+            "name": "Tourism Development Zone.",
+            "landuserId": 12
+        },
+        {
+            "id": 34,
+            "name": "Afforestation Zone.",
+            "landuserId": 13
+        },
+        {
+            "id": 35,
+            "name": "Hill Top-Hill Slope Zone (HTHS) (Slope having gradient more than 1:5 irrespective of whether shown on plan or not.) / Hilly area. ",
+            "landuserId": 14
+        },
+        {
+            "id": 36,
+            "name": "Green Zone -2",
+            "landuserId": 15
+        },
+        {
+            "id": 37,
+            "name": "Forest Zone.",
+            "landuserId": 16
+        },
+        {
+            "id": 38,
+            "name": "Defence Zone.",
+            "landuserId": 17
+        },
+        {
+            "id": 39,
+            "name": " Mines and Quarry Zone",
+            "landuserId": 18
+        },
+        {
+            "id": 40,
+            "name": "Quarry to Park Zone, ",
+            "landuserId": 18
+        },
+        {
+            "id": 41,
+            "name": " Public Utility Zone. ",
+            "landuserId": 19
+        }
+    ]
+}

@@ -1,0 +1,3350 @@
+{
+    "ulb_rp_special_authority": [
+        {
+            "id": 1,
+            "districtName": "Sangli",
+            "talukaName": "Shirala Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 195
+        },
+        {
+            "id": 2,
+            "districtName": "Dhule",
+            "talukaName": "Shindkheda Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 53
+        },
+        {
+            "id": 3,
+            "districtName": "Jalgaon",
+            "talukaName": "Shendurni Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 395
+        },
+        {
+            "id": 4,
+            "districtName": "Thane",
+            "talukaName": "Shahapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 277
+        },
+        {
+            "id": 5,
+            "districtName": "Hingoli",
+            "talukaName": "Sengaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 234
+        },
+        {
+            "id": 6,
+            "districtName": "Wardha",
+            "talukaName": "Seloo Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 291
+        },
+        {
+            "id": 7,
+            "districtName": "Chandrapur",
+            "talukaName": "Saoli Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 329
+        },
+        {
+            "id": 8,
+            "districtName": "Buldhana",
+            "talukaName": "sangrampur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 268
+        },
+        {
+            "id": 9,
+            "districtName": "Wardha",
+            "talukaName": "Samudrapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 292
+        },
+        {
+            "id": 10,
+            "districtName": "Gondia",
+            "talukaName": "Salekasa Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 298
+        },
+        {
+            "id": 11,
+            "districtName": "Dhule",
+            "talukaName": "Sakri Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 54
+        },
+        {
+            "id": 12,
+            "districtName": "Gondia",
+            "talukaName": "Sadak-Arjuni Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 299
+        },
+        {
+            "id": 13,
+            "districtName": "Latur",
+            "talukaName": "Renapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 357
+        },
+        {
+            "id": 14,
+            "districtName": "Yavatmal",
+            "talukaName": "Ralegaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 285
+        },
+        {
+            "id": 15,
+            "districtName": "Chandrapur",
+            "talukaName": "Pombhurna Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 332
+        },
+        {
+            "id": 16,
+            "districtName": "Raigad",
+            "talukaName": "Poladpur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 13
+        },
+        {
+            "id": 17,
+            "districtName": "Aurangabad",
+            "talukaName": "Phulambri Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 387
+        },
+        {
+            "id": 18,
+            "districtName": "Nashik",
+            "talukaName": "Peth Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 43
+        },
+        {
+            "id": 19,
+            "districtName": "Beed",
+            "talukaName": "Patoda Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 225
+        },
+        {
+            "id": 20,
+            "districtName": "Satara",
+            "talukaName": "Patan Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 345
+        },
+        {
+            "id": 21,
+            "districtName": "Ahmednagar",
+            "talukaName": "Parner Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 119
+        },
+        {
+            "id": 22,
+            "districtName": "Parbhani",
+            "talukaName": "Palam Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 233
+        },
+        {
+            "id": 23,
+            "districtName": "Nashik",
+            "talukaName": "Nifad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 38
+        },
+        {
+            "id": 24,
+            "districtName": "Ahmednagar",
+            "talukaName": "Nevasa Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 134
+        },
+        {
+            "id": 25,
+            "districtName": "Nanded",
+            "talukaName": "Naygaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 241
+        },
+        {
+            "id": 26,
+            "districtName": "Gadchiroli",
+            "talukaName": "Mulchera Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 335
+        },
+        {
+            "id": 27,
+            "districtName": "Thane",
+            "talukaName": "Murbad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 276
+        },
+        {
+            "id": 28,
+            "districtName": "Jalgaon",
+            "talukaName": "Muktai Nagar Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 394
+        },
+        {
+            "id": 29,
+            "districtName": "Nagpur",
+            "talukaName": "Mouda Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 310
+        },
+        {
+            "id": 30,
+            "districtName": "Buldhana",
+            "talukaName": "Motala Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 267
+        },
+        {
+            "id": 31,
+            "districtName": "Palghar",
+            "talukaName": "Mokhada Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 349
+        },
+        {
+            "id": 32,
+            "districtName": "Bhandara",
+            "talukaName": "Mohadi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 321
+        },
+        {
+            "id": 33,
+            "districtName": "Raigad",
+            "talukaName": "Mhasala Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 11
+        },
+        {
+            "id": 34,
+            "districtName": "Satara",
+            "talukaName": "Medha Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 351
+        },
+        {
+            "id": 35,
+            "districtName": "Yavatmal",
+            "talukaName": "Maregaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 283
+        },
+        {
+            "id": 36,
+            "districtName": "Jalna",
+            "talukaName": "Mantha Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 308
+        },
+        {
+            "id": 37,
+            "districtName": "Washim",
+            "talukaName": "Manora Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 271
+        },
+        {
+            "id": 38,
+            "districtName": "Raigad",
+            "talukaName": "Mangaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 14
+        },
+        {
+            "id": 39,
+            "districtName": "Ratnagiri",
+            "talukaName": "Mandangad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 21
+        },
+        {
+            "id": 40,
+            "districtName": "Solapur",
+            "talukaName": "Malshiras Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 211
+        },
+        {
+            "id": 41,
+            "districtName": "Washim",
+            "talukaName": "Malegaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 79
+        },
+        {
+            "id": 42,
+            "districtName": "Nanded",
+            "talukaName": "Mahur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 238
+        },
+        {
+            "id": 43,
+            "districtName": "Yavatmal",
+            "talukaName": "Mahagaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 286
+        },
+        {
+            "id": 44,
+            "districtName": "Nagpur",
+            "talukaName": "Mahadula Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 311
+        },
+        {
+            "id": 45,
+            "districtName": "Solapur",
+            "talukaName": "Madha Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 210
+        },
+        {
+            "id": 46,
+            "districtName": "Satara",
+            "talukaName": "Lonand Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 204
+        },
+        {
+            "id": 47,
+            "districtName": "Solapur",
+            "talukaName": "Akluj",
+            "councilName": "Non-MC",
+            "councilId": 0
+        },
+        {
+            "id": 48,
+            "districtName": "Osmanabad",
+            "talukaName": "LoharaBu. Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 401
+        },
+        {
+            "id": 49,
+            "districtName": "Ratnagiri",
+            "talukaName": "Lanja Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 400
+        },
+        {
+            "id": 50,
+            "districtName": "Bhandara",
+            "talukaName": "Lakhani Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 228
+        },
+        {
+            "id": 51,
+            "districtName": "Bhandara",
+            "talukaName": "Lakhandur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 320
+        },
+        {
+            "id": 52,
+            "districtName": "Gadchiroli",
+            "talukaName": "Kurkheda Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 339
+        },
+        {
+            "id": 53,
+            "districtName": "Nagpur",
+            "talukaName": "Kuhi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 314
+        },
+        {
+            "id": 54,
+            "districtName": "Sindhudurg",
+            "talukaName": "Kudal Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 26
+        },
+        {
+            "id": 55,
+            "districtName": "Chandrapur",
+            "talukaName": "Korpana Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 330
+        },
+        {
+            "id": 56,
+            "districtName": "Satara",
+            "talukaName": "Koregaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 344
+        },
+        {
+            "id": 57,
+            "districtName": "Gadchiroli",
+            "talukaName": "Korchi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 334
+        },
+        {
+            "id": 58,
+            "districtName": "Satara",
+            "talukaName": "Khandala Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 346
+        },
+        {
+            "id": 59,
+            "districtName": "Sangli",
+            "talukaName": "Khanapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 194
+        },
+        {
+            "id": 60,
+            "districtName": "Raigad",
+            "talukaName": "Khalapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 269
+        },
+        {
+            "id": 61,
+            "districtName": "Sangli",
+            "talukaName": "Kavathe Mahankal Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 192
+        },
+        {
+            "id": 62,
+            "districtName": "Sindhudurg",
+            "talukaName": "Kasai-Dodamarg Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 25
+        },
+        {
+            "id": 63,
+            "districtName": "Ahmednagar",
+            "talukaName": "Karjat Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 118
+        },
+        {
+            "id": 64,
+            "districtName": "Wardha",
+            "talukaName": "Karanja Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 294
+        },
+        {
+            "id": 65,
+            "districtName": "Sindhudurg",
+            "talukaName": "Kankavali Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 23
+        },
+        {
+            "id": 66,
+            "districtName": "Nashik",
+            "talukaName": "Kalwan Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 41
+        },
+        {
+            "id": 67,
+            "districtName": "Yavatmal",
+            "talukaName": "Kalamb Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 287
+        },
+        {
+            "id": 68,
+            "districtName": "Sangli",
+            "talukaName": "Kadegaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 193
+        },
+        {
+            "id": 69,
+            "districtName": "Chandrapur",
+            "talukaName": "Jiwati Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 328
+        },
+        {
+            "id": 70,
+            "districtName": "Latur",
+            "talukaName": "Jalkot Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 247
+        },
+        {
+            "id": 71,
+            "districtName": "Jalna",
+            "talukaName": "Jafrabad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 220
+        },
+        {
+            "id": 72,
+            "districtName": "Nagpur",
+            "talukaName": "Hingna Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 315
+        },
+        {
+            "id": 73,
+            "districtName": "Nanded",
+            "talukaName": "Himayatnagar Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 240
+        },
+        {
+            "id": 74,
+            "districtName": "Kolhapur",
+            "talukaName": "Hathkanagale Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 393
+        },
+        {
+            "id": 75,
+            "districtName": "Ratnagiri",
+            "talukaName": "Guhagar Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 20
+        },
+        {
+            "id": 76,
+            "districtName": "Chandrapur",
+            "talukaName": "Gondpipri Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 331
+        },
+        {
+            "id": 77,
+            "districtName": "Jalna",
+            "talukaName": "Ghansavangi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 250
+        },
+        {
+            "id": 78,
+            "districtName": "Gadchiroli",
+            "talukaName": "Eitapalli Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 342
+        },
+        {
+            "id": 79,
+            "districtName": "Nashik",
+            "talukaName": "Dindori Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 48
+        },
+        {
+            "id": 80,
+            "districtName": "Amravati",
+            "talukaName": "Dharani Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 258
+        },
+        {
+            "id": 81,
+            "districtName": "Gadchiroli",
+            "talukaName": "Dhanora Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 307
+        },
+        {
+            "id": 82,
+            "districtName": "Yavatmal",
+            "talukaName": "Dhanki Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 392
+        },
+        {
+            "id": 83,
+            "districtName": "Nandurbar",
+            "talukaName": "Dhadgaon-wadfalaya Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 251
+        },
+        {
+            "id": 84,
+            "districtName": "Nashik",
+            "talukaName": "Dewla Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 42
+        },
+        {
+            "id": 85,
+            "districtName": "Ratnagiri",
+            "talukaName": "Devrukh Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 18
+        },
+        {
+            "id": 86,
+            "districtName": "Gondia",
+            "talukaName": "Devri Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 296
+        },
+        {
+            "id": 87,
+            "districtName": "Latur",
+            "talukaName": "Devni Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 248
+        },
+        {
+            "id": 88,
+            "districtName": "Sindhudurg",
+            "talukaName": "Devgad Jamsande Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 352
+        },
+        {
+            "id": 89,
+            "districtName": "Ratnagiri",
+            "talukaName": "Dapoli Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 17
+        },
+        {
+            "id": 90,
+            "districtName": "Satara",
+            "talukaName": "Dahivadi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 355
+        },
+        {
+            "id": 91,
+            "districtName": "Kolhapur",
+            "talukaName": "Chandgad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 391
+        },
+        {
+            "id": 92,
+            "districtName": "Gadchiroli",
+            "talukaName": "Chamorshi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 343
+        },
+        {
+            "id": 93,
+            "districtName": "Latur",
+            "talukaName": "Chakur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 246
+        },
+        {
+            "id": 94,
+            "districtName": "Jalgaon",
+            "talukaName": "Bodvad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 347
+        },
+        {
+            "id": 95,
+            "districtName": "Nagpur",
+            "talukaName": "Bhiwapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 399
+        },
+        {
+            "id": 96,
+            "districtName": "Amravati",
+            "talukaName": "Bhatkuli Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 257
+        },
+        {
+            "id": 97,
+            "districtName": "Gadchiroli",
+            "talukaName": "Bhamragad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 336
+        },
+        {
+            "id": 98,
+            "districtName": "Akola",
+            "talukaName": "Barshi Takali Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 265
+        },
+        {
+            "id": 99,
+            "districtName": "Jalna",
+            "talukaName": "Badnapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 58
+        },
+        {
+            "id": 100,
+            "districtName": "Yavatmal",
+            "talukaName": "Babhulgaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 282
+        },
+        {
+            "id": 101,
+            "districtName": "Hingoli",
+            "talukaName": "Aundha Nagnath Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 235
+        },
+        {
+            "id": 102,
+            "districtName": "Beed",
+            "talukaName": "Ashti Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 398
+        },
+        {
+            "id": 103,
+            "districtName": "Nanded",
+            "talukaName": "Ardhapur Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 239
+        },
+        {
+            "id": 104,
+            "districtName": "Ahmednagar",
+            "talukaName": "Akole Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 117
+        },
+        {
+            "id": 105,
+            "districtName": "Kolhapur",
+            "talukaName": "Ajara Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 388
+        },
+        {
+            "id": 106,
+            "districtName": "Gadchiroli",
+            "talukaName": "Aheri Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 340
+        },
+        {
+            "id": 107,
+            "districtName": "Nagpur",
+            "talukaName": "Parseoni Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 359
+        },
+        {
+            "id": 108,
+            "districtName": "Gondia",
+            "talukaName": "Arjuni Morgaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 301
+        },
+        {
+            "id": 109,
+            "districtName": "Amravati",
+            "talukaName": "Nandgaon Khandeshwar Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 259
+        },
+        {
+            "id": 110,
+            "districtName": "Pune",
+            "talukaName": "Loni-Kalbhor",
+            "councilName": "Non-MC",
+            "councilId": 0
+        },
+        {
+            "id": 111,
+            "districtName": "Kolhapur",
+            "talukaName": "Shirol Municipal Council",
+            "councilName": "C",
+            "councilId": 403
+        },
+        {
+            "id": 112,
+            "districtName": "Kolhapur",
+            "talukaName": "Hupari Municipal Council",
+            "councilName": "C",
+            "councilId": 404
+        },
+        {
+            "id": 113,
+            "districtName": "Solapur",
+            "talukaName": "Mohol Municipal Council",
+            "councilName": "C",
+            "councilId": 272
+        },
+        {
+            "id": 114,
+            "districtName": "Bhandara",
+            "talukaName": "Sakoli Municipal Council",
+            "councilName": "C",
+            "councilId": 227
+        },
+        {
+            "id": 115,
+            "districtName": "Gondia",
+            "talukaName": "Amgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 309
+        },
+        {
+            "id": 116,
+            "districtName": "Nagpur",
+            "talukaName": "Butibori Municipal Council",
+            "councilName": "C",
+            "councilId": 390
+        },
+        {
+            "id": 117,
+            "districtName": "Wardha",
+            "talukaName": "Ashti Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 293
+        },
+        {
+            "id": 118,
+            "districtName": "Gondia",
+            "talukaName": "Goregaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 300
+        },
+        {
+            "id": 119,
+            "districtName": "Nagpur",
+            "talukaName": "Nagpur Municipal Corporation",
+            "councilName": "A Corporation",
+            "councilId": 383
+        },
+        {
+            "id": 120,
+            "districtName": "Pune",
+            "talukaName": "Baramati Municipal Council",
+            "councilName": "A",
+            "councilId": 135
+        },
+        {
+            "id": 121,
+            "districtName": "Pune",
+            "talukaName": "Daund Municipal Council",
+            "councilName": "B",
+            "councilId": 148
+        },
+        {
+            "id": 122,
+            "districtName": "Pune",
+            "talukaName": "Talegaon Dabhade Municipal Council",
+            "councilName": "B",
+            "councilId": 1
+        },
+        {
+            "id": 123,
+            "districtName": "Pune",
+            "talukaName": "Jejuri Municipal Council",
+            "councilName": "C",
+            "councilId": 161
+        },
+        {
+            "id": 124,
+            "districtName": "Pune",
+            "talukaName": "Indapur Municipal Council",
+            "councilName": "C",
+            "councilId": 167
+        },
+        {
+            "id": 125,
+            "districtName": "Pune",
+            "talukaName": "Saswad Municipal Council",
+            "councilName": "C",
+            "councilId": 150
+        },
+        {
+            "id": 126,
+            "districtName": "Pune",
+            "talukaName": "Shirur Municipal Council",
+            "councilName": "C",
+            "councilId": 169
+        },
+        {
+            "id": 127,
+            "districtName": "Pune",
+            "talukaName": "Bhor Municipal Council",
+            "councilName": "C",
+            "councilId": 363
+        },
+        {
+            "id": 128,
+            "districtName": "Pune",
+            "talukaName": "Alandi Municipal Council",
+            "councilName": "C",
+            "councilId": 30
+        },
+        {
+            "id": 129,
+            "districtName": "Pune",
+            "talukaName": "Junnar Municipal Council \n",
+            "councilName": "C",
+            "councilId": 19
+        },
+        {
+            "id": 130,
+            "districtName": "Kolhapur",
+            "talukaName": "Ichalkaranji Municipal Council",
+            "councilName": "A",
+            "councilId": 304
+        },
+        {
+            "id": 131,
+            "districtName": "Kolhapur",
+            "talukaName": "Ichalkarnji(Part Rev.)",
+            "councilName": "A",
+            "councilId": 0
+        },
+        {
+            "id": 132,
+            "districtName": "Kolhapur",
+            "talukaName": "Jaysingpur Municipal Council",
+            "councilName": "B",
+            "councilId": 34
+        },
+        {
+            "id": 133,
+            "districtName": "Kolhapur",
+            "talukaName": "Malkapur Municipal Council",
+            "councilName": "C",
+            "councilId": 361
+        },
+        {
+            "id": 134,
+            "districtName": "Kolhapur",
+            "talukaName": "Murgud Municipal Council",
+            "councilName": "C",
+            "councilId": 36
+        },
+        {
+            "id": 135,
+            "districtName": "Kolhapur",
+            "talukaName": "Vadgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 214
+        },
+        {
+            "id": 136,
+            "districtName": "Kolhapur",
+            "talukaName": "Gadhinglaj Municipal Council",
+            "councilName": "C",
+            "councilId": 215
+        },
+        {
+            "id": 137,
+            "districtName": "Kolhapur",
+            "talukaName": "Kurundwad Municipal Council",
+            "councilName": "C",
+            "councilId": 39
+        },
+        {
+            "id": 138,
+            "districtName": "Kolhapur",
+            "talukaName": "Kagal Municipal Council",
+            "councilName": "C",
+            "councilId": 40
+        },
+        {
+            "id": 139,
+            "districtName": "Satara",
+            "talukaName": "Satara Municipal Council",
+            "councilName": "A",
+            "councilId": 198
+        },
+        {
+            "id": 140,
+            "districtName": "Satara",
+            "talukaName": "Karad Municipal Council",
+            "councilName": "B",
+            "councilId": 37
+        },
+        {
+            "id": 141,
+            "districtName": "Satara",
+            "talukaName": "Phaltan Municipal Council",
+            "councilName": "B",
+            "councilId": 200
+        },
+        {
+            "id": 142,
+            "districtName": "Satara",
+            "talukaName": "Rahimatpur Municipal Council",
+            "councilName": "C",
+            "councilId": 44
+        },
+        {
+            "id": 143,
+            "districtName": "Satara",
+            "talukaName": "Mhaswad Municipal Council",
+            "councilName": "C",
+            "councilId": 201
+        },
+        {
+            "id": 144,
+            "districtName": "Satara",
+            "talukaName": "Wai Municipal Council",
+            "councilName": "C",
+            "councilId": 46
+        },
+        {
+            "id": 145,
+            "districtName": "Solapur",
+            "talukaName": "Barshi Municipal Council",
+            "councilName": "A",
+            "councilId": 237
+        },
+        {
+            "id": 146,
+            "districtName": "Solapur",
+            "talukaName": "Pandharpur Municipal Council",
+            "councilName": "B",
+            "councilId": 50
+        },
+        {
+            "id": 147,
+            "districtName": "Solapur",
+            "talukaName": "Pandharpur(Ext.Area)",
+            "councilName": "B",
+            "councilId": 0
+        },
+        {
+            "id": 148,
+            "districtName": "Solapur",
+            "talukaName": "Karmala Municipal Council",
+            "councilName": "C",
+            "councilId": 51
+        },
+        {
+            "id": 149,
+            "districtName": "Solapur",
+            "talukaName": "Sangola Municipal Council",
+            "councilName": "C",
+            "councilId": 33
+        },
+        {
+            "id": 150,
+            "districtName": "Solapur",
+            "talukaName": "Akkalkot Municipal Council",
+            "councilName": "B",
+            "councilId": 207
+        },
+        {
+            "id": 151,
+            "districtName": "Solapur",
+            "talukaName": "Akkalkot(AA)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 152,
+            "districtName": "Solapur",
+            "talukaName": "Mangalvedha Municipal Council",
+            "councilName": "C",
+            "councilId": 208
+        },
+        {
+            "id": 153,
+            "districtName": "Solapur",
+            "talukaName": "Maindargi Municipal Council",
+            "councilName": "C",
+            "councilId": 55
+        },
+        {
+            "id": 154,
+            "districtName": "Solapur",
+            "talukaName": "Dudhani Municipal Council",
+            "councilName": "C",
+            "councilId": 56
+        },
+        {
+            "id": 155,
+            "districtName": "Solapur",
+            "talukaName": "Kurduwadi Municipal Council",
+            "councilName": "C",
+            "councilId": 261
+        },
+        {
+            "id": 156,
+            "districtName": "Sangli",
+            "talukaName": "Islampur Municipal Council",
+            "councilName": "B",
+            "councilId": 59
+        },
+        {
+            "id": 157,
+            "districtName": "Sangli",
+            "talukaName": "Vita Municipal Council",
+            "councilName": "B",
+            "councilId": 60
+        },
+        {
+            "id": 158,
+            "districtName": "Sangli",
+            "talukaName": "Ashta Municipal Council",
+            "councilName": "C",
+            "councilId": 224
+        },
+        {
+            "id": 159,
+            "districtName": "Sangli",
+            "talukaName": "Tasgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 62
+        },
+        {
+            "id": 160,
+            "districtName": "Amravati",
+            "talukaName": "Achalpur Municipal Council\n",
+            "councilName": "A",
+            "councilId": 63
+        },
+        {
+            "id": 161,
+            "districtName": "Amravati",
+            "talukaName": "Dhamangaon Railway Municipal Council\n",
+            "councilName": "C",
+            "councilId": 64
+        },
+        {
+            "id": 162,
+            "districtName": "Amravati",
+            "talukaName": "Daryapur Municipal Council",
+            "councilName": "C",
+            "councilId": 65
+        },
+        {
+            "id": 163,
+            "districtName": "Amravati",
+            "talukaName": "Chandur Railway Municipal Council",
+            "councilName": "C",
+            "councilId": 66
+        },
+        {
+            "id": 164,
+            "districtName": "Amravati",
+            "talukaName": "Warud Municipal Council\n",
+            "councilName": "B",
+            "councilId": 67
+        },
+        {
+            "id": 165,
+            "districtName": "Amravati",
+            "talukaName": "Warud(Republished)",
+            "councilName": "B",
+            "councilId": 0
+        },
+        {
+            "id": 166,
+            "districtName": "Amravati",
+            "talukaName": "Chandur Bazar Municipal Council \n",
+            "councilName": "C",
+            "councilId": 68
+        },
+        {
+            "id": 167,
+            "districtName": "Amravati",
+            "talukaName": "Anjangaonsurji Municipal Council",
+            "councilName": "B",
+            "councilId": 69
+        },
+        {
+            "id": 168,
+            "districtName": "Amravati",
+            "talukaName": "Morshi Municipal Council\n",
+            "councilName": "C",
+            "councilId": 70
+        },
+        {
+            "id": 169,
+            "districtName": "Akola",
+            "talukaName": "Akot Municipal Council",
+            "councilName": "B",
+            "councilId": 71
+        },
+        {
+            "id": 170,
+            "districtName": "Akola ",
+            "talukaName": "Akot(Ext. Area)",
+            "councilName": "B",
+            "councilId": 0
+        },
+        {
+            "id": 171,
+            "districtName": "Akola",
+            "talukaName": "Murtizapur Municipal Council",
+            "councilName": "B",
+            "councilId": 72
+        },
+        {
+            "id": 172,
+            "districtName": "Akola",
+            "talukaName": "Balapur Municipal Council\n",
+            "councilName": "B",
+            "councilId": 73
+        },
+        {
+            "id": 173,
+            "districtName": "Akola ",
+            "talukaName": "Balapur( Republished)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 174,
+            "districtName": "Akola",
+            "talukaName": "Telhara Municipal Council",
+            "councilName": "C",
+            "councilId": 74
+        },
+        {
+            "id": 175,
+            "districtName": "Akola",
+            "talukaName": "Patur Municipal Council",
+            "councilName": "C",
+            "councilId": 264
+        },
+        {
+            "id": 176,
+            "districtName": "Washim",
+            "talukaName": "Washim Municipal Council",
+            "councilName": "B",
+            "councilId": 75
+        },
+        {
+            "id": 177,
+            "districtName": "Washim",
+            "talukaName": "Karanja Municipal Council",
+            "councilName": "B",
+            "councilId": 76
+        },
+        {
+            "id": 178,
+            "districtName": "Washim",
+            "talukaName": "Mangrulpir Municipal Council",
+            "councilName": "C",
+            "councilId": 77
+        },
+        {
+            "id": 179,
+            "districtName": "Washim",
+            "talukaName": "Risod Municipal Council",
+            "councilName": "C",
+            "councilId": 78
+        },
+        {
+            "id": 180,
+            "districtName": "Washim",
+            "talukaName": "Risod(Republished)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 181,
+            "districtName": "Buldhana",
+            "talukaName": "Buldhana Municipal Council",
+            "councilName": "B",
+            "councilId": 80
+        },
+        {
+            "id": 182,
+            "districtName": "Buldhana",
+            "talukaName": "Khamgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 81
+        },
+        {
+            "id": 183,
+            "districtName": "Buldhana",
+            "talukaName": "Shegaon Municipal Council",
+            "councilName": "B",
+            "councilId": 82
+        },
+        {
+            "id": 184,
+            "districtName": "Buldhana",
+            "talukaName": "Malkapur Municipal Council",
+            "councilName": "B",
+            "councilId": 360
+        },
+        {
+            "id": 185,
+            "districtName": "Buldhana",
+            "talukaName": "Jalgaon Jamod Municipal Council",
+            "councilName": "C",
+            "councilId": 83
+        },
+        {
+            "id": 186,
+            "districtName": "Buldhana",
+            "talukaName": "Mehakar Municipal Council",
+            "councilName": "B",
+            "councilId": 266
+        },
+        {
+            "id": 187,
+            "districtName": "Buldhana",
+            "talukaName": "Lonar Municipal Council",
+            "councilName": "C",
+            "councilId": 85
+        },
+        {
+            "id": 188,
+            "districtName": "Buldhana",
+            "talukaName": "Deulgaon raja Municipal Council",
+            "councilName": "C",
+            "councilId": 86
+        },
+        {
+            "id": 189,
+            "districtName": "Buldhana",
+            "talukaName": "Deulgaon Raja(Republished)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 190,
+            "districtName": "Buldhana",
+            "talukaName": "Chikhali Municipal Council",
+            "councilName": "B",
+            "councilId": 87
+        },
+        {
+            "id": 191,
+            "districtName": "Buldhana",
+            "talukaName": "Chikhali(Republished)",
+            "councilName": "B",
+            "councilId": 0
+        },
+        {
+            "id": 192,
+            "districtName": "Buldhana",
+            "talukaName": "Sindkhed raja Municipal Council",
+            "councilName": "C",
+            "councilId": 88
+        },
+        {
+            "id": 193,
+            "districtName": "Buldhana",
+            "talukaName": "Nandura Municipal Council",
+            "councilName": "C",
+            "councilId": 89
+        },
+        {
+            "id": 194,
+            "districtName": "Yavatmal",
+            "talukaName": "Yavatmal Municipal Council\n",
+            "councilName": "A",
+            "councilId": 12
+        },
+        {
+            "id": 195,
+            "districtName": "Yavatmal",
+            "talukaName": "Wani Municipal Council",
+            "councilName": "B",
+            "councilId": 275
+        },
+        {
+            "id": 196,
+            "districtName": "Yavatmal",
+            "talukaName": "Pusad Municipal Council",
+            "councilName": "B",
+            "councilId": 3
+        },
+        {
+            "id": 197,
+            "districtName": "Yavatmal",
+            "talukaName": "Pandharkavda Municipal Council",
+            "councilName": "C",
+            "councilId": 4
+        },
+        {
+            "id": 198,
+            "districtName": "Yavatmal",
+            "talukaName": "Umarkhed Municipal Council",
+            "councilName": "B",
+            "councilId": 5
+        },
+        {
+            "id": 199,
+            "districtName": "Yavatmal",
+            "talukaName": "Digras Municipal Council",
+            "councilName": "B",
+            "councilId": 6
+        },
+        {
+            "id": 200,
+            "districtName": "Yavatmal",
+            "talukaName": "Darhva Municipal Council\n",
+            "councilName": "C",
+            "councilId": 7
+        },
+        {
+            "id": 201,
+            "districtName": "Yavatmal",
+            "talukaName": "Ghatanji Municipal Council \n",
+            "councilName": "C",
+            "councilId": 8
+        },
+        {
+            "id": 202,
+            "districtName": "Yavatmal",
+            "talukaName": "Ner (Nawabpur) Municipal Council \n",
+            "councilName": "C",
+            "councilId": 9
+        },
+        {
+            "id": 203,
+            "districtName": "Nagpur",
+            "talukaName": "Umred Municipal Council",
+            "councilName": "B",
+            "councilId": 90
+        },
+        {
+            "id": 204,
+            "districtName": "Nagpur",
+            "talukaName": "Kalmeshwar Municipal Council\n",
+            "councilName": "C",
+            "councilId": 91
+        },
+        {
+            "id": 205,
+            "districtName": "Nagpur",
+            "talukaName": "Kamthi Municipal Council\n",
+            "councilName": "B",
+            "councilId": 92
+        },
+        {
+            "id": 206,
+            "districtName": "Nagpur",
+            "talukaName": "Ramtek Municipal Council\n",
+            "councilName": "C",
+            "councilId": 93
+        },
+        {
+            "id": 207,
+            "districtName": "Nagpur",
+            "talukaName": "Mowad Municipal Council",
+            "councilName": "C",
+            "councilId": 94
+        },
+        {
+            "id": 208,
+            "districtName": "Nagpur",
+            "talukaName": "Katol Municipal Council",
+            "councilName": "B",
+            "councilId": 95
+        },
+        {
+            "id": 209,
+            "districtName": "Nagpur",
+            "talukaName": "Khapa Municipal Council\n",
+            "councilName": "C",
+            "councilId": 96
+        },
+        {
+            "id": 210,
+            "districtName": "Nagpur",
+            "talukaName": "Mohapa Municipal Council",
+            "councilName": "C",
+            "councilId": 97
+        },
+        {
+            "id": 211,
+            "districtName": "Nagpur",
+            "talukaName": "Saoner Municipal Council",
+            "councilName": "C",
+            "councilId": 297
+        },
+        {
+            "id": 212,
+            "districtName": "Nagpur",
+            "talukaName": "Narkhed Municipal Council",
+            "councilName": "C",
+            "councilId": 99
+        },
+        {
+            "id": 213,
+            "districtName": "Nagpur",
+            "talukaName": "Bhivapur Municipal Council\n",
+            "councilName": "C",
+            "councilId": 100
+        },
+        {
+            "id": 214,
+            "districtName": "Wardha",
+            "talukaName": "Wardha Municipal Council",
+            "councilName": "A",
+            "councilId": 101
+        },
+        {
+            "id": 215,
+            "districtName": "Wardha",
+            "talukaName": "Arvi Municipal Council",
+            "councilName": "B",
+            "councilId": 102
+        },
+        {
+            "id": 216,
+            "districtName": "Wardha",
+            "talukaName": "Hinganghat Municipal Council",
+            "councilName": "A",
+            "councilId": 103
+        },
+        {
+            "id": 217,
+            "districtName": "Wardha",
+            "talukaName": "Pulgaon Municipal Council\n",
+            "councilName": "C",
+            "councilId": 104
+        },
+        {
+            "id": 218,
+            "districtName": "Wardha",
+            "talukaName": "Deoli Municipal Council",
+            "councilName": "C",
+            "councilId": 290
+        },
+        {
+            "id": 219,
+            "districtName": "Wardha",
+            "talukaName": "Sindi Railway Municipal Council",
+            "councilName": "C",
+            "councilId": 284
+        },
+        {
+            "id": 220,
+            "districtName": "Ahmednagar",
+            "talukaName": "Sevagram Municipal Council\n",
+            "councilName": "C",
+            "councilId": 107
+        },
+        {
+            "id": 221,
+            "districtName": "Gadchiroli",
+            "talukaName": "Gadchiroli Municipal Council",
+            "councilName": "B",
+            "councilId": 108
+        },
+        {
+            "id": 222,
+            "districtName": "Gadchiroli",
+            "talukaName": "Desaiganj Wadasa Municipal Council",
+            "councilName": "C",
+            "councilId": 109
+        },
+        {
+            "id": 223,
+            "districtName": "Bhandara",
+            "talukaName": "Bhandara Municipal Council\n",
+            "councilName": "B",
+            "councilId": 113
+        },
+        {
+            "id": 224,
+            "districtName": "Bhandara",
+            "talukaName": "Tumsar Municipal Council\n",
+            "councilName": "B",
+            "councilId": 115
+        },
+        {
+            "id": 225,
+            "districtName": "Bhandara",
+            "talukaName": "Paoni Municipal Council\n",
+            "councilName": "C",
+            "councilId": 226
+        },
+        {
+            "id": 226,
+            "districtName": "Chandrapur",
+            "talukaName": "Chandrapur Municipal Corporation",
+            "councilName": "D",
+            "councilId": 377
+        },
+        {
+            "id": 227,
+            "districtName": "Chandrapur",
+            "talukaName": "Ballarpur Municipal Council\n",
+            "councilName": "B",
+            "councilId": 170
+        },
+        {
+            "id": 228,
+            "districtName": "Chandrapur",
+            "talukaName": "Ballarpur(EP)",
+            "councilName": "B",
+            "councilId": 0
+        },
+        {
+            "id": 229,
+            "districtName": "Chandrapur",
+            "talukaName": "Brahmpuri Municipal Council",
+            "councilName": "C",
+            "councilId": 171
+        },
+        {
+            "id": 230,
+            "districtName": "Chandrapur",
+            "talukaName": "Bhramhapuri(EP)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 231,
+            "districtName": "Chandrapur",
+            "talukaName": "Warora Municipal Council",
+            "councilName": "B",
+            "councilId": 172
+        },
+        {
+            "id": 232,
+            "districtName": "Chandrapur",
+            "talukaName": "Rajura Municipal Council",
+            "councilName": "C",
+            "councilId": 174
+        },
+        {
+            "id": 233,
+            "districtName": "Gondia",
+            "talukaName": "Gondiya Municipal Council\n",
+            "councilName": "A",
+            "councilId": 288
+        },
+        {
+            "id": 234,
+            "districtName": "Gondia",
+            "talukaName": "Tirora Municipal Council",
+            "councilName": "C",
+            "councilId": 289
+        },
+        {
+            "id": 235,
+            "districtName": "Gondia",
+            "talukaName": "Tiroda(EP)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 236,
+            "districtName": "Raigad",
+            "talukaName": "Panvel Municipal Corporation",
+            "councilName": "DCORP",
+            "councilId": 178
+        },
+        {
+            "id": 237,
+            "districtName": "Raigad",
+            "talukaName": "Khopoli Municipal Council",
+            "councilName": "B",
+            "councilId": 179
+        },
+        {
+            "id": 238,
+            "districtName": "Raigad",
+            "talukaName": "Karjat Municipal Council",
+            "councilName": "C",
+            "councilId": 180
+        },
+        {
+            "id": 239,
+            "districtName": "Raigad",
+            "talukaName": "Pen Municipal Council",
+            "councilName": "C",
+            "councilId": 181
+        },
+        {
+            "id": 240,
+            "districtName": "Raigad",
+            "talukaName": "Alibag Municipal Council",
+            "councilName": "C",
+            "councilId": 182
+        },
+        {
+            "id": 241,
+            "districtName": "Raigad",
+            "talukaName": "Murud-Janjira Municipal Council",
+            "councilName": "C",
+            "councilId": 183
+        },
+        {
+            "id": 242,
+            "districtName": "Raigad",
+            "talukaName": "Roha Municipal Council",
+            "councilName": "C",
+            "councilId": 184
+        },
+        {
+            "id": 243,
+            "districtName": "Raigad",
+            "talukaName": "Shrivardhan Municipal Council",
+            "councilName": "C",
+            "councilId": 185
+        },
+        {
+            "id": 244,
+            "districtName": "Raigad",
+            "talukaName": "Mahad Municipal Council",
+            "councilName": "C",
+            "councilId": 186
+        },
+        {
+            "id": 245,
+            "districtName": "Thane",
+            "talukaName": "Ambernath Municipal Council",
+            "councilName": "A",
+            "councilId": 187
+        },
+        {
+            "id": 246,
+            "districtName": "Thane",
+            "talukaName": "Kulgaon Badlapur Municipal Council",
+            "councilName": "A",
+            "councilId": 2
+        },
+        {
+            "id": 247,
+            "districtName": "Palghar",
+            "talukaName": "Jawhar Municipal Council",
+            "councilName": "C",
+            "councilId": 189
+        },
+        {
+            "id": 248,
+            "districtName": "Ratnagiri",
+            "talukaName": "Ratnagiri Municipal Council",
+            "councilName": "B",
+            "councilId": 191
+        },
+        {
+            "id": 249,
+            "districtName": "Ratnagiri",
+            "talukaName": "Chiplun Municipal Council",
+            "councilName": "B",
+            "councilId": 270
+        },
+        {
+            "id": 250,
+            "districtName": "Ratnagiri",
+            "talukaName": "Khed Municipal Council",
+            "councilName": "C",
+            "councilId": 15
+        },
+        {
+            "id": 251,
+            "districtName": "Ratnagiri",
+            "talukaName": "Rajapur Municipal Council",
+            "councilName": "C",
+            "councilId": 16
+        },
+        {
+            "id": 252,
+            "districtName": "Sindhudurg",
+            "talukaName": "Malvan Municipal Council",
+            "councilName": "A",
+            "councilId": 22
+        },
+        {
+            "id": 253,
+            "districtName": "Sindhudurg",
+            "talukaName": "Vengurla Municipal Council",
+            "councilName": "C",
+            "councilId": 196
+        },
+        {
+            "id": 254,
+            "districtName": "Sindhudurg",
+            "talukaName": "Sawantwadi Municipal Council",
+            "councilName": "C",
+            "councilId": 197
+        },
+        {
+            "id": 255,
+            "districtName": "Nashik",
+            "talukaName": "Satana Municipal Council\n",
+            "councilName": "C",
+            "councilId": 199
+        },
+        {
+            "id": 256,
+            "districtName": "Nashik",
+            "talukaName": "Sinner Municipal Council\n",
+            "councilName": "B",
+            "councilId": 324
+        },
+        {
+            "id": 257,
+            "districtName": "Nashik",
+            "talukaName": "Nandgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 31
+        },
+        {
+            "id": 258,
+            "districtName": "Nashik",
+            "talukaName": "Manmad Municipal Council\n",
+            "councilName": "B",
+            "councilId": 202
+        },
+        {
+            "id": 259,
+            "districtName": "Nashik",
+            "talukaName": "Yeola Municipal Council\n",
+            "councilName": "B",
+            "councilId": 203
+        },
+        {
+            "id": 260,
+            "districtName": "Nashik",
+            "talukaName": "Igatpuri Municipal Council",
+            "councilName": "C",
+            "councilId": 116
+        },
+        {
+            "id": 261,
+            "districtName": "Nashik",
+            "talukaName": "Trimbak Municipal Council",
+            "councilName": "C",
+            "councilId": 32
+        },
+        {
+            "id": 262,
+            "districtName": "Nashik",
+            "talukaName": "Bhagur Municipal Council\n",
+            "councilName": "C",
+            "councilId": 206
+        },
+        {
+            "id": 263,
+            "districtName": "Jalgaon",
+            "talukaName": "Bhusawal Municipal Council",
+            "councilName": "A",
+            "councilId": 253
+        },
+        {
+            "id": 264,
+            "districtName": "Jalgaon",
+            "talukaName": "Chalisgaon Municipal Council\n",
+            "councilName": "B",
+            "councilId": 209
+        },
+        {
+            "id": 265,
+            "districtName": "Jalgaon",
+            "talukaName": "Amalner Municipal Council",
+            "councilName": "A",
+            "councilId": 252
+        },
+        {
+            "id": 266,
+            "districtName": "Jalgaon",
+            "talukaName": "Chopada Municipal Council",
+            "councilName": "B",
+            "councilId": 273
+        },
+        {
+            "id": 267,
+            "districtName": "Jalgaon",
+            "talukaName": "Pachora Municipal Council",
+            "councilName": "C",
+            "councilId": 212
+        },
+        {
+            "id": 268,
+            "districtName": "Jalgaon",
+            "talukaName": "Raver Municipal Council\n",
+            "councilName": "C",
+            "councilId": 213
+        },
+        {
+            "id": 269,
+            "districtName": "Jalgaon",
+            "talukaName": "Savda Municipal council\n",
+            "councilName": "C",
+            "councilId": 337
+        },
+        {
+            "id": 270,
+            "districtName": "Jalgaon",
+            "talukaName": "Faizpur Municipal Council",
+            "councilName": "C",
+            "councilId": 302
+        },
+        {
+            "id": 271,
+            "districtName": "Jalgaon",
+            "talukaName": "Yawal Municipal Council\n",
+            "councilName": "C",
+            "councilId": 216
+        },
+        {
+            "id": 272,
+            "districtName": "Jalgaon",
+            "talukaName": "Dharangaon Municipal Council",
+            "councilName": "C",
+            "councilId": 306
+        },
+        {
+            "id": 273,
+            "districtName": "Jalgaon",
+            "talukaName": "Erandol Municipal Council\n",
+            "councilName": "C",
+            "councilId": 218
+        },
+        {
+            "id": 274,
+            "districtName": "Jalgaon",
+            "talukaName": "Parola Municipal Council\n",
+            "councilName": "C",
+            "councilId": 219
+        },
+        {
+            "id": 275,
+            "districtName": "Nandurbar",
+            "talukaName": "Nandurbar Municipal Council",
+            "councilName": "A",
+            "councilId": 57
+        },
+        {
+            "id": 276,
+            "districtName": "Nandurbar",
+            "talukaName": "Navapur Municipal Council\n",
+            "councilName": "C",
+            "councilId": 222
+        },
+        {
+            "id": 277,
+            "districtName": "Nandurbar",
+            "talukaName": "Taloda Municipal Council\n",
+            "councilName": "C",
+            "councilId": 223
+        },
+        {
+            "id": 278,
+            "districtName": "Dhule",
+            "talukaName": "Shirpur Varwade Municipal Council",
+            "councilName": "B",
+            "councilId": 49
+        },
+        {
+            "id": 279,
+            "districtName": "Dhule",
+            "talukaName": "Dondaicha Varwade Municipal Council",
+            "councilName": "B",
+            "councilId": 52
+        },
+        {
+            "id": 280,
+            "districtName": "Dhule",
+            "talukaName": "Dondaicha-Warwade(R)",
+            "councilName": "B",
+            "councilId": 0
+        },
+        {
+            "id": 281,
+            "districtName": "Ahmednagar",
+            "talukaName": "Shrirampur Municipal Council",
+            "councilName": "B",
+            "councilId": 380
+        },
+        {
+            "id": 282,
+            "districtName": "Ahmednagar",
+            "talukaName": "Sangamner Municipal Council",
+            "councilName": "B",
+            "councilId": 341
+        },
+        {
+            "id": 283,
+            "districtName": "Ahmednagar",
+            "talukaName": "Kopargaon Municipal Council",
+            "councilName": "B",
+            "councilId": 106
+        },
+        {
+            "id": 284,
+            "districtName": "Ahmednagar",
+            "talukaName": "Rahuri Municipal Council",
+            "councilName": "C",
+            "councilId": 111
+        },
+        {
+            "id": 285,
+            "districtName": "Ahmednagar ",
+            "talukaName": "Kopargoan",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 286,
+            "districtName": "Ahmednagar",
+            "talukaName": "Rahata Pimplas Municipal Council",
+            "councilName": "C",
+            "councilId": 114
+        },
+        {
+            "id": 287,
+            "districtName": "Ahmednagar",
+            "talukaName": "Devlali Pravara Municipal Council",
+            "councilName": "C",
+            "councilId": 112
+        },
+        {
+            "id": 288,
+            "districtName": "Ahmednagar",
+            "talukaName": "Shrigonda Municipal Council",
+            "councilName": "C",
+            "councilId": 318
+        },
+        {
+            "id": 289,
+            "districtName": "Ahmednagar",
+            "talukaName": "Sevgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 122
+        },
+        {
+            "id": 290,
+            "districtName": "Aurangabad",
+            "talukaName": "Sillod Municipal Council",
+            "councilName": "B",
+            "councilId": 156
+        },
+        {
+            "id": 291,
+            "districtName": "Aurangabad",
+            "talukaName": "Vaijapur Municipal Council",
+            "councilName": "B",
+            "councilId": 157
+        },
+        {
+            "id": 292,
+            "districtName": "Aurangabad ",
+            "talukaName": "Vaijapur(Addl.) ",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 293,
+            "districtName": "Aurangabad",
+            "talukaName": "Paithan Municipal Council",
+            "councilName": "B",
+            "councilId": 158
+        },
+        {
+            "id": 294,
+            "districtName": "Aurangabad",
+            "talukaName": "Gangapur Municipal Council",
+            "councilName": "C",
+            "councilId": 159
+        },
+        {
+            "id": 295,
+            "districtName": "Aurangabad",
+            "talukaName": "Kannad Municipal Council",
+            "councilName": "B",
+            "councilId": 160
+        },
+        {
+            "id": 296,
+            "districtName": "Aurangabad ",
+            "talukaName": "Kannad(AA)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 297,
+            "districtName": "Hingoli",
+            "talukaName": "Hingoli Municipal Council",
+            "councilName": "B",
+            "councilId": 153
+        },
+        {
+            "id": 298,
+            "districtName": "Hingoli",
+            "talukaName": "Basmatnagar Municipal Council",
+            "councilName": "B",
+            "councilId": 154
+        },
+        {
+            "id": 299,
+            "districtName": "Hingoli",
+            "talukaName": "Kalamnuri Municipal Council",
+            "councilName": "C",
+            "councilId": 155
+        },
+        {
+            "id": 300,
+            "districtName": "Hingoli",
+            "talukaName": "Kalamnuri(A.A)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 301,
+            "districtName": "Parbhani",
+            "talukaName": "Parbhani Municipal Corporation",
+            "councilName": "D",
+            "councilId": 378
+        },
+        {
+            "id": 302,
+            "districtName": "Parbhani",
+            "talukaName": "Gangakhed Municipal Council",
+            "councilName": "B",
+            "councilId": 162
+        },
+        {
+            "id": 303,
+            "districtName": "Parbhani",
+            "talukaName": "Purna Municipal Council",
+            "councilName": "C",
+            "councilId": 163
+        },
+        {
+            "id": 304,
+            "districtName": "Parbhani",
+            "talukaName": "Purna(A.A)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 305,
+            "districtName": "Parbhani",
+            "talukaName": "Manvat Municipal Council",
+            "councilName": "C",
+            "councilId": 164
+        },
+        {
+            "id": 306,
+            "districtName": "Parbhani",
+            "talukaName": "Pathri Municipal Council",
+            "councilName": "C",
+            "councilId": 165
+        },
+        {
+            "id": 307,
+            "districtName": "Parbhani",
+            "talukaName": "Sonpeth Municipal Council",
+            "councilName": "C",
+            "councilId": 166
+        },
+        {
+            "id": 308,
+            "districtName": "Parbhani",
+            "talukaName": "Jintoor Municipal council\n",
+            "councilName": "B",
+            "councilId": 232
+        },
+        {
+            "id": 309,
+            "districtName": "Parbhani",
+            "talukaName": "Selu Municipal Council",
+            "councilName": "B",
+            "councilId": 168
+        },
+        {
+            "id": 310,
+            "districtName": "Latur",
+            "talukaName": "Latur Municipal Corporation",
+            "councilName": "D",
+            "councilId": 374
+        },
+        {
+            "id": 311,
+            "districtName": "Latur",
+            "talukaName": "Udgir Municipal Council",
+            "councilName": "A",
+            "councilId": 149
+        },
+        {
+            "id": 312,
+            "districtName": "Latur",
+            "talukaName": "Ahmedpur Municipal Council",
+            "councilName": "C",
+            "councilId": 245
+        },
+        {
+            "id": 313,
+            "districtName": "Latur",
+            "talukaName": "Ahemadpur(Addl.)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 314,
+            "districtName": "Latur",
+            "talukaName": "Nilanga Municipal Council",
+            "councilName": "C",
+            "councilId": 151
+        },
+        {
+            "id": 315,
+            "districtName": "Latur",
+            "talukaName": "Nilanga(Addl.)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 316,
+            "districtName": "Latur",
+            "talukaName": "Ausa Municipal Council",
+            "councilName": "C",
+            "councilId": 152
+        },
+        {
+            "id": 317,
+            "districtName": "Jalna",
+            "talukaName": "Jalna Municipal Council",
+            "councilName": "A",
+            "councilId": 144
+        },
+        {
+            "id": 318,
+            "districtName": "Jalna",
+            "talukaName": "Jalna(R+A.A)",
+            "councilName": "A",
+            "councilId": 0
+        },
+        {
+            "id": 319,
+            "districtName": "Jalna",
+            "talukaName": "Ambad Municipal Council",
+            "councilName": "C",
+            "councilId": 145
+        },
+        {
+            "id": 320,
+            "districtName": "Jalna",
+            "talukaName": "Ambad(R)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 321,
+            "districtName": "Jalna",
+            "talukaName": "Bhokardan Municipal Council",
+            "councilName": "C",
+            "councilId": 146
+        },
+        {
+            "id": 322,
+            "districtName": "Jalna",
+            "talukaName": "Partur Municipal Council",
+            "councilName": "C",
+            "councilId": 147
+        },
+        {
+            "id": 323,
+            "districtName": "Osmanabad",
+            "talukaName": "Osmanabad Municipal Council",
+            "councilName": "A",
+            "councilId": 136
+        },
+        {
+            "id": 324,
+            "districtName": "Osmanabad",
+            "talukaName": "Bhoom Municipal Council",
+            "councilName": "C",
+            "councilId": 242
+        },
+        {
+            "id": 325,
+            "districtName": "Osmanabad",
+            "talukaName": "Kalamb Municipal Council",
+            "councilName": "C",
+            "councilId": 138
+        },
+        {
+            "id": 326,
+            "districtName": "Osmanabad",
+            "talukaName": "Naldurg Municipal Council",
+            "councilName": "C",
+            "councilId": 139
+        },
+        {
+            "id": 327,
+            "districtName": "Osmanabad",
+            "talukaName": "Tuljapur Municipal Council",
+            "councilName": "C",
+            "councilId": 140
+        },
+        {
+            "id": 328,
+            "districtName": "Osmanabad",
+            "talukaName": "Muroom Municipal Council",
+            "councilName": "C",
+            "councilId": 141
+        },
+        {
+            "id": 329,
+            "districtName": "Osmanabad",
+            "talukaName": "Paranda Municipal Council",
+            "councilName": "C",
+            "councilId": 142
+        },
+        {
+            "id": 330,
+            "districtName": "Osmanabad",
+            "talukaName": "Umarga Municipal Council",
+            "councilName": "C",
+            "councilId": 143
+        },
+        {
+            "id": 331,
+            "districtName": "Osmanabad",
+            "talukaName": "Umerga(Addl.)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 332,
+            "districtName": "Nanded",
+            "talukaName": "Degloor Municipal Council",
+            "councilName": "B",
+            "councilId": 236
+        },
+        {
+            "id": 333,
+            "districtName": "Nanded",
+            "talukaName": "Kinwat Municipal Council",
+            "councilName": "C",
+            "councilId": 123
+        },
+        {
+            "id": 334,
+            "districtName": "Nanded",
+            "talukaName": "Dharmabad Municipal Council",
+            "councilName": "C",
+            "councilId": 124
+        },
+        {
+            "id": 335,
+            "districtName": "Nanded",
+            "talukaName": "Loha Municipal Council",
+            "councilName": "C",
+            "councilId": 125
+        },
+        {
+            "id": 336,
+            "districtName": "Nanded",
+            "talukaName": "Kandhar Municipal Council",
+            "councilName": "C",
+            "councilId": 126
+        },
+        {
+            "id": 337,
+            "districtName": "Nanded",
+            "talukaName": "Hadgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 127
+        },
+        {
+            "id": 338,
+            "districtName": "Nanded",
+            "talukaName": "Mudkhed Municipal Council",
+            "councilName": "C",
+            "councilId": 128
+        },
+        {
+            "id": 339,
+            "districtName": "Nanded",
+            "talukaName": "Umari Municipal Council",
+            "councilName": "C",
+            "councilId": 129
+        },
+        {
+            "id": 340,
+            "districtName": "Nanded",
+            "talukaName": "Biloli Municipal Council",
+            "councilName": "C",
+            "councilId": 130
+        },
+        {
+            "id": 341,
+            "districtName": "Nanded",
+            "talukaName": "Kundalwadi Municipal council\n",
+            "councilName": "C",
+            "councilId": 205
+        },
+        {
+            "id": 342,
+            "districtName": "Nanded",
+            "talukaName": "Mukhed Municipal Council",
+            "councilName": "C",
+            "councilId": 132
+        },
+        {
+            "id": 343,
+            "districtName": "Nanded",
+            "talukaName": "Bhokar Municipal Council",
+            "councilName": "C",
+            "councilId": 133
+        },
+        {
+            "id": 344,
+            "districtName": "Beed",
+            "talukaName": "Beed Municipal Council",
+            "councilName": "A",
+            "councilId": 121
+        },
+        {
+            "id": 345,
+            "districtName": "Beed",
+            "talukaName": "Ambejogai Municipal Council",
+            "councilName": "B",
+            "councilId": 120
+        },
+        {
+            "id": 346,
+            "districtName": "Beed",
+            "talukaName": "Parali Vaijnath Municipal council\n",
+            "councilName": "B",
+            "councilId": 322
+        },
+        {
+            "id": 347,
+            "districtName": "Beed",
+            "talukaName": "Majalgaon Municipal council\n",
+            "councilName": "B",
+            "councilId": 323
+        },
+        {
+            "id": 348,
+            "districtName": "Beed",
+            "talukaName": "Georai(R+A.A)",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 349,
+            "districtName": "Beed",
+            "talukaName": "Killedharur",
+            "councilName": "C",
+            "councilId": 0
+        },
+        {
+            "id": 350,
+            "districtName": "Raigad",
+            "talukaName": "Pali Municipal Council",
+            "councilName": "C",
+            "councilId": 10
+        },
+        {
+            "id": 351,
+            "districtName": "Satara",
+            "talukaName": "Mahabaleshwar Municipal Council",
+            "councilName": "C",
+            "councilId": 27
+        },
+        {
+            "id": 352,
+            "districtName": "Nashik",
+            "talukaName": "Chandwad Municipal Council",
+            "councilName": "C",
+            "councilId": 47
+        },
+        {
+            "id": 353,
+            "districtName": "Jalgaon",
+            "talukaName": "VarngaonMunicipal Council",
+            "councilName": "C",
+            "councilId": 105
+        },
+        {
+            "id": 354,
+            "districtName": "Ahmednagar",
+            "talukaName": "Jamkhed Municipal Council",
+            "councilName": "C",
+            "councilId": 131
+        },
+        {
+            "id": 355,
+            "districtName": "Pune",
+            "talukaName": "Rajgurunagar Municipal Council",
+            "councilName": "C",
+            "councilId": 175
+        },
+        {
+            "id": 356,
+            "districtName": "Pune",
+            "talukaName": "Chakan Municipal Council",
+            "councilName": "B",
+            "councilId": 176
+        },
+        {
+            "id": 357,
+            "districtName": "Aurangabad",
+            "talukaName": "Fulambri Municipal Council",
+            "councilName": "C",
+            "councilId": 217
+        },
+        {
+            "id": 358,
+            "districtName": "Beed",
+            "talukaName": "Gevrai Municipal council",
+            "councilName": "C",
+            "councilId": 229
+        },
+        {
+            "id": 359,
+            "districtName": "Beed",
+            "talukaName": "Dharur Municipal council",
+            "councilName": "C",
+            "councilId": 230
+        },
+        {
+            "id": 360,
+            "districtName": "Osmanabad",
+            "talukaName": "Lohara Bu. Municipal Council",
+            "councilName": "C",
+            "councilId": 243
+        },
+        {
+            "id": 361,
+            "districtName": "Amravati",
+            "talukaName": "Shendurjanaghat Municipal Council",
+            "councilName": "C",
+            "councilId": 255
+        },
+        {
+            "id": 362,
+            "districtName": "Amravati",
+            "talukaName": "Chikhaldara Municipal Council",
+            "councilName": "C",
+            "councilId": 256
+        },
+        {
+            "id": 363,
+            "districtName": "Raigad",
+            "talukaName": "Uran Municipal Council",
+            "councilName": "C",
+            "councilId": 262
+        },
+        {
+            "id": 364,
+            "districtName": "Raigad",
+            "talukaName": "Matheran Municipal Council",
+            "councilName": "C",
+            "councilId": 263
+        },
+        {
+            "id": 365,
+            "districtName": "Palghar",
+            "talukaName": "Dahanu Municipal Council",
+            "councilName": "B",
+            "councilId": 278
+        },
+        {
+            "id": 366,
+            "districtName": "Palghar",
+            "talukaName": "Palghar Municipal Council",
+            "councilName": "B",
+            "councilId": 279
+        },
+        {
+            "id": 367,
+            "districtName": "Yavatmal",
+            "talukaName": "Arni Municipal Council",
+            "councilName": "C",
+            "councilId": 280
+        },
+        {
+            "id": 368,
+            "districtName": "Jalgaon",
+            "talukaName": "Bhadgaon Municipal Council",
+            "councilName": "C",
+            "councilId": 295
+        },
+        {
+            "id": 369,
+            "districtName": "Chandrapur",
+            "talukaName": "Bhadrawati Municipal Council",
+            "councilName": "B",
+            "councilId": 303
+        },
+        {
+            "id": 370,
+            "districtName": "Chandrapur",
+            "talukaName": "Nagbhid Municipal Council",
+            "councilName": "C",
+            "councilId": 305
+        },
+        {
+            "id": 371,
+            "districtName": "Nagpur",
+            "talukaName": "kanhann pimpari Municipal Council",
+            "councilName": "C",
+            "councilId": 312
+        },
+        {
+            "id": 372,
+            "districtName": "Jalgaon",
+            "talukaName": "Jamner Municipal Council",
+            "councilName": "B",
+            "councilId": 316
+        },
+        {
+            "id": 373,
+            "districtName": "Ahmednagar",
+            "talukaName": "Pathardi Municipal Council",
+            "councilName": "C",
+            "councilId": 317
+        },
+        {
+            "id": 374,
+            "districtName": "Chandrapur",
+            "talukaName": "Mool Municipal Council",
+            "councilName": "C",
+            "councilId": 325
+        },
+        {
+            "id": 375,
+            "districtName": "Chandrapur",
+            "talukaName": "Gadchandur Municipal Council",
+            "councilName": "C",
+            "councilId": 326
+        },
+        {
+            "id": 376,
+            "districtName": "Chandrapur",
+            "talukaName": "Chimur Municipal Council",
+            "councilName": "C",
+            "councilId": 327
+        },
+        {
+            "id": 377,
+            "districtName": "Aurangabad",
+            "talukaName": "Khultabad Municipal Council",
+            "councilName": "C",
+            "councilId": 356
+        },
+        {
+            "id": 378,
+            "districtName": "Nagpur",
+            "talukaName": "Wanadongari Municipal Council",
+            "councilName": "C",
+            "councilId": 358
+        },
+        {
+            "id": 379,
+            "districtName": "Satara",
+            "talukaName": "Panchgani Municipal Council",
+            "councilName": "C",
+            "councilId": 364
+        },
+        {
+            "id": 380,
+            "districtName": "Amravati",
+            "talukaName": "Amravati Municipal Corporation",
+            "councilName": "DCORP",
+            "councilId": 365
+        },
+        {
+            "id": 381,
+            "districtName": "Kolhapur",
+            "talukaName": "Kolhapur Municipal Corporation",
+            "councilName": "D",
+            "councilId": 367
+        },
+        {
+            "id": 382,
+            "districtName": "Sangli",
+            "talukaName": "Sangli-Miraj & Kupwad Municipal Corporation",
+            "councilName": "D",
+            "councilId": 370
+        },
+        {
+            "id": 383,
+            "districtName": "Nashik",
+            "talukaName": "Malegaon Municipal Corporation",
+            "councilName": "D",
+            "councilId": 371
+        },
+        {
+            "id": 384,
+            "districtName": "Jalgaon",
+            "talukaName": "Jalgaon Municipal Corporation",
+            "councilName": "D",
+            "councilId": 372
+        },
+        {
+            "id": 385,
+            "districtName": "Akola",
+            "talukaName": "Akola Municipal Corporation",
+            "councilName": "D",
+            "councilId": 373
+        },
+        {
+            "id": 386,
+            "districtName": "Dhule",
+            "talukaName": "Dhule Municipal Corporation",
+            "councilName": "D",
+            "councilId": 375
+        },
+        {
+            "id": 387,
+            "districtName": "Ahmednagar",
+            "talukaName": "Ahmednagar Municipal Corporation",
+            "councilName": "D",
+            "councilId": 376
+        },
+        {
+            "id": 388,
+            "districtName": "Nanded",
+            "talukaName": "Nanded Waghala Municipal Corporation",
+            "councilName": "D",
+            "councilId": 366
+        },
+        {
+            "id": 389,
+            "districtName": "Pune",
+            "talukaName": "Lonavala Municipal Council",
+            "councilName": "B",
+            "councilId": 137
+        },
+        {
+            "id": 390,
+            "districtName": "Satara",
+            "talukaName": "Malkapur Municipal Council",
+            "councilName": "C",
+            "councilId": 35
+        },
+        {
+            "id": 391,
+            "districtName": "Nagpur",
+            "talukaName": "Wadi Municipal Council",
+            "councilName": "B",
+            "councilId": 313
+        },
+        {
+            "id": 392,
+            "districtName": "Aurangabad",
+            "talukaName": "Aurangabad Municipal Corporation",
+            "councilName": "CCORP",
+            "councilId": 381
+        },
+        {
+            "id": 393,
+            "districtName": "Solapur",
+            "talukaName": "Solapur Municipal Corporation",
+            "councilName": "D",
+            "councilId": 382
+        },
+        {
+            "id": 394,
+            "districtName": "Nagpur",
+            "talukaName": "Nagpur Municipal Corporation",
+            "councilName": "ACORP",
+            "councilId": 383
+        },
+        {
+            "id": 395,
+            "districtName": "Nagpur",
+            "talukaName": "NMRDA",
+            "councilName": "NMRDA",
+            "councilId": 384
+        },
+        {
+            "id": 396,
+            "districtName": "Sangli",
+            "talukaName": "Jat Municipal Council",
+            "councilName": "C",
+            "councilId": 188
+        },
+        {
+            "id": 397,
+            "districtName": "Mumbai-Greater",
+            "talukaName": "Municipal Corporation of Greater Mumbai",
+            "councilName": "ACORP",
+            "councilId": 1009
+        },
+        {
+            "id": 398,
+            "districtName": "Thane",
+            "talukaName": "Bhiwandi-Nizampur Municipal Corporation",
+            "councilName": "ACORP",
+            "councilId": 1010
+        },
+        {
+            "id": 399,
+            "districtName": "Pune",
+            "talukaName": "Pune Municipal Corporation",
+            "councilName": "ACORP",
+            "councilId": 1011
+        },
+        {
+            "id": 400,
+            "districtName": "Thane",
+            "talukaName": "Thane Municipal Corporation",
+            "councilName": "BCORP",
+            "councilId": 407
+        },
+        {
+            "id": 401,
+            "districtName": "Nashik",
+            "talukaName": "Nashik Municipal Corporation",
+            "councilName": "BCORP",
+            "councilId": 1013
+        },
+        {
+            "id": 402,
+            "districtName": "Pune",
+            "talukaName": "Pimpri-Chinchwad Municipal Corporation",
+            "councilName": "BCORP",
+            "councilId": 1014
+        },
+        {
+            "id": 403,
+            "districtName": "Palghar",
+            "talukaName": "Vasai-Virar City Municipal Corporation",
+            "councilName": "CCORP",
+            "councilId": 1015
+        },
+        {
+            "id": 404,
+            "districtName": "Thane",
+            "talukaName": "Kalyan Dombivli Municipal Corporation",
+            "councilName": "CCORP",
+            "councilId": 1016
+        },
+        {
+            "id": 405,
+            "districtName": "Thane",
+            "talukaName": "Navi Mumbai Municipal Corporation",
+            "councilName": "CCORP",
+            "councilId": 1017
+        },
+        {
+            "id": 406,
+            "districtName": "Satara",
+            "talukaName": "Satara Regional Plan",
+            "councilName": "RP",
+            "councilId": 408
+        },
+        {
+            "id": 407,
+            "districtName": "Hingoli",
+            "talukaName": "Hingoli Regional Plan",
+            "councilName": "RP",
+            "councilId": 409
+        },
+        {
+            "id": 408,
+            "districtName": "Buldhana",
+            "talukaName": "Buldhana Regional Plan",
+            "councilName": "RP",
+            "councilId": 410
+        },
+        {
+            "id": 409,
+            "districtName": "Washim",
+            "talukaName": "Washim Regional Plan",
+            "councilName": "RP",
+            "councilId": 1021
+        },
+        {
+            "id": 410,
+            "districtName": "Yawatmal",
+            "talukaName": "Yawatmal Regional Plan",
+            "councilName": "RP",
+            "councilId": 1022
+        },
+        {
+            "id": 411,
+            "districtName": "Nanded",
+            "talukaName": "Nanded Regional Plan",
+            "councilName": "RP",
+            "councilId": 1023
+        },
+        {
+            "id": 412,
+            "districtName": "Raigad",
+            "talukaName": "Raigad Regional Plan",
+            "councilName": "RP",
+            "councilId": 414
+        },
+        {
+            "id": 413,
+            "districtName": "Solapur",
+            "talukaName": "Solapur Regional Plan",
+            "councilName": "RP",
+            "councilId": 417
+        },
+        {
+            "id": 414,
+            "districtName": "Latur",
+            "talukaName": "Latur Regional Plan",
+            "councilName": "RP",
+            "councilId": 406
+        },
+        {
+            "id": 415,
+            "districtName": "Gadchiroli",
+            "talukaName": "Armori Municipal Council\n",
+            "councilName": "C",
+            "councilId": 110
+        },
+        {
+            "id": 416,
+            "districtName": "Bhandara",
+            "talukaName": "Sakoli Municipal Council\n",
+            "councilName": "Non-MC",
+            "councilId": 227
+        },
+        {
+            "id": 417,
+            "districtName": "Chandrapur",
+            "talukaName": "Chandrapur(Extn. Area)",
+            "councilName": "MPL",
+            "councilId": 0
+        },
+        {
+            "id": 418,
+            "districtName": "Thane ",
+            "talukaName": "Umarpada -Safala",
+            "councilName": "Non-MC",
+            "councilId": 0
+        },
+        {
+            "id": 419,
+            "districtName": "Nashik",
+            "talukaName": "Saptashrungigad",
+            "councilName": "Non-MC",
+            "councilId": 0
+        },
+        {
+            "id": 420,
+            "districtName": "Nandurbar",
+            "talukaName": "Shahada Municipal Council\n",
+            "councilName": "B",
+            "councilId": 221
+        },
+        {
+            "id": 421,
+            "districtName": "Ahmednagar",
+            "talukaName": "Parthardi Municipal Council\n",
+            "councilName": "Non-MC",
+            "councilId": 28
+        },
+        {
+            "id": 422,
+            "districtName": "Ahmednagar ",
+            "talukaName": "Belapur",
+            "councilName": "Non-MC",
+            "councilId": 0
+        },
+        {
+            "id": 423,
+            "districtName": "Beed",
+            "talukaName": "Kej Municipal Council",
+            "councilName": "Non-MC",
+            "councilId": 231
+        },
+        {
+            "id": 424,
+            "districtName": "Beed",
+            "talukaName": "Asti",
+            "councilName": "Non-MC",
+            "councilId": 0
+        },
+        {
+            "id": 425,
+            "districtName": "Nashik",
+            "talukaName": "Kalwan Municipal Council",
+            "councilName": "Non-MC",
+            "councilId": 41
+        },
+        {
+            "id": 426,
+            "districtName": "Sangli",
+            "talukaName": "Palus Municipal Council",
+            "councilName": "C",
+            "councilId": 190
+        },
+        {
+            "id": 427,
+            "districtName": "Kolhapur",
+            "talukaName": "Panhala Municipal Council",
+            "councilName": "C",
+            "councilId": 362
+        },
+        {
+            "id": 428,
+            "districtName": "Thane",
+            "talukaName": "Ulhasnagar Municipal Corporation",
+            "councilName": "D",
+            "councilId": 369
+        },
+        {
+            "id": 429,
+            "districtName": "Yavatmal",
+            "talukaName": "Zari Jamni Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 281
+        },
+        {
+            "id": 430,
+            "districtName": "Beed",
+            "talukaName": "Wadwani Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 61
+        },
+        {
+            "id": 431,
+            "districtName": "Palghar",
+            "talukaName": "Wada Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 354
+        },
+        {
+            "id": 432,
+            "districtName": "Palghar",
+            "talukaName": "Vikramgad Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 350
+        },
+        {
+            "id": 433,
+            "districtName": "Osmanabad",
+            "talukaName": "Vashi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 244
+        },
+        {
+            "id": 434,
+            "districtName": "Satara",
+            "talukaName": "Vaduj Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 353
+        },
+        {
+            "id": 435,
+            "districtName": "Pune",
+            "talukaName": "Vadgaon Maval Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 397
+        },
+        {
+            "id": 436,
+            "districtName": "Sindhudurg",
+            "talukaName": "Vabhave-Vaibhavwadi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 24
+        },
+        {
+            "id": 437,
+            "districtName": "Amravati",
+            "talukaName": "Tiwasa Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 260
+        },
+        {
+            "id": 438,
+            "districtName": "Palghar",
+            "talukaName": "Talasari Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 348
+        },
+        {
+            "id": 439,
+            "districtName": "Raigad",
+            "talukaName": "Tala Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 274
+        },
+        {
+            "id": 440,
+            "districtName": "Nashik",
+            "talukaName": "Surgana Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 45
+        },
+        {
+            "id": 441,
+            "districtName": "Aurangabad",
+            "talukaName": "Soygaon Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 98
+        },
+        {
+            "id": 442,
+            "districtName": "Gadchiroli",
+            "talukaName": "Sironcha Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 338
+        },
+        {
+            "id": 443,
+            "districtName": "Chandrapur",
+            "talukaName": "Sindewahi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 333
+        },
+        {
+            "id": 444,
+            "districtName": "Beed",
+            "talukaName": "Shirur Kasar Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 396
+        },
+        {
+            "id": 445,
+            "districtName": "Latur",
+            "talukaName": "Shirur Anantpal Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 249
+        },
+        {
+            "id": 446,
+            "districtName": "Ahmednagar",
+            "talukaName": "Shirdi Nagar Panchayat",
+            "councilName": "NP",
+            "councilId": 29
+        },
+        {
+            "id": 447,
+            "districtName": "Sindhudurg",
+            "talukaName": "Sindhudurg Regional Plan",
+            "councilName": "RP",
+            "councilId": 412
+        },
+        {
+            "id": 448,
+            "districtName": "Pune",
+            "talukaName": "Pune Regional Plan",
+            "councilName": "RP",
+            "councilId": 416
+        },
+        {
+            "id": 449,
+            "districtName": "Kolhapur",
+            "talukaName": "Kolhapur Regional Plan",
+            "councilName": "RP",
+            "councilId": 415
+        },
+        {
+            "id": 450,
+            "districtName": "Ratnagiri ",
+            "talukaName": "Ratnagiri Regional Plan",
+            "councilName": "RP",
+            "councilId": 413
+        },
+        {
+            "id": 451,
+            "districtName": "Pune",
+            "talukaName": "Pune Municipal Corporation",
+            "councilName": "BCORP",
+            "councilId": 418
+        },
+        {
+            "id": 452,
+            "districtName": "Nashik",
+            "talukaName": "Nashik Municipal Corporation",
+            "councilName": "BCORP",
+            "councilId": 419
+        },
+        {
+            "id": 453,
+            "districtName": "Aurangabad ",
+            "talukaName": "Aurangabad Regional Plan",
+            "councilName": "RP",
+            "councilId": 420
+        },
+        {
+            "id": 454,
+            "districtName": "Beed",
+            "talukaName": "Beed Regional Plan",
+            "councilName": "RP",
+            "councilId": 421
+        },
+        {
+            "id": 455,
+            "districtName": "Bhandara",
+            "talukaName": "Bhandara Regional Plan",
+            "councilName": "RP",
+            "councilId": 422
+        },
+        {
+            "id": 456,
+            "districtName": "Chandrapur",
+            "talukaName": "Chandrapur Regional Plan",
+            "councilName": "RP",
+            "councilId": 423
+        },
+        {
+            "id": 457,
+            "districtName": "Dhule",
+            "talukaName": "Dhule Regional Plan",
+            "councilName": "RP",
+            "councilId": 424
+        },
+        {
+            "id": 458,
+            "districtName": "Gadchiroli",
+            "talukaName": "Gadchiroli Regional Plan",
+            "councilName": "RP",
+            "councilId": 425
+        },
+        {
+            "id": 459,
+            "districtName": "Gondia",
+            "talukaName": "Gondia Regional Plan",
+            "councilName": "RP",
+            "councilId": 426
+        },
+        {
+            "id": 460,
+            "districtName": "Jalgaon",
+            "talukaName": "Jalgaon Regional Plan",
+            "councilName": "RP",
+            "councilId": 427
+        },
+        {
+            "id": 461,
+            "districtName": "Jalna",
+            "talukaName": "Jalna Regional Plan",
+            "councilName": "RP",
+            "councilId": 428
+        },
+        {
+            "id": 462,
+            "districtName": "Nagpur",
+            "talukaName": "Nagpur Regional Plan",
+            "councilName": "RP",
+            "councilId": 429
+        },
+        {
+            "id": 463,
+            "districtName": "Nanded",
+            "talukaName": "Nanded Regional Plan",
+            "councilName": "RP",
+            "councilId": 430
+        },
+        {
+            "id": 464,
+            "districtName": "Nandurbar",
+            "talukaName": "Nandurbar Regional Plan",
+            "councilName": "RP",
+            "councilId": 431
+        },
+        {
+            "id": 465,
+            "districtName": "Nashik",
+            "talukaName": "Nashik Regional Plan",
+            "councilName": "RP",
+            "councilId": 432
+        },
+        {
+            "id": 466,
+            "districtName": "Osmanabad",
+            "talukaName": "Osmanabad Regional Plan",
+            "councilName": "RP",
+            "councilId": 433
+        },
+        {
+            "id": 467,
+            "districtName": "Parbhani",
+            "talukaName": "Parbhani Regional Plan",
+            "councilName": "RP",
+            "councilId": 434
+        },
+        {
+            "id": 468,
+            "districtName": "Ahmednagar",
+            "talukaName": "Ahmednagar Regional Plan",
+            "councilName": "RP",
+            "councilId": 435
+        },
+        {
+            "id": 469,
+            "districtName": "Sangli",
+            "talukaName": "Sangli Regional Plan",
+            "councilName": "RP",
+            "councilId": 436
+        },
+        {
+            "id": 470,
+            "districtName": "Thane",
+            "talukaName": "Thane Regional Plan",
+            "councilName": "RP",
+            "councilId": 437
+        },
+        {
+            "id": 471,
+            "districtName": "Wardha",
+            "talukaName": "Wardha Regional Plan",
+            "councilName": "RP",
+            "councilId": 438
+        },
+        {
+            "id": 472,
+            "districtName": "Washim",
+            "talukaName": "Washim Regional Plan",
+            "councilName": "RP",
+            "councilId": 439
+        },
+        {
+            "id": 473,
+            "districtName": "Yavatmal",
+            "talukaName": "Yavatmal Regional Plan",
+            "councilName": "RP",
+            "councilId": 440
+        },
+        {
+            "id": 474,
+            "districtName": "Akola",
+            "talukaName": "Akola Regional Plan",
+            "councilName": "RP",
+            "councilId": 441
+        },
+        {
+            "id": 475,
+            "districtName": "Tambadi",
+            "talukaName": "Tambadi Regional Plan",
+            "councilName": "RP",
+            "councilId": 442
+        },
+        {
+            "id": 476,
+            "districtName": "Pune",
+            "talukaName": "Pimpri Chinchwad Municipal Corporation",
+            "councilName": "BCORP",
+            "councilId": 443
+        },
+        {
+            "id": 477,
+            "districtName": "Amravati",
+            "talukaName": "Amravati Regional Plan",
+            "councilName": "RP",
+            "councilId": 444
+        },
+        {
+            "id": 478,
+            "districtName": "Pune",
+            "talukaName": "Dehu Nagarpanchayat",
+            "councilName": "NP",
+            "councilId": 481
+        }
+    ]
+}

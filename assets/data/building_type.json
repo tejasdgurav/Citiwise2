@@ -1,0 +1,89 @@
+{
+    "building_type": [
+        {
+            "id": 1,
+            "name": "Residential",
+            "proposalId": 1
+        },
+        {
+            "id": 2,
+            "name": "Educational",
+            "proposalId": 2
+        },
+        {
+            "id": 3,
+            "name": "Institutional",
+            "proposalId": 2
+        },
+        {
+            "id": 4,
+            "name": "Assembly",
+            "proposalId": 2
+        },
+        {
+            "id": 5,
+            "name": "Business",
+            "proposalId": 2
+        },
+        {
+            "id": 6,
+            "name": "Mercantile",
+            "proposalId": 2
+        },
+        {
+            "id": 7,
+            "name": "Industrial",
+            "proposalId": 3
+        },
+        {
+            "id": 8,
+            "name": "Storage",
+            "proposalId": 2
+        },
+        {
+            "id": 9,
+            "name": "Hazardous",
+            "proposalId": 3
+        },
+        {
+            "id": 10,
+            "name": "Public Semipublic",
+            "proposalId": 2
+        },
+        {
+            "id": 11,
+            "name": "Office Building / Premises",
+            "proposalId": 2
+        },
+        {
+            "id": 27,
+            "name": "Information Technology Building / Establishment (ITE)",
+            "proposalId": 2
+        },
+        {
+            "id": 28,
+            "name": "Yatri Niwas",
+            "proposalId": 1
+        },
+        {
+            "id": 29,
+            "name": "Wholesale Establishment",
+            "proposalId": 2
+        },
+        {
+            "id": 31,
+            "name": "Mixed",
+            "proposalId": 0
+        },
+        {
+            "id": 33,
+            "name": "Petrol Pump",
+            "proposalId": 2
+        },
+        {
+            "id": 35,
+            "name": "Recreational Structure",
+            "proposalId": 2
+        }
+    ]
+}

@@ -1,0 +1,1564 @@
+{
+    "city_specific_area": [
+        {
+            "id": 164,
+            "name": "The Circuit House - Fitzgerald Bridge Road on the west",
+            "areaCode": "CCHOFB",
+            "councilId": 418
+        },
+        {
+            "id": 326,
+            "name": "(Chal) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "CHAL_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 327,
+            "name": "(Chal) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "CHAL_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 328,
+            "name": "(Chal) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "CHAL_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 329,
+            "name": "(Chal) 3.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "CHAL_CIDCO_3.1",
+            "councilId": 178
+        },
+        {
+            "id": 330,
+            "name": "(Chal) 3.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "CHAL_CIDCO_3.2",
+            "councilId": 178
+        },
+        {
+            "id": 331,
+            "name": "(Chal) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "CHAL_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 332,
+            "name": "(Chal) 4.2- Remaining property in the village",
+            "areaCode": "CHAL_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 333,
+            "name": "(Chal) 8- Property in the area of Maharashtra Industrial Development Corporation (MIDC)",
+            "areaCode": "CHAL_CIDCO_8",
+            "councilId": 178
+        },
+        {
+            "id": 334,
+            "name": "(Chal) 8.1- Industrial plot",
+            "areaCode": "CHAL_CIDCO_8.1",
+            "councilId": 178
+        },
+        {
+            "id": 335,
+            "name": "(Chal) 8.2- Resident plot",
+            "areaCode": "CHAL_CIDCO_8.2",
+            "councilId": 178
+        },
+        {
+            "id": 336,
+            "name": "(Chal) 8.3- Commercial plot",
+            "areaCode": "CHAL_CIDCO_8.3",
+            "councilId": 178
+        },
+        {
+            "id": 260,
+            "name": "(Devicha Pada) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "DEVICHA PADA_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 261,
+            "name": "(Devicha Pada) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "DEVICHA PADA_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 262,
+            "name": "(Devicha Pada) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "DEVICHA PADA_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 263,
+            "name": "(Devicha Pada) 3.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "DEVICHA PADA_CIDCO_3.1",
+            "councilId": 178
+        },
+        {
+            "id": 264,
+            "name": "(Devicha Pada) 3.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "DEVICHA PADA_CIDCO_3.2",
+            "councilId": 178
+        },
+        {
+            "id": 265,
+            "name": "(Devicha Pada) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "DEVICHA PADA_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 266,
+            "name": "(Devicha Pada) 4.2- Remaining property in the village",
+            "areaCode": "DEVICHA PADA_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 267,
+            "name": "(Devicha Pada) 7- Forests",
+            "areaCode": "DEVICHA PADA_CIDCO_7",
+            "councilId": 178
+        },
+        {
+            "id": 268,
+            "name": "(Devicha Pada) 8- Property in the area of Maharashtra Industrial Development Corporation (MIDC)",
+            "areaCode": "DEVICHA PADA_CIDCO_8",
+            "councilId": 178
+        },
+        {
+            "id": 269,
+            "name": "(Devicha Pada) 8.1- Industrial plot",
+            "areaCode": "DEVICHA PADA_CIDCO_8.1",
+            "councilId": 178
+        },
+        {
+            "id": 270,
+            "name": "(Devicha Pada) 8.2- Resident plot",
+            "areaCode": "DEVICHA PADA_CIDCO_8.2",
+            "councilId": 178
+        },
+        {
+            "id": 271,
+            "name": "(Devicha Pada) 8.3- Commercial plot",
+            "areaCode": "DEVICHA PADA_CIDCO_8.3",
+            "councilId": 178
+        },
+        {
+            "id": 163,
+            "name": "The Ghorpadi village boundary on the east",
+            "areaCode": "GHORPADIV",
+            "councilId": 418
+        },
+        {
+            "id": 259,
+            "name": "5/17-Mauje (Village) Kalamboli No.2 CIDCO Division - Kalamboli (Sector No.) Price Rate Section 4 Kal",
+            "areaCode": "KALAMBOLI_CIDCO_3/15",
+            "councilId": 178
+        },
+        {
+            "id": 226,
+            "name": "3/15/10-Kalamboli CIDCO Sec.No.10",
+            "areaCode": "KALAMBOLI_CIDCO_3/15 / 10",
+            "councilId": 178
+        },
+        {
+            "id": 225,
+            "name": "3/15 / 10E-Kalamboli CIDCO Sec.No.10E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15 / 10E",
+            "councilId": 178
+        },
+        {
+            "id": 237,
+            "name": "3/15/1-Kalamboli CIDCO Sec.No.1",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/1",
+            "councilId": 178
+        },
+        {
+            "id": 227,
+            "name": "3/15/11-Kalamboli CIDCO Sec.No.11",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/11",
+            "councilId": 178
+        },
+        {
+            "id": 228,
+            "name": "3/15/12-Kalamboli CIDCO Sec.No.12",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/12",
+            "councilId": 178
+        },
+        {
+            "id": 229,
+            "name": "3/15/13-Kalamboli CIDCO Sec.No.13",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/13",
+            "councilId": 178
+        },
+        {
+            "id": 230,
+            "name": "3/15/14-Kalamboli CIDCO Sec.No.14",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/14",
+            "councilId": 178
+        },
+        {
+            "id": 231,
+            "name": "3/15/15-Kalamboli CIDCO Sec.No.15",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/15",
+            "councilId": 178
+        },
+        {
+            "id": 232,
+            "name": "3/15/16 - Kalamboli CIDCO Sec. No. 16 and 16E Road with Pali village",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/16",
+            "councilId": 178
+        },
+        {
+            "id": 233,
+            "name": "3/15/17-Kalamboli CIDCO Sec.No.17",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/17",
+            "councilId": 178
+        },
+        {
+            "id": 234,
+            "name": "3/15/18-Kalamboli CIDCO Sec.No.18",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/18",
+            "councilId": 178
+        },
+        {
+            "id": 235,
+            "name": "3/15/19-Kalamboli CIDCO Sec.No.19",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/19",
+            "councilId": 178
+        },
+        {
+            "id": 236,
+            "name": "3/15/1E-Kalamboli CIDCO Sec.No.1E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/1E",
+            "councilId": 178
+        },
+        {
+            "id": 243,
+            "name": "3/15/2-Kalamboli CIDCO Sec.No.2",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/2",
+            "councilId": 178
+        },
+        {
+            "id": 238,
+            "name": "3/15/20-Kalamboli CIDCO Sec.No.20",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/20",
+            "councilId": 178
+        },
+        {
+            "id": 239,
+            "name": "3/15/21-Kalamboli CIDCO Sec.No.21",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/21",
+            "councilId": 178
+        },
+        {
+            "id": 240,
+            "name": "3/15/22-Kalamboli CIDCO Sec.No.22",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/22",
+            "councilId": 178
+        },
+        {
+            "id": 241,
+            "name": "3/15/23-Kalamboli CIDCO Sec.No.23",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/23",
+            "councilId": 178
+        },
+        {
+            "id": 242,
+            "name": "3/15/2E-Kalamboli CIDCO Sec.No.2E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/2E",
+            "councilId": 178
+        },
+        {
+            "id": 245,
+            "name": "3/15/3-Kalamboli CIDCO Sec.No.3",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/3",
+            "councilId": 178
+        },
+        {
+            "id": 244,
+            "name": "3/15/3E-Kalamboli CIDCO Sec.No.3E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/3E",
+            "councilId": 178
+        },
+        {
+            "id": 247,
+            "name": "3/15/4-Kalamboli CIDCO Sec.No.4",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/4",
+            "councilId": 178
+        },
+        {
+            "id": 246,
+            "name": "3/15/4E-Kalamboli CIDCO Sec.No.4E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/4E",
+            "councilId": 178
+        },
+        {
+            "id": 249,
+            "name": "3/15/5-Kalamboli CIDCO Sec.No.5",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/5",
+            "councilId": 178
+        },
+        {
+            "id": 248,
+            "name": "3/15/5E-Kalamboli CIDCO Sec.No.5E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/5E",
+            "councilId": 178
+        },
+        {
+            "id": 251,
+            "name": "3/15/6-Kalamboli CIDCO Sec.No.6",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/6",
+            "councilId": 178
+        },
+        {
+            "id": 250,
+            "name": "3/15/6E-Kalamboli CIDCO Sec.No.6E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/6E",
+            "councilId": 178
+        },
+        {
+            "id": 253,
+            "name": "3/15/7-Kalamboli CIDCO Sec.No.7",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/7",
+            "councilId": 178
+        },
+        {
+            "id": 252,
+            "name": "3/15/7E-Kalamboli CIDCO Sec.No.7E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/7E",
+            "councilId": 178
+        },
+        {
+            "id": 255,
+            "name": "3/15/8-Kalamboli CIDCO Sec.No.8",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/8",
+            "councilId": 178
+        },
+        {
+            "id": 254,
+            "name": "3/15/8E-Kalamboli CIDCO Sec.No.8E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/8E",
+            "councilId": 178
+        },
+        {
+            "id": 257,
+            "name": "3/15/9-Kalamboli CIDCO Sec.No.9",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/9",
+            "councilId": 178
+        },
+        {
+            "id": 256,
+            "name": "3/15/9E-Kalamboli CIDCO Sec.No.9E",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/9E",
+            "councilId": 178
+        },
+        {
+            "id": 258,
+            "name": "3/15 / A-Kalamboli Gaothan",
+            "areaCode": "KALAMBOLI_CIDCO_3/15/A",
+            "councilId": 178
+        },
+        {
+            "id": 337,
+            "name": "(Kalundre) 1.1- Developed lands for residential and other uses along the highway",
+            "areaCode": "KALUNDRE_CIDCO_1.1",
+            "councilId": 178
+        },
+        {
+            "id": 338,
+            "name": "(Kalundre) 1.2 - Developable lands for residential and other use along highways",
+            "areaCode": "KALUNDRE_CIDCO_1.2",
+            "councilId": 178
+        },
+        {
+            "id": 339,
+            "name": "(Kalundre) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "KALUNDRE_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 340,
+            "name": "(Kalundre) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "KALUNDRE_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 341,
+            "name": "(Kalundre) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "KALUNDRE_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 342,
+            "name": "(Kalundre) 3.1.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "KALUNDRE_CIDCO_3.1.1",
+            "councilId": 178
+        },
+        {
+            "id": 343,
+            "name": "(Kalundre) 3.1.2- Developed lands for residential and other uses of remaining place",
+            "areaCode": "KALUNDRE_CIDCO_3.1.2",
+            "councilId": 178
+        },
+        {
+            "id": 344,
+            "name": "(Kalundre) 3.2.1- Developable lands for residential and other use of remaining place",
+            "areaCode": "KALUNDRE_CIDCO_3.2.1",
+            "councilId": 178
+        },
+        {
+            "id": 345,
+            "name": "(Kalundre) 3.2.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "KALUNDRE_CIDCO_3.2.2",
+            "councilId": 178
+        },
+        {
+            "id": 346,
+            "name": "(Kalundre) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "KALUNDRE_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 347,
+            "name": "(Kalundre) 3.4- CIDCO Plot No. 133,135 to 149,151,166 to 180",
+            "areaCode": "KALUNDRE_CIDCO_3.4",
+            "councilId": 178
+        },
+        {
+            "id": 348,
+            "name": "(Kalundre) 3.5- CIDCO Plot No. 24 to 31, 29 A, 29 B, 69 to 72",
+            "areaCode": "KALUNDRE_CIDCO_3.5",
+            "councilId": 178
+        },
+        {
+            "id": 349,
+            "name": "(Kalundre) 3.6- CIDCO Plot No. 13 to 23, 33 to 35",
+            "areaCode": "KALUNDRE_CIDCO_3.6",
+            "councilId": 178
+        },
+        {
+            "id": 350,
+            "name": "(Kalundre) 3.7- CIDCO Plot No. 36 to 46,46 A, 97 to 101,101 A to 101 B, 109 A, 110 to 118",
+            "areaCode": "KALUNDRE_CIDCO_3.7",
+            "councilId": 178
+        },
+        {
+            "id": 351,
+            "name": "(Kalundre) 3.8- CIDCO Plot No. 119 to 122,128,129,150,152 to 160,181,182",
+            "areaCode": "KALUNDRE_CIDCO_3.8",
+            "councilId": 178
+        },
+        {
+            "id": 352,
+            "name": "(Kalundre) 3.9- CIDCO Plot No. 47 to 96",
+            "areaCode": "KALUNDRE_CIDCO_3.9",
+            "councilId": 178
+        },
+        {
+            "id": 353,
+            "name": "(Kalundre) 4.2- Remaining income in the village",
+            "areaCode": "KALUNDRE_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 354,
+            "name": "(Kalundre) 7 - Forests (reserved and others)",
+            "areaCode": "KALUNDRE_CIDCO_7",
+            "councilId": 178
+        },
+        {
+            "id": 355,
+            "name": "(Kalundre) 8- Property in the area of Maharashtra Industrial Development Corporation (MIDC)",
+            "areaCode": "KALUNDRE_CIDCO_8",
+            "councilId": 178
+        },
+        {
+            "id": 356,
+            "name": "(Kalundre) 8.1- Industrial plot",
+            "areaCode": "KALUNDRE_CIDCO_8.1",
+            "councilId": 178
+        },
+        {
+            "id": 357,
+            "name": "(Kalundre) 8.2- Resident plot",
+            "areaCode": "KALUNDRE_CIDCO_8.2",
+            "councilId": 178
+        },
+        {
+            "id": 358,
+            "name": "(Kalundre) 8.3- Commercial plot",
+            "areaCode": "KALUNDRE_CIDCO_8.3",
+            "councilId": 178
+        },
+        {
+            "id": 224,
+            "name": "15A-Mauje (Village) Kamothe CIDCO Department",
+            "areaCode": "KAMOTHE_CIDCO_15A",
+            "councilId": 178
+        },
+        {
+            "id": 181,
+            "name": "15A / 1 - Kamothe CIDCO Sec. No. 1",
+            "areaCode": "KAMOTHE_CIDCO_15A/1",
+            "councilId": 178
+        },
+        {
+            "id": 170,
+            "name": "15A/10-Kamothe CIDCO Sec.No.10",
+            "areaCode": "KAMOTHE_CIDCO_15A/10",
+            "councilId": 178
+        },
+        {
+            "id": 171,
+            "name": "15A/11-Kamothe CIDCO Sec.No.11",
+            "areaCode": "KAMOTHE_CIDCO_15A/11",
+            "councilId": 178
+        },
+        {
+            "id": 172,
+            "name": "15A/12-Kamothe CIDCO Sec.No.12",
+            "areaCode": "KAMOTHE_CIDCO_15A/12",
+            "councilId": 178
+        },
+        {
+            "id": 173,
+            "name": "15A/13-Kamothe CIDCO Sec.No.13",
+            "areaCode": "KAMOTHE_CIDCO_15A/13",
+            "councilId": 178
+        },
+        {
+            "id": 174,
+            "name": "15A/14-Kamothe CIDCO Sec.No.14",
+            "areaCode": "KAMOTHE_CIDCO_15A/14",
+            "councilId": 178
+        },
+        {
+            "id": 175,
+            "name": "15A/15-Kamothe CIDCO Sec.No.15",
+            "areaCode": "KAMOTHE_CIDCO_15A/15",
+            "councilId": 178
+        },
+        {
+            "id": 176,
+            "name": "15A/15-Mauje (Village) Kamothe CIDCO Sec.No.15",
+            "areaCode": "KAMOTHE_CIDCO_15A/15_Mauje ",
+            "councilId": 178
+        },
+        {
+            "id": 177,
+            "name": "15A/16-Kamothe CIDCO Sec.No.16",
+            "areaCode": "KAMOTHE_CIDCO_15A/16",
+            "councilId": 178
+        },
+        {
+            "id": 178,
+            "name": "15A/17-Kamothe CIDCO Sec.No.17",
+            "areaCode": "KAMOTHE_CIDCO_15A/17",
+            "councilId": 178
+        },
+        {
+            "id": 179,
+            "name": "15A/18-Kamothe CIDCO Sec.No.18",
+            "areaCode": "KAMOTHE_CIDCO_15A/18",
+            "councilId": 178
+        },
+        {
+            "id": 180,
+            "name": "15A/19-Kamothe CIDCO Sec.No.19",
+            "areaCode": "KAMOTHE_CIDCO_15A/19",
+            "councilId": 178
+        },
+        {
+            "id": 192,
+            "name": "15A / 2 - Kamothe CIDCO Sec. No. 2",
+            "areaCode": "KAMOTHE_CIDCO_15A/2",
+            "councilId": 178
+        },
+        {
+            "id": 182,
+            "name": "15A/20-Kamothe CIDCO Sec.No.20",
+            "areaCode": "KAMOTHE_CIDCO_15A/20",
+            "councilId": 178
+        },
+        {
+            "id": 183,
+            "name": "15A/21-Kamothe CIDCO Sec.No.21",
+            "areaCode": "KAMOTHE_CIDCO_15A/21",
+            "councilId": 178
+        },
+        {
+            "id": 184,
+            "name": "15A/22-Kamothe CIDCO Sec.No.22",
+            "areaCode": "KAMOTHE_CIDCO_15A/22",
+            "councilId": 178
+        },
+        {
+            "id": 185,
+            "name": "15A/23-Kamothe CIDCO Sec.No.23",
+            "areaCode": "KAMOTHE_CIDCO_15A/23",
+            "councilId": 178
+        },
+        {
+            "id": 186,
+            "name": "15A/24-Kamothe CIDCO Sec.No.24",
+            "areaCode": "KAMOTHE_CIDCO_15A/24",
+            "councilId": 178
+        },
+        {
+            "id": 187,
+            "name": "15A/25-Kamothe CIDCO Sec.No.25",
+            "areaCode": "KAMOTHE_CIDCO_15A/25",
+            "councilId": 178
+        },
+        {
+            "id": 188,
+            "name": "15A/26-Kamothe CIDCO Sec.No.26",
+            "areaCode": "KAMOTHE_CIDCO_15A/26",
+            "councilId": 178
+        },
+        {
+            "id": 189,
+            "name": "15A/27-Kamothe CIDCO Sec.No.27",
+            "areaCode": "KAMOTHE_CIDCO_15A/27",
+            "councilId": 178
+        },
+        {
+            "id": 190,
+            "name": "15A/28-Kamothe CIDCO Sec.No.28",
+            "areaCode": "KAMOTHE_CIDCO_15A/28",
+            "councilId": 178
+        },
+        {
+            "id": 191,
+            "name": "15A/29-Kamothe CIDCO Sec.No.29",
+            "areaCode": "KAMOTHE_CIDCO_15A/29",
+            "councilId": 178
+        },
+        {
+            "id": 202,
+            "name": "15A / 3 - Kamothe from CIDCO. No.3",
+            "areaCode": "KAMOTHE_CIDCO_15A/3",
+            "councilId": 178
+        },
+        {
+            "id": 193,
+            "name": "15A/30-Kamothe CIDCO Sec.No.30",
+            "areaCode": "KAMOTHE_CIDCO_15A/30",
+            "councilId": 178
+        },
+        {
+            "id": 194,
+            "name": "15A/31-Kamothe CIDCO Sec.No.31",
+            "areaCode": "KAMOTHE_CIDCO_15A/31",
+            "councilId": 178
+        },
+        {
+            "id": 195,
+            "name": "15A/32-Kamothe CIDCO Sec.No.32",
+            "areaCode": "KAMOTHE_CIDCO_15A/32",
+            "councilId": 178
+        },
+        {
+            "id": 196,
+            "name": "15A/33-Kamothe CIDCO Sec.No.33",
+            "areaCode": "KAMOTHE_CIDCO_15A/33",
+            "councilId": 178
+        },
+        {
+            "id": 197,
+            "name": "15A/35-Kamothe CIDCO Sec.No.35",
+            "areaCode": "KAMOTHE_CIDCO_15A/35",
+            "councilId": 178
+        },
+        {
+            "id": 198,
+            "name": "15A/36-Kamothe CIDCO Sec.No.36",
+            "areaCode": "KAMOTHE_CIDCO_15A/36",
+            "councilId": 178
+        },
+        {
+            "id": 199,
+            "name": "15A/37-Kamothe CIDCO Sec.No.37",
+            "areaCode": "KAMOTHE_CIDCO_15A/37",
+            "councilId": 178
+        },
+        {
+            "id": 200,
+            "name": "15A/38-Kamothe CIDCO Sec.No.38",
+            "areaCode": "KAMOTHE_CIDCO_15A/38",
+            "councilId": 178
+        },
+        {
+            "id": 201,
+            "name": "15A/39-Kamothe CIDCO Sec.No.39",
+            "areaCode": "KAMOTHE_CIDCO_15A/39",
+            "councilId": 178
+        },
+        {
+            "id": 213,
+            "name": "15A/4 - Kamothe CIDCO. Sec. No. 4",
+            "areaCode": "KAMOTHE_CIDCO_15A/4",
+            "councilId": 178
+        },
+        {
+            "id": 203,
+            "name": "15A/40-Kamothe CIDCO Sec.No.40",
+            "areaCode": "KAMOTHE_CIDCO_15A/40",
+            "councilId": 178
+        },
+        {
+            "id": 204,
+            "name": "15A/41-Kamothe CIDCO Sec.No.41",
+            "areaCode": "KAMOTHE_CIDCO_15A/41",
+            "councilId": 178
+        },
+        {
+            "id": 205,
+            "name": "15A/42-Kamothe CIDCO Sec.No.42",
+            "areaCode": "KAMOTHE_CIDCO_15A/42",
+            "councilId": 178
+        },
+        {
+            "id": 206,
+            "name": "15A/43-Kamothe CIDCO Sec.No.43",
+            "areaCode": "KAMOTHE_CIDCO_15A/43",
+            "councilId": 178
+        },
+        {
+            "id": 207,
+            "name": "15A/44-Kamothe CIDCO Sec.No.44",
+            "areaCode": "KAMOTHE_CIDCO_15A/44",
+            "councilId": 178
+        },
+        {
+            "id": 208,
+            "name": "15A/45-Kamothe CIDCO Sec.No.45",
+            "areaCode": "KAMOTHE_CIDCO_15A/45",
+            "councilId": 178
+        },
+        {
+            "id": 209,
+            "name": "15A/46-Kamothe CIDCO Sec.No.46",
+            "areaCode": "KAMOTHE_CIDCO_15A/46",
+            "councilId": 178
+        },
+        {
+            "id": 210,
+            "name": "15A/47-Kamothe CIDCO Sec.No.47",
+            "areaCode": "KAMOTHE_CIDCO_15A/47",
+            "councilId": 178
+        },
+        {
+            "id": 211,
+            "name": "15A/48-Kamothe CIDCO Sec.No.48",
+            "areaCode": "KAMOTHE_CIDCO_15A/48",
+            "councilId": 178
+        },
+        {
+            "id": 212,
+            "name": "15A/49-Kamothe CIDCO Sec.No.49",
+            "areaCode": "KAMOTHE_CIDCO_15A/49",
+            "councilId": 178
+        },
+        {
+            "id": 219,
+            "name": "15A/5 - Kamothe CIDCO Sec. No. 5",
+            "areaCode": "KAMOTHE_CIDCO_15A/5",
+            "councilId": 178
+        },
+        {
+            "id": 214,
+            "name": "15A/50-Kamothe CIDCO Sec.No.50",
+            "areaCode": "KAMOTHE_CIDCO_15A/50",
+            "councilId": 178
+        },
+        {
+            "id": 215,
+            "name": "15A/51-Kamothe CIDCO Sec.No.51",
+            "areaCode": "KAMOTHE_CIDCO_15A/51",
+            "councilId": 178
+        },
+        {
+            "id": 216,
+            "name": "15A/52-Kamothe CIDCO Sec.No.52",
+            "areaCode": "KAMOTHE_CIDCO_15A/52",
+            "councilId": 178
+        },
+        {
+            "id": 217,
+            "name": "15A/53-Kamothe CIDCO Sec.No.53",
+            "areaCode": "KAMOTHE_CIDCO_15A/53",
+            "councilId": 178
+        },
+        {
+            "id": 218,
+            "name": "15A/54-Kamothe CIDCO Sec.No.54",
+            "areaCode": "KAMOTHE_CIDCO_15A/54",
+            "councilId": 178
+        },
+        {
+            "id": 220,
+            "name": "15A/6-Kamothe CIDCO Sec.No.6",
+            "areaCode": "KAMOTHE_CIDCO_15A/6",
+            "councilId": 178
+        },
+        {
+            "id": 221,
+            "name": "15A/7-Kamothe CIDCO Sec.No.7",
+            "areaCode": "KAMOTHE_CIDCO_15A/7",
+            "councilId": 178
+        },
+        {
+            "id": 222,
+            "name": "15A/8-Kamothe CIDCO Sec.No.8",
+            "areaCode": "KAMOTHE_CIDCO_15A/8",
+            "councilId": 178
+        },
+        {
+            "id": 223,
+            "name": "15A/9-Kamothe CIDCO Sec.No.9",
+            "areaCode": "KAMOTHE_CIDCO_15A/9",
+            "councilId": 178
+        },
+        {
+            "id": 119,
+            "name": "CTS no. 1143, E",
+            "areaCode": "KOL_1143E1",
+            "councilId": 367
+        },
+        {
+            "id": 135,
+            "name": "B. Final plot No. 15 and 19",
+            "areaCode": "KOL_15_19PLT",
+            "councilId": 367
+        },
+        {
+            "id": 130,
+            "name": "2 Gunthas to 5 gunthas ( 2 ares to 5 areas)",
+            "areaCode": "KOL_2-5GNT",
+            "councilId": 367
+        },
+        {
+            "id": 129,
+            "name": "Upto 2 Gunthas ( less than 2 area)",
+            "areaCode": "KOL_2GNT1",
+            "councilId": 367
+        },
+        {
+            "id": 134,
+            "name": "A. Final plot about 5000 sq.ft.",
+            "areaCode": "KOL_5000ft1",
+            "councilId": 367
+        },
+        {
+            "id": 131,
+            "name": "5 gunthas (5 ares)",
+            "areaCode": "KOL_5GNT",
+            "councilId": 367
+        },
+        {
+            "id": 154,
+            "name": "Site No. 60",
+            "areaCode": "KOL_60",
+            "councilId": 367
+        },
+        {
+            "id": 150,
+            "name": "R.S. No. 690 site No. 365",
+            "areaCode": "KOL_690STE1",
+            "councilId": 367
+        },
+        {
+            "id": 152,
+            "name": "R.S. No 711 K, Karveer",
+            "areaCode": "KOL_711KRVR1",
+            "councilId": 367
+        },
+        {
+            "id": 151,
+            "name": "Site No. 87 (Housing the Dishoused)",
+            "areaCode": "KOL_87HSGDSD1",
+            "councilId": 367
+        },
+        {
+            "id": 111,
+            "name": "Balbag Vashant",
+            "areaCode": "KOL_BLBG1",
+            "councilId": 367
+        },
+        {
+            "id": 123,
+            "name": "Line Bazar near Masjid",
+            "areaCode": "KOL_BZRNRMZD1",
+            "councilId": 367
+        },
+        {
+            "id": 126,
+            "name": "CTS No. 1243/2 to 1243/4",
+            "areaCode": "KOL_CTS1243_1",
+            "councilId": 367
+        },
+        {
+            "id": 125,
+            "name": "CTS No. 1325",
+            "areaCode": "KOL_CTS1325",
+            "councilId": 367
+        },
+        {
+            "id": 127,
+            "name": "Dhor Vasahant",
+            "areaCode": "KOL_DHRVSHT1",
+            "councilId": 367
+        },
+        {
+            "id": 155,
+            "name": "Daulat Nagar",
+            "areaCode": "KOL_DLTNGR1",
+            "councilId": 367
+        },
+        {
+            "id": 148,
+            "name": "Dinanath Mangeshkar Nagar ",
+            "areaCode": "KOL_DNMNGNGR272",
+            "councilId": 367
+        },
+        {
+            "id": 132,
+            "name": "Excepting above further final plots",
+            "areaCode": "KOL_EXPT1",
+            "councilId": 367
+        },
+        {
+            "id": 118,
+            "name": "Sykes Extension",
+            "areaCode": "KOL_EXTN1",
+            "councilId": 367
+        },
+        {
+            "id": 110,
+            "name": "Gokhale College",
+            "areaCode": "KOL_GKHLRD1",
+            "councilId": 367
+        },
+        {
+            "id": 142,
+            "name": "Golibar Vasahat K Bavada",
+            "areaCode": "KOL_GLBRBVDA1",
+            "councilId": 367
+        },
+        {
+            "id": 122,
+            "name": "Jawahar Nagar",
+            "areaCode": "KOL_JWHRNGR1",
+            "councilId": 367
+        },
+        {
+            "id": 139,
+            "name": "Khasbag Road",
+            "areaCode": "KOL_KHsbgRD1",
+            "councilId": 367
+        },
+        {
+            "id": 108,
+            "name": "Laxmipuri",
+            "areaCode": "KOL_LXPR1",
+            "councilId": 367
+        },
+        {
+            "id": 161,
+            "name": "Laxmipuri(15.2 m x 30.48m)",
+            "areaCode": "KOL_LXPR2",
+            "councilId": 367
+        },
+        {
+            "id": 112,
+            "name": "Muskuti Talao",
+            "areaCode": "KOL_MSKT1",
+            "councilId": 367
+        },
+        {
+            "id": 146,
+            "name": "Nagala Area of Tarbai Park",
+            "areaCode": "KOL_NGLATRBIPRK1",
+            "councilId": 367
+        },
+        {
+            "id": 113,
+            "name": "Old cantonment",
+            "areaCode": "KOL_OLDCNTM1",
+            "councilId": 367
+        },
+        {
+            "id": 120,
+            "name": "Old Gavat Mandai",
+            "areaCode": "KOL_OLDGVTMNDI1",
+            "councilId": 367
+        },
+        {
+            "id": 144,
+            "name": "Old Vasahats Dombar Wada",
+            "areaCode": "KOL_OLDVSHTDMBR1",
+            "councilId": 367
+        },
+        {
+            "id": 107,
+            "name": "Other lane",
+            "areaCode": "KOL_OTHRLN1",
+            "councilId": 367
+        },
+        {
+            "id": 147,
+            "name": "Hind co - Operative Housing Society (Ruikar Colony)",
+            "areaCode": "KOL_PERTVHSCRUICLN",
+            "councilId": 367
+        },
+        {
+            "id": 136,
+            "name": "Mahatma Phulewadi",
+            "areaCode": "KOL_PHLWD1",
+            "councilId": 367
+        },
+        {
+            "id": 133,
+            "name": "Two planning Scheme Kolhapur No. III",
+            "areaCode": "KOL_PLNS1",
+            "councilId": 367
+        },
+        {
+            "id": 143,
+            "name": "Patharvat Vasahat",
+            "areaCode": "KOL_PTHRVT1",
+            "councilId": 367
+        },
+        {
+            "id": 114,
+            "name": "Patankar Colony",
+            "areaCode": "KOL_PTNKRC1",
+            "councilId": 367
+        },
+        {
+            "id": 115,
+            "name": "Rajarampur New vasahat East side",
+            "areaCode": "KOL_RJRMNW1",
+            "councilId": 367
+        },
+        {
+            "id": 104,
+            "name": "Rajarampuri",
+            "areaCode": "KOL_RJRMPR1",
+            "councilId": 367
+        },
+        {
+            "id": 153,
+            "name": "Remanmala Zopadpatti",
+            "areaCode": "KOL_RMNMLAZOPDPT1",
+            "councilId": 367
+        },
+        {
+            "id": 121,
+            "name": "Subhash Nagar",
+            "areaCode": "KOL_SBHNGR1",
+            "councilId": 367
+        },
+        {
+            "id": 109,
+            "name": "Subhash road",
+            "areaCode": "Kol_SBHRD1",
+            "councilId": 367
+        },
+        {
+            "id": 149,
+            "name": "Sagarmal ( S.No. 1330) E Ward, site No. 338)",
+            "areaCode": "KOL_SGRMAL1",
+            "councilId": 367
+        },
+        {
+            "id": 138,
+            "name": "Sagar Mal.",
+            "areaCode": "KOL_SGRMLL1",
+            "councilId": 367
+        },
+        {
+            "id": 117,
+            "name": "Shahaji Nagar",
+            "areaCode": "KOL_SHJNGR1",
+            "councilId": 367
+        },
+        {
+            "id": 105,
+            "name": "Shahupuri Commercial lane",
+            "areaCode": "KOL_SHPR1",
+            "councilId": 367
+        },
+        {
+            "id": 106,
+            "name": "Shahu Road",
+            "areaCode": "KOL_SHURD1",
+            "councilId": 367
+        },
+        {
+            "id": 124,
+            "name": "Shivaji Udyam Nagar",
+            "areaCode": "KOL_SHVJUDNNGR1",
+            "councilId": 367
+        },
+        {
+            "id": 140,
+            "name": "Sakoli Vasahat to the South West",
+            "areaCode": "KOL_SKLIVSHT1",
+            "councilId": 367
+        },
+        {
+            "id": 137,
+            "name": "Sambhaji Nagar",
+            "areaCode": "KOL_SMJING1",
+            "councilId": 367
+        },
+        {
+            "id": 145,
+            "name": "Sotewala Vasahat",
+            "areaCode": "KOL_STWL1",
+            "councilId": 367
+        },
+        {
+            "id": 141,
+            "name": "Timber Market",
+            "areaCode": "KOL_TMBRMKT1",
+            "councilId": 367
+        },
+        {
+            "id": 128,
+            "name": "Town Planning Scheme",
+            "areaCode": "KOL_TPLS1",
+            "councilId": 367
+        },
+        {
+            "id": 116,
+            "name": "Tarabai Park",
+            "areaCode": "KOL_TRBNPRK1",
+            "councilId": 367
+        },
+        {
+            "id": 162,
+            "name": "The Koregaon Park North Road on the north",
+            "areaCode": "KORPARN",
+            "councilId": 418
+        },
+        {
+            "id": 156,
+            "name": "From Gangapur S.No.12 to Ambad S.No.199",
+            "areaCode": "NMCB_Gangpr1",
+            "councilId": 1013
+        },
+        {
+            "id": 16,
+            "name": "None",
+            "areaCode": "None",
+            "councilId": 0
+        },
+        {
+            "id": 280,
+            "name": "(Padghe) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "PADGHE_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 281,
+            "name": "(Padghe) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "PADGHE_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 282,
+            "name": "(Padghe) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "PADGHE_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 283,
+            "name": "(Padghe) 3.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "PADGHE_CIDCO_3.1",
+            "councilId": 178
+        },
+        {
+            "id": 284,
+            "name": "(Padghe) 3.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "PADGHE_CIDCO_3.2",
+            "councilId": 178
+        },
+        {
+            "id": 285,
+            "name": "(Padghe) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "PADGHE_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 286,
+            "name": "(Padghe) 4.2- Remaining property in the village",
+            "areaCode": "PADGHE_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 287,
+            "name": "(Padghe) 7- Forests",
+            "areaCode": "PADGHE_CIDCO_7",
+            "councilId": 178
+        },
+        {
+            "id": 288,
+            "name": "(Padghe) 8- Property in the area of Maharashtra Industrial Development Corporation (MIDC)",
+            "areaCode": "PADGHE_CIDCO_8",
+            "councilId": 178
+        },
+        {
+            "id": 289,
+            "name": "(Padghe) 8.1- Industrial plot",
+            "areaCode": "PADGHE_CIDCO_8.1",
+            "councilId": 178
+        },
+        {
+            "id": 290,
+            "name": "(Padghe) 8.2- Resident plot",
+            "areaCode": "PADGHE_CIDCO_8.2",
+            "councilId": 178
+        },
+        {
+            "id": 291,
+            "name": "(Padghe) 8.3- Commercial plot",
+            "areaCode": "PADGHE_CIDCO_8.3",
+            "councilId": 178
+        },
+        {
+            "id": 292,
+            "name": "(Pale Khurd) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "PALEKHURD_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 293,
+            "name": "(Pale Khurd) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "PALEKHURD_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 294,
+            "name": "(Pale Khurd) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "PALEKHURD_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 295,
+            "name": "(Pale Khurd) 3.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "PALEKHURD_CIDCO_3.1",
+            "councilId": 178
+        },
+        {
+            "id": 296,
+            "name": "(Pale Khurd) 3.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "PALEKHURD_CIDCO_3.2",
+            "councilId": 178
+        },
+        {
+            "id": 297,
+            "name": "(Pale Khurd) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "PALEKHURD_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 298,
+            "name": "(Pale Khurd) 4.2- Remaining property in the village",
+            "areaCode": "PALEKHURD_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 299,
+            "name": "(Pale Khurd) 8- Property in the area of Maharashtra Industrial Development Corporation (MIDC)",
+            "areaCode": "PALEKHURD_CIDCO_8",
+            "councilId": 178
+        },
+        {
+            "id": 300,
+            "name": "(Pale Khurd) 8.1- Industrial plot",
+            "areaCode": "PALEKHURD_CIDCO_8.1",
+            "councilId": 178
+        },
+        {
+            "id": 301,
+            "name": "(Pale Khurd) 8.2- Resident plot",
+            "areaCode": "PALEKHURD_CIDCO_8.2",
+            "councilId": 178
+        },
+        {
+            "id": 302,
+            "name": "(Pale Khurd) 8.3- Commercial plot",
+            "areaCode": "PALEKHURD_CIDCO_8.3",
+            "councilId": 178
+        },
+        {
+            "id": 166,
+            "name": "1/12 - Mauje (Village) New Panvel No. Chief Price Division 1 Khanda Gaothan",
+            "areaCode": "PANVEL_CIDCO_1/12",
+            "councilId": 178
+        },
+        {
+            "id": 167,
+            "name": "1/13-Mauje (Village) New Panvel CIDCO Div - New Panvel (West) (Sec. No.) Price Rate Div 2, Asudgaon",
+            "areaCode": "PANVEL_CIDCO_1/13",
+            "councilId": 178
+        },
+        {
+            "id": 168,
+            "name": "1/14 - Mauje - (Village) New Panvel (East) Price Division 3",
+            "areaCode": "PANVEL_CIDCO_1/14",
+            "councilId": 178
+        },
+        {
+            "id": 169,
+            "name": "18 - Mauje (Village) Khanda CIDCO Department",
+            "areaCode": "PANVEL_CIDCO_18",
+            "councilId": 178
+        },
+        {
+            "id": 159,
+            "name": "Kune Pangaloli- Kurwand",
+            "areaCode": "PKPK",
+            "councilId": 416
+        },
+        {
+            "id": 158,
+            "name": "Lonavala-Karla-Malvali",
+            "areaCode": "PLKM",
+            "councilId": 416
+        },
+        {
+            "id": 165,
+            "name": "The Southern Railway line on the south",
+            "areaCode": "RAILLNSO",
+            "councilId": 418
+        },
+        {
+            "id": 157,
+            "name": "Wadi special area",
+            "areaCode": "RAI_WADI",
+            "councilId": 414
+        },
+        {
+            "id": 315,
+            "name": "(Tenbhode) 1.1- Developed lands for residential and other uses along the highway",
+            "areaCode": "REMBHODE_CIDCO_1.1",
+            "councilId": 178
+        },
+        {
+            "id": 316,
+            "name": "(Tenbhode) 1.2 - Developable lands for residential and other use along highways",
+            "areaCode": "REMBHODE_CIDCO_1.2",
+            "councilId": 178
+        },
+        {
+            "id": 317,
+            "name": "(Tenbhode) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "REMBHODE_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 318,
+            "name": "(Tenbhode) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "REMBHODE_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 319,
+            "name": "(Tenbhode) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "REMBHODE_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 320,
+            "name": "(Tenbhode) 3.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "REMBHODE_CIDCO_3.1",
+            "councilId": 178
+        },
+        {
+            "id": 321,
+            "name": "(Tenbhode) 3.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "REMBHODE_CIDCO_3.2",
+            "councilId": 178
+        },
+        {
+            "id": 322,
+            "name": "(Tenbhode) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "REMBHODE_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 323,
+            "name": "(Tenbhode) 4.2- Remaining property in the village",
+            "areaCode": "REMBHODE_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 324,
+            "name": "(Tenbhode) 6 - Dongarpad lands",
+            "areaCode": "REMBHODE_CIDCO_6",
+            "councilId": 178
+        },
+        {
+            "id": 325,
+            "name": "(Tenbhode) 7- Forests",
+            "areaCode": "REMBHODE_CIDCO_7",
+            "councilId": 178
+        },
+        {
+            "id": 160,
+            "name": "Bhiwandi Surrounding Notified Area",
+            "areaCode": "Than_Bhwnd",
+            "councilId": 442
+        },
+        {
+            "id": 20,
+            "name": "Eastern Express Highway",
+            "areaCode": "TMC_EXPRS1",
+            "councilId": 407
+        },
+        {
+            "id": 18,
+            "name": "Gokhale Road from the portion between Ashok Talkies",
+            "areaCode": "TMC_GKHRD1",
+            "councilId": 407
+        },
+        {
+            "id": 19,
+            "name": "Gokhale Road, junction with M.G. Road",
+            "areaCode": "TMC_GKHRD2",
+            "councilId": 407
+        },
+        {
+            "id": 17,
+            "name": "Ram Maruti Road and Gokhale Road",
+            "areaCode": "TMC_RamMaruti1",
+            "councilId": 407
+        },
+        {
+            "id": 303,
+            "name": "(Tondre) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "TONDRE_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 304,
+            "name": "(Tondre) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "TONDRE_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 305,
+            "name": "(Tondre) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "TONDRE_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 306,
+            "name": "(Tondre) 3.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "TONDRE_CIDCO_3.1",
+            "councilId": 178
+        },
+        {
+            "id": 307,
+            "name": "(Tondre) 3.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "TONDRE_CIDCO_3.2",
+            "councilId": 178
+        },
+        {
+            "id": 308,
+            "name": "(Tondre) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "TONDRE_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 309,
+            "name": "(Tondre) 4.2- Remaining property in the village",
+            "areaCode": "TONDRE_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 310,
+            "name": "(Tondre) 7- Forests",
+            "areaCode": "TONDRE_CIDCO_7",
+            "councilId": 178
+        },
+        {
+            "id": 311,
+            "name": "(Tondre) 8- Property in the area of Maharashtra Industrial Development Corporation (MIDC)",
+            "areaCode": "TONDRE_CIDCO_8",
+            "councilId": 178
+        },
+        {
+            "id": 312,
+            "name": "(Tondre) 8.1- Industrial plot",
+            "areaCode": "TONDRE_CIDCO_8.1",
+            "councilId": 178
+        },
+        {
+            "id": 313,
+            "name": "(Tondre) 8.2- Resident plot",
+            "areaCode": "TONDRE_CIDCO_8.2",
+            "councilId": 178
+        },
+        {
+            "id": 314,
+            "name": "(Tondre) 8.3- Commercial plot",
+            "areaCode": "TONDRE_CIDCO_8.3",
+            "councilId": 178
+        },
+        {
+            "id": 272,
+            "name": "(Valvali) 2.1- Developed lands for other roadside residential and other uses",
+            "areaCode": "VALVLI_CIDCO_2.1",
+            "councilId": 178
+        },
+        {
+            "id": 273,
+            "name": "(Valvali) 2.2- Developable lands for residential and other use in front of other roads",
+            "areaCode": "VALVLI_CIDCO_2.2",
+            "councilId": 178
+        },
+        {
+            "id": 274,
+            "name": "(Valvali) 2.3- Lands under other important roadside agricultural uses",
+            "areaCode": "VALVLI_CIDCO_2.3",
+            "councilId": 178
+        },
+        {
+            "id": 275,
+            "name": "(Valvali) 3.1- Developed lands for residential and other uses of remaining place",
+            "areaCode": "VALVLI_CIDCO_3.1",
+            "councilId": 178
+        },
+        {
+            "id": 276,
+            "name": "(Valvali) 3.2- Developable lands for residential and other use of remaining place",
+            "areaCode": "VALVLI_CIDCO_3.2",
+            "councilId": 178
+        },
+        {
+            "id": 277,
+            "name": "(Valvali) 3.3- Land under agricultural use of remaining place",
+            "areaCode": "VALVLI_CIDCO_3.3",
+            "councilId": 178
+        },
+        {
+            "id": 278,
+            "name": "(Valvali) 4.2- Remaining property in the village",
+            "areaCode": "VALVLI_CIDCO_4.2",
+            "councilId": 178
+        },
+        {
+            "id": 279,
+            "name": "(Valvali) 7- Forests",
+            "areaCode": "VALVLI_CIDCO_7",
+            "councilId": 178
+        }
+    ]
+}

@@ -1,0 +1,1159 @@
+{
+    "building_subtype": [
+        {
+            "id": 69,
+            "bldgtypeID": 6,
+            "name": "Other Hotels"
+        },
+        {
+            "id": 137,
+            "bldgtypeID": 31,
+            "name": "Mixed"
+        },
+        {
+            "id": 140,
+            "bldgtypeID": 35,
+            "name": "Club House"
+        },
+        {
+            "id": 153,
+            "bldgtypeID": 1,
+            "name": "lodging or rooming houses"
+        },
+        {
+            "id": 154,
+            "bldgtypeID": 2,
+            "name": "College"
+        },
+        {
+            "id": 155,
+            "bldgtypeID": 2,
+            "name": "Pre Primary School"
+        },
+        {
+            "id": 156,
+            "bldgtypeID": 3,
+            "name": "Mental Asylum"
+        },
+        {
+            "id": 157,
+            "bldgtypeID": 3,
+            "name": "Jail"
+        },
+        {
+            "id": 158,
+            "bldgtypeID": 3,
+            "name": "Prisons"
+        },
+        {
+            "id": 159,
+            "bldgtypeID": 3,
+            "name": "sanatoria"
+        },
+        {
+            "id": 160,
+            "bldgtypeID": 4,
+            "name": "theatres"
+        },
+        {
+            "id": 161,
+            "bldgtypeID": 4,
+            "name": "Museum"
+        },
+        {
+            "id": 162,
+            "bldgtypeID": 4,
+            "name": "Exhibition Hall"
+        },
+        {
+            "id": 163,
+            "bldgtypeID": 4,
+            "name": "Assembly Hall"
+        },
+        {
+            "id": 164,
+            "bldgtypeID": 4,
+            "name": "places of worship"
+        },
+        {
+            "id": 165,
+            "bldgtypeID": 4,
+            "name": "dance theatres"
+        },
+        {
+            "id": 166,
+            "bldgtypeID": 5,
+            "name": "offices"
+        },
+        {
+            "id": 167,
+            "bldgtypeID": 5,
+            "name": "banks"
+        },
+        {
+            "id": 168,
+            "bldgtypeID": 5,
+            "name": "professional establishments"
+        },
+        {
+            "id": 169,
+            "bldgtypeID": 5,
+            "name": "I.T"
+        },
+        {
+            "id": 170,
+            "bldgtypeID": 5,
+            "name": "establishments"
+        },
+        {
+            "id": 171,
+            "bldgtypeID": 5,
+            "name": "call centres"
+        },
+        {
+            "id": 172,
+            "bldgtypeID": 5,
+            "name": "Transaction of Business"
+        },
+        {
+            "id": 173,
+            "bldgtypeID": 6,
+            "name": "Shops"
+        },
+        {
+            "id": 174,
+            "bldgtypeID": 6,
+            "name": "Stores"
+        },
+        {
+            "id": 175,
+            "bldgtypeID": 6,
+            "name": "Markets"
+        },
+        {
+            "id": 176,
+            "bldgtypeID": 6,
+            "name": "Wholesale Shops"
+        },
+        {
+            "id": 177,
+            "bldgtypeID": 6,
+            "name": "Retail Shops"
+        },
+        {
+            "id": 178,
+            "bldgtypeID": 6,
+            "name": "Office Storage"
+        },
+        {
+            "id": 179,
+            "bldgtypeID": 7,
+            "name": "which products or materials of all kinds and properties are fabricated"
+        },
+        {
+            "id": 180,
+            "bldgtypeID": 7,
+            "name": "assembled"
+        },
+        {
+            "id": 181,
+            "bldgtypeID": 7,
+            "name": "processed like assembling plants"
+        },
+        {
+            "id": 182,
+            "bldgtypeID": 7,
+            "name": "laboratories"
+        },
+        {
+            "id": 183,
+            "bldgtypeID": 7,
+            "name": "power plants"
+        },
+        {
+            "id": 184,
+            "bldgtypeID": 7,
+            "name": "smoke houses"
+        },
+        {
+            "id": 185,
+            "bldgtypeID": 28,
+            "name": "Yatri Niwas"
+        },
+        {
+            "id": 186,
+            "bldgtypeID": 8,
+            "name": "sheltering of goods"
+        },
+        {
+            "id": 187,
+            "bldgtypeID": 8,
+            "name": "wares or merchandise"
+        },
+        {
+            "id": 188,
+            "bldgtypeID": 8,
+            "name": "Cold Storages"
+        },
+        {
+            "id": 189,
+            "bldgtypeID": 29,
+            "name": "wholly or partly engaged in wholesale trade"
+        },
+        {
+            "id": 190,
+            "bldgtypeID": 29,
+            "name": "manufacturers"
+        },
+        {
+            "id": 191,
+            "bldgtypeID": 29,
+            "name": "storage facilities"
+        },
+        {
+            "id": 192,
+            "bldgtypeID": 29,
+            "name": "A.P.M.C. establishments"
+        },
+        {
+            "id": 193,
+            "bldgtypeID": 29,
+            "name": "warehouses and establishments engaged"
+        },
+        {
+            "id": 194,
+            "bldgtypeID": 1,
+            "name": "residential hotels"
+        },
+        {
+            "id": 195,
+            "bldgtypeID": 1,
+            "name": "dormitories"
+        },
+        {
+            "id": 196,
+            "bldgtypeID": 1,
+            "name": "dharmashalas"
+        },
+        {
+            "id": 197,
+            "bldgtypeID": 1,
+            "name": "apartment houses"
+        },
+        {
+            "id": 198,
+            "bldgtypeID": 1,
+            "name": "flats"
+        },
+        {
+            "id": 199,
+            "bldgtypeID": 1,
+            "name": "service apartments"
+        },
+        {
+            "id": 200,
+            "bldgtypeID": 1,
+            "name": "studio apartments"
+        },
+        {
+            "id": 201,
+            "bldgtypeID": 2,
+            "name": "library"
+        },
+        {
+            "id": 202,
+            "bldgtypeID": 2,
+            "name": "multi-purpose hall"
+        },
+        {
+            "id": 203,
+            "bldgtypeID": 2,
+            "name": "auditorium"
+        },
+        {
+            "id": 204,
+            "bldgtypeID": 2,
+            "name": "educational institution"
+        },
+        {
+            "id": 205,
+            "bldgtypeID": 2,
+            "name": "day care"
+        },
+        {
+            "id": 206,
+            "bldgtypeID": 3,
+            "name": "research in education"
+        },
+        {
+            "id": 207,
+            "bldgtypeID": 3,
+            "name": "health and other activities"
+        },
+        {
+            "id": 208,
+            "bldgtypeID": 3,
+            "name": "medical or other treatment"
+        },
+        {
+            "id": 209,
+            "bldgtypeID": 3,
+            "name": "hostel for working women/ persons/ students"
+        },
+        {
+            "id": 210,
+            "bldgtypeID": 3,
+            "name": "lodging"
+        },
+        {
+            "id": 211,
+            "bldgtypeID": 3,
+            "name": "an auditorium"
+        },
+        {
+            "id": 212,
+            "bldgtypeID": 3,
+            "name": "complex"
+        },
+        {
+            "id": 213,
+            "bldgtypeID": 3,
+            "name": "cultural and allied activities"
+        },
+        {
+            "id": 214,
+            "bldgtypeID": 3,
+            "name": "hospice"
+        },
+        {
+            "id": 215,
+            "bldgtypeID": 3,
+            "name": "Physical or mental illness"
+        },
+        {
+            "id": 216,
+            "bldgtypeID": 3,
+            "name": "handicap"
+        },
+        {
+            "id": 217,
+            "bldgtypeID": 3,
+            "name": "disease or infirmity"
+        },
+        {
+            "id": 218,
+            "bldgtypeID": 3,
+            "name": "care of orphans"
+        },
+        {
+            "id": 219,
+            "bldgtypeID": 3,
+            "name": "abandoned women"
+        },
+        {
+            "id": 220,
+            "bldgtypeID": 3,
+            "name": "children and infants"
+        },
+        {
+            "id": 221,
+            "bldgtypeID": 3,
+            "name": "convalescents"
+        },
+        {
+            "id": 222,
+            "bldgtypeID": 3,
+            "name": "destitute"
+        },
+        {
+            "id": 223,
+            "bldgtypeID": 3,
+            "name": "Penal or correctional detention with restricted liberty"
+        },
+        {
+            "id": 224,
+            "bldgtypeID": 3,
+            "name": "includes hospitals"
+        },
+        {
+            "id": 225,
+            "bldgtypeID": 4,
+            "name": "amusement"
+        },
+        {
+            "id": 226,
+            "bldgtypeID": 4,
+            "name": "recreation or social"
+        },
+        {
+            "id": 227,
+            "bldgtypeID": 4,
+            "name": "religious"
+        },
+        {
+            "id": 228,
+            "bldgtypeID": 4,
+            "name": "patriotic"
+        },
+        {
+            "id": 229,
+            "bldgtypeID": 4,
+            "name": "civil"
+        },
+        {
+            "id": 230,
+            "bldgtypeID": 4,
+            "name": "travel and similar purposes"
+        },
+        {
+            "id": 231,
+            "bldgtypeID": 4,
+            "name": "motion picture houses"
+        },
+        {
+            "id": 232,
+            "bldgtypeID": 4,
+            "name": "drive-in-theatres"
+        },
+        {
+            "id": 233,
+            "bldgtypeID": 4,
+            "name": "city halls"
+        },
+        {
+            "id": 234,
+            "bldgtypeID": 4,
+            "name": "town halls"
+        },
+        {
+            "id": 235,
+            "bldgtypeID": 4,
+            "name": "auditoria"
+        },
+        {
+            "id": 236,
+            "bldgtypeID": 4,
+            "name": "cultural centres"
+        },
+        {
+            "id": 237,
+            "bldgtypeID": 4,
+            "name": "skating rinks"
+        },
+        {
+            "id": 238,
+            "bldgtypeID": 4,
+            "name": "clubs & gymkhanas"
+        },
+        {
+            "id": 239,
+            "bldgtypeID": 4,
+            "name": "malls"
+        },
+        {
+            "id": 240,
+            "bldgtypeID": 4,
+            "name": "passenger stations"
+        },
+        {
+            "id": 241,
+            "bldgtypeID": 4,
+            "name": "terminals of air"
+        },
+        {
+            "id": 242,
+            "bldgtypeID": 4,
+            "name": "recreation piers and stadia"
+        },
+        {
+            "id": 243,
+            "bldgtypeID": 6,
+            "name": "malls for display and sale of merchandise"
+        },
+        {
+            "id": 244,
+            "bldgtypeID": 6,
+            "name": "storage and service facilities incidental"
+        },
+        {
+            "id": 245,
+            "bldgtypeID": 6,
+            "name": "sale of merchandise"
+        },
+        {
+            "id": 246,
+            "bldgtypeID": 10,
+            "name": "ordinarily or occasionally"
+        },
+        {
+            "id": 247,
+            "bldgtypeID": 10,
+            "name": "offices of State"
+        },
+        {
+            "id": 248,
+            "bldgtypeID": 10,
+            "name": "Central Government"
+        },
+        {
+            "id": 249,
+            "bldgtypeID": 7,
+            "name": "refineries"
+        },
+        {
+            "id": 250,
+            "bldgtypeID": 7,
+            "name": "gas plants"
+        },
+        {
+            "id": 251,
+            "bldgtypeID": 7,
+            "name": "mills"
+        },
+        {
+            "id": 252,
+            "bldgtypeID": 8,
+            "name": "Freight Depot"
+        },
+        {
+            "id": 253,
+            "bldgtypeID": 8,
+            "name": "Transit Shade"
+        },
+        {
+            "id": 254,
+            "bldgtypeID": 8,
+            "name": "Store House"
+        },
+        {
+            "id": 255,
+            "bldgtypeID": 8,
+            "name": "Public Garage"
+        },
+        {
+            "id": 256,
+            "bldgtypeID": 8,
+            "name": "Public Housing"
+        },
+        {
+            "id": 257,
+            "bldgtypeID": 8,
+            "name": "Hanger"
+        },
+        {
+            "id": 258,
+            "bldgtypeID": 8,
+            "name": "Truck Terminal"
+        },
+        {
+            "id": 259,
+            "bldgtypeID": 8,
+            "name": "Grain Elevators"
+        },
+        {
+            "id": 260,
+            "bldgtypeID": 8,
+            "name": "Stable"
+        },
+        {
+            "id": 261,
+            "bldgtypeID": 4,
+            "name": "Commercial Area"
+        },
+        {
+            "id": 262,
+            "bldgtypeID": 4,
+            "name": "Mangal Karyalaya"
+        },
+        {
+            "id": 263,
+            "bldgtypeID": 30,
+            "name": "an office"
+        },
+        {
+            "id": 264,
+            "bldgtypeID": 1,
+            "name": "multi-family dwellings"
+        },
+        {
+            "id": 265,
+            "bldgtypeID": 2,
+            "name": "Primary School"
+        },
+        {
+            "id": 266,
+            "bldgtypeID": 2,
+            "name": "Secondary School"
+        },
+        {
+            "id": 267,
+            "bldgtypeID": 2,
+            "name": "research institution"
+        },
+        {
+            "id": 268,
+            "bldgtypeID": 16,
+            "name": "Other"
+        },
+        {
+            "id": 269,
+            "bldgtypeID": 7,
+            "name": "Flatted Industries"
+        },
+        {
+            "id": 270,
+            "bldgtypeID": 8,
+            "name": "Goods Godown"
+        },
+        {
+            "id": 271,
+            "bldgtypeID": 2,
+            "name": "Middle/High/Higher Sec. School"
+        },
+        {
+            "id": 272,
+            "bldgtypeID": 2,
+            "name": "Nursery School"
+        },
+        {
+            "id": 273,
+            "bldgtypeID": 21,
+            "name": "Mixed"
+        },
+        {
+            "id": 274,
+            "bldgtypeID": 1,
+            "name": "normal residential"
+        },
+        {
+            "id": 275,
+            "bldgtypeID": 4,
+            "name": "Multiplex"
+        },
+        {
+            "id": 276,
+            "bldgtypeID": 2,
+            "name": "Tution Classes"
+        },
+        {
+            "id": 277,
+            "bldgtypeID": 4,
+            "name": "Shopping Mall"
+        },
+        {
+            "id": 278,
+            "bldgtypeID": 6,
+            "name": "Offices"
+        },
+        {
+            "id": 279,
+            "bldgtypeID": 4,
+            "name": "Hazardous"
+        },
+        {
+            "id": 280,
+            "bldgtypeID": 4,
+            "name": "IT building"
+        },
+        {
+            "id": 281,
+            "bldgtypeID": 1,
+            "name": "hostels"
+        },
+        {
+            "id": 282,
+            "bldgtypeID": 27,
+            "name": "Information Technology Building / Establishment (ITE)"
+        },
+        {
+            "id": 283,
+            "bldgtypeID": 10,
+            "name": "local Authority"
+        },
+        {
+            "id": 284,
+            "bldgtypeID": 10,
+            "name": "Semi Government Organization"
+        },
+        {
+            "id": 285,
+            "bldgtypeID": 10,
+            "name": "a place for public worship"
+        },
+        {
+            "id": 286,
+            "bldgtypeID": 7,
+            "name": "dairies"
+        },
+        {
+            "id": 287,
+            "bldgtypeID": 7,
+            "name": "factories"
+        },
+        {
+            "id": 288,
+            "bldgtypeID": 9,
+            "name": "storage"
+        },
+        {
+            "id": 289,
+            "bldgtypeID": 9,
+            "name": "handling"
+        },
+        {
+            "id": 290,
+            "bldgtypeID": 9,
+            "name": "manufacture or processing of radioactive"
+        },
+        {
+            "id": 291,
+            "bldgtypeID": 9,
+            "name": "highly combustible"
+        },
+        {
+            "id": 292,
+            "bldgtypeID": 9,
+            "name": "explosive materials"
+        },
+        {
+            "id": 293,
+            "bldgtypeID": 9,
+            "name": "poisonous fumes or explosive"
+        },
+        {
+            "id": 294,
+            "bldgtypeID": 9,
+            "name": "emanations during storage"
+        },
+        {
+            "id": 295,
+            "bldgtypeID": 9,
+            "name": "handling"
+        },
+        {
+            "id": 296,
+            "bldgtypeID": 9,
+            "name": "manufacturing or processing"
+        },
+        {
+            "id": 297,
+            "bldgtypeID": 9,
+            "name": "toxic or noxious alkalis"
+        },
+        {
+            "id": 298,
+            "bldgtypeID": 9,
+            "name": "acids or other liquids or chemicals producing flames"
+        },
+        {
+            "id": 299,
+            "bldgtypeID": 9,
+            "name": "fumes and explosive mixtures of dust"
+        },
+        {
+            "id": 300,
+            "bldgtypeID": 5,
+            "name": "private entrepreneurs."
+        },
+        {
+            "id": 301,
+            "bldgtypeID": 30,
+            "name": "office purpose"
+        },
+        {
+            "id": 302,
+            "bldgtypeID": 30,
+            "name": "administration"
+        },
+        {
+            "id": 303,
+            "bldgtypeID": 30,
+            "name": "clerical work"
+        },
+        {
+            "id": 304,
+            "bldgtypeID": 30,
+            "name": "handling money"
+        },
+        {
+            "id": 305,
+            "bldgtypeID": 30,
+            "name": "telephone/ telegraph/ computer operations"
+        },
+        {
+            "id": 306,
+            "bldgtypeID": 30,
+            "name": "clerical work"
+        },
+        {
+            "id": 307,
+            "bldgtypeID": 30,
+            "name": "book-keeping"
+        },
+        {
+            "id": 308,
+            "bldgtypeID": 30,
+            "name": "sorting papers"
+        },
+        {
+            "id": 309,
+            "bldgtypeID": 30,
+            "name": "typing"
+        },
+        {
+            "id": 310,
+            "bldgtypeID": 30,
+            "name": "filing"
+        },
+        {
+            "id": 311,
+            "bldgtypeID": 30,
+            "name": "duplicating"
+        },
+        {
+            "id": 312,
+            "bldgtypeID": 30,
+            "name": "drawing of matter for publication and the editorial preparation of matter for publication"
+        },
+        {
+            "id": 314,
+            "bldgtypeID": 11,
+            "name": "Administration"
+        },
+        {
+            "id": 315,
+            "bldgtypeID": 11,
+            "name": "clerical work"
+        },
+        {
+            "id": 316,
+            "bldgtypeID": 11,
+            "name": "handling money"
+        },
+        {
+            "id": 317,
+            "bldgtypeID": 11,
+            "name": "Telephone/telegraph/computer operations"
+        },
+        {
+            "id": 318,
+            "bldgtypeID": 11,
+            "name": "Book-Keeping"
+        },
+        {
+            "id": 319,
+            "bldgtypeID": 11,
+            "name": "Sorting Papers"
+        },
+        {
+            "id": 320,
+            "bldgtypeID": 11,
+            "name": "Typing Filing"
+        },
+        {
+            "id": 321,
+            "bldgtypeID": 11,
+            "name": "Duplicating"
+        },
+        {
+            "id": 322,
+            "bldgtypeID": 11,
+            "name": "such other activities"
+        },
+        {
+            "id": 323,
+            "bldgtypeID": 11,
+            "name": "Publication"
+        },
+        {
+            "id": 324,
+            "bldgtypeID": 9,
+            "name": "Petrol Pump"
+        },
+        {
+            "id": 327,
+            "bldgtypeID": 1,
+            "name": "Independent single family"
+        },
+        {
+            "id": 328,
+            "bldgtypeID": 1,
+            "name": "Row House"
+        },
+        {
+            "id": 335,
+            "bldgtypeID": 33,
+            "name": "Petrol Pump"
+        },
+        {
+            "id": 336,
+            "bldgtypeID": 1,
+            "name": "Restorent"
+        },
+        {
+            "id": 337,
+            "bldgtypeID": 34,
+            "name": "Educational"
+        },
+        {
+            "id": 338,
+            "bldgtypeID": 35,
+            "name": "Commercial"
+        },
+        {
+            "id": 339,
+            "bldgtypeID": 2,
+            "name": "Special Educational Institute for Physically challenged/ Mentally ill\t"
+        },
+        {
+            "id": 340,
+            "bldgtypeID": 2,
+            "name": "Other Educational Buildings including hostels\t"
+        },
+        {
+            "id": 341,
+            "bldgtypeID": 6,
+            "name": "Two star and above hotel\t"
+        },
+        {
+            "id": 342,
+            "bldgtypeID": 3,
+            "name": "Maternity Homes\t"
+        },
+        {
+            "id": 343,
+            "bldgtypeID": 4,
+            "name": "Community Hall"
+        },
+        {
+            "id": 344,
+            "bldgtypeID": 7,
+            "name": "Information Technology (I.T.)"
+        },
+        {
+            "id": 345,
+            "bldgtypeID": 6,
+            "name": "Sports Complex"
+        },
+        {
+            "id": 346,
+            "bldgtypeID": 6,
+            "name": "Convenience Shopping"
+        },
+        {
+            "id": 347,
+            "bldgtypeID": 6,
+            "name": "Parking Lots"
+        },
+        {
+            "id": 348,
+            "bldgtypeID": 6,
+            "name": "Sub Post-Office"
+        },
+        {
+            "id": 349,
+            "bldgtypeID": 6,
+            "name": "Police Station"
+        },
+        {
+            "id": 350,
+            "bldgtypeID": 6,
+            "name": "Electric Substation "
+        },
+        {
+            "id": 351,
+            "bldgtypeID": 6,
+            "name": "ATM of banks"
+        },
+        {
+            "id": 352,
+            "bldgtypeID": 6,
+            "name": "Electronic Cyber Library"
+        },
+        {
+            "id": 353,
+            "bldgtypeID": 6,
+            "name": "Open Market"
+        },
+        {
+            "id": 354,
+            "bldgtypeID": 6,
+            "name": "Garbage Bin"
+        },
+        {
+            "id": 355,
+            "bldgtypeID": 6,
+            "name": "MSEB/Electric Sub Station"
+        },
+        {
+            "id": 356,
+            "bldgtypeID": 6,
+            "name": "Water Supply Work"
+        },
+        {
+            "id": 357,
+            "bldgtypeID": 6,
+            "name": "Sewage Treatment Plant"
+        },
+        {
+            "id": 358,
+            "bldgtypeID": 6,
+            "name": "Fire Station"
+        },
+        {
+            "id": 359,
+            "bldgtypeID": 6,
+            "name": "Public Toilets"
+        },
+        {
+            "id": 360,
+            "bldgtypeID": 4,
+            "name": "Auditorium"
+        },
+        {
+            "id": 361,
+            "bldgtypeID": 4,
+            "name": "Conventional Centre"
+        },
+        {
+            "id": 362,
+            "bldgtypeID": 2,
+            "name": "Primary And Secondary Schools "
+        },
+        {
+            "id": 363,
+            "bldgtypeID": 3,
+            "name": "Health Club"
+        },
+        {
+            "id": 364,
+            "bldgtypeID": 3,
+            "name": "Dispensary"
+        },
+        {
+            "id": 365,
+            "bldgtypeID": 3,
+            "name": "Nursing Home"
+        },
+        {
+            "id": 366,
+            "bldgtypeID": 6,
+            "name": "Hospital"
+        },
+        {
+            "id": 367,
+            "bldgtypeID": 3,
+            "name": "Assisted Living And Hospice Together"
+        },
+        {
+            "id": 368,
+            "bldgtypeID": 3,
+            "name": "Senior Citizen Housing And Orphanage Together "
+        },
+        {
+            "id": 369,
+            "bldgtypeID": 3,
+            "name": "Project Affected Persons Housing"
+        },
+        {
+            "id": 370,
+            "bldgtypeID": 7,
+            "name": "Storage"
+        },
+        {
+            "id": 371,
+            "bldgtypeID": 2,
+            "name": "Sport Institution"
+        },
+        {
+            "id": 372,
+            "bldgtypeID": 2,
+            "name": "Art and Science"
+        },
+        {
+            "id": 373,
+            "bldgtypeID": 2,
+            "name": "Amusement Parks"
+        },
+        {
+            "id": 374,
+            "bldgtypeID": 2,
+            "name": "Creches"
+        },
+        {
+            "id": 375,
+            "bldgtypeID": 3,
+            "name": "Houses for correctional detention and reformatories"
+        },
+        {
+            "id": 376,
+            "bldgtypeID": 3,
+            "name": "Custodial"
+        },
+        {
+            "id": 384,
+            "bldgtypeID": 35,
+            "name": "Gymnasia"
+        },
+        {
+            "id": 385,
+            "bldgtypeID": 35,
+            "name": "Fitness Centre"
+        },
+        {
+            "id": 386,
+            "bldgtypeID": 35,
+            "name": "Pavilion"
+        },
+        {
+            "id": 387,
+            "bldgtypeID": 35,
+            "name": "Vipassana Yoga Centre"
+        },
+        {
+            "id": 388,
+            "bldgtypeID": 35,
+            "name": "Kindergartner"
+        },
+        {
+            "id": 389,
+            "bldgtypeID": 35,
+            "name": "Sport and recreational activity"
+        },
+        {
+            "id": 390,
+            "bldgtypeID": 35,
+            "name": "Water tank"
+        },
+        {
+            "id": 391,
+            "bldgtypeID": 35,
+            "name": "Substation"
+        },
+        {
+            "id": 392,
+            "bldgtypeID": 35,
+            "name": "Generator Set"
+        },
+        {
+            "id": 393,
+            "bldgtypeID": 35,
+            "name": "Pump House"
+        },
+        {
+            "id": 394,
+            "bldgtypeID": 35,
+            "name": "Garbage Treatement"
+        },
+        {
+            "id": 395,
+            "bldgtypeID": 35,
+            "name": "Public Health out Centre"
+        },
+        {
+            "id": 396,
+            "bldgtypeID": 35,
+            "name": "Religious structure"
+        }
+    ]
+}

@@ -1,0 +1,354 @@
+/* Final Minimalist Form CSS */
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --input-color: #333333;
+  --placeholder-color: #cccccc;
+  --border-color: #e0e0e0;
+  --focus-color: #3366ff;
+  --disabled-bg-color: #f5f5f5;
+  --disabled-text-color: #999999;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--input-color);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder,
+select option:first-child {
+  color: var(--placeholder-color);
+  opacity: 1;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--focus-color);
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--input-color);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0.5L5 5.5L10 0.5H0Z' fill='%23333333'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--focus-color);
+}
+
+select:hover:not(:disabled) {
+  border-color: var(--focus-color);
+}
+
+select:disabled {
+  background-color: var(--disabled-bg-color);
+  color: var(--disabled-text-color);
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0.5L5 5.5L10 0.5H0Z' fill='%23999999'/%3E%3C/svg%3E");
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--focus-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: block;
+  margin: 20px auto 0;
+  width: 100%;
+  max-width: 200px;
+}
+
+input[type="submit"]:hover {
+  background-color: #2952cc;
+}
+
+/* Add this after the existing input[type="submit"] styles */
+
+button#submit {
+  background-color: var(--focus-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  margin: 30px auto 0;
+  width: auto;
+  min-width: 200px;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button#submit:hover {
+  background-color: #2952cc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button#submit:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button#submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(51, 102, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+  button#submit {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin: 0 0 20px 0;
+  padding: 15px;
+}
+
+legend {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--focus-color);
+  border-color: var(--focus-color);
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  left: 3px;
+  top: -1px;
+}
+
+.road-details {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 2px solid var(--border-color);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+.road-details input[type="number"],
+.road-details select {
+  margin-top: 5px;
+}
+
+fieldset .form-group:last-child {
+  margin-bottom: 0;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: var(--disabled-bg-color);
+  color: var(--disabled-text-color);
+  cursor: not-allowed;
+}
+
+.loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.input-group-addon {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-right: 1px solid var(--border-color);
+}
+
+.input-group input[type="tel"] {
+    border: none;
+    flex-grow: 1;
+    padding: 8px 10px;
+}
+
+.input-group:focus-within {
+    border-color: var(--focus-color);
+}
+
+.feedback {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+.feedback.invalid {
+  color: #d9534f;
+}
+.feedback.valid {
+  color: #5cb85c;
+}
+.invalid-input {
+  border-color: #d9534f;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"] {
+    background-color: white; /* Ensure background color is white */
+    color: var(--input-color); /* Ensure text color is readable */
+    position: relative;
+    z-index: 1; /* Bring input above other elements */
+    padding: 10px; /* Add padding for better usability */
+    border-radius: 4px; /* Ensure rounded corners */
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: var(--focus-color); /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(51, 102, 255, 0.3); /* Add shadow for better visibility */
+}
