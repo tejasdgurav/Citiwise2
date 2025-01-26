@@ -130,6 +130,37 @@
       }
     }
 
+  /* Adjustments for larger screens (laptop/desktop) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.25rem; /* Scale up base font size */
+    line-height: 1.8;   /* Slightly increase line height */
+  }
+
+  .hero, .section, .footer {
+    max-width: 900px; /* Increase content width */
+    padding: 4rem 2rem; /* Increase padding */
+  }
+
+  .section-title {
+    font-size: 2.5rem; /* Scale up titles */
+  }
+
+  .description {
+    font-size: 1.25rem; /* Increase description font size */
+  }
+
+  .btn-primary {
+    font-size: 1.1rem; /* Increase button font size */
+    padding: 14px 30px; /* Adjust button padding */
+  }
+
+  header {
+    padding: 2rem 6rem; /* Increase header padding */
+  }
+}
+
+
     /* Footer Links */
     .footer a {
       color: var(--color-subtext);
