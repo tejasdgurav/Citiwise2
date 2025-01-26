@@ -18,6 +18,7 @@
       --color-footer-text: #555;
       --color-link-hover: #2f3437;
       --color-card-bg: #ffffff;
+      --color-card-hover-bg: #f9f9f9;
     }
 
     /* Dark Mode Overrides */
@@ -158,14 +159,12 @@
     header {
       background-color: var(--color-background);
       transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     /* Dark Mode Specific Header Styles */
     body.dark-mode header {
       background-color: #1e1e1f;
       color: #f0f0f3;
-      box-shadow: 0 2px 4px rgba(255,255,255,0.1);
     }
 
     /* Dark Mode Button Shadow */
@@ -176,79 +175,55 @@
     /* Dark Mode Card Background */
     body.dark-mode .shadow-card {
       background-color: #2a2a2c;
-      box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+      box-shadow: none;
     }
 
-    /* Minimalist Theme Toggle Styles */
-    .theme-toggle {
-      margin-left: 1rem;
-      width: 40px;
-      height: 40px;
-      background-color: transparent;
-      border: none;
+    /* Dark Mode Toggle Switch */
+    .dark-mode-toggle {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 50px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 9999px;
       cursor: pointer;
-      outline: none;
-      position: relative;
-      transition: transform 0.3s ease;
+      transition: background-color 0.3s ease;
       display: flex;
       align-items: center;
-      justify-content: center;
+      padding: 3px;
+      z-index: 1000; /* Ensures the toggle is above all other elements */
     }
 
-    .theme-toggle:hover {
-      transform: scale(1.1);
+    .dark-mode-toggle::after {
+      content: '';
+      width: 19px;
+      height: 19px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+      transform: translateX(0);
     }
 
-    .theme-toggle svg {
-      width: 24px;
-      height: 24px;
-      fill: var(--color-text);
-      transition: fill 0.5s ease-in-out;
+    body.dark-mode .dark-mode-toggle {
+      background-color: #4f46e5; /* Indigo-600 */
     }
 
-    body.dark-mode .theme-toggle svg {
-      fill: #f0f0f3;
-    }
-
-    /* Toggle Icon Animation */
-    .theme-toggle .sun,
-    .theme-toggle .moon {
-      position: absolute;
-      transition: opacity 0.5s ease-in-out;
-    }
-
-    .theme-toggle .sun.hidden,
-    .theme-toggle .moon.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .theme-toggle .sun.visible,
-    .theme-toggle .moon.visible {
-      opacity: 1;
-      pointer-events: all;
+    body.dark-mode .dark-mode-toggle::after {
+      transform: translateX(25px);
     }
 
   </style>
 </head>
 <body class="antialiased leading-relaxed">
 
-  <!-- Header with Minimalist Toggle -->
-  <header class="flex justify-between items-center p-6 transition-colors duration-500">
+  <!-- Dark Mode Toggle Switch -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode"></div>
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 shadow-sm transition-colors duration-500">
     <div class="text-2xl font-bold">Citiwise</div>
-    <div class="flex items-center">
-      <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
-      <button class="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
-        <!-- Sun Icon -->
-        <svg id="sun-icon" class="sun visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M12 4.354a1 1 0 011 1V6a1 1 0 11-2 0V5.354a1 1 0 011-1zm5.657 2.757a1 1 0 011.414 1.414l-.506.506a1 1 0 11-1.414-1.414l.506-.506zM20 12a1 1 0 011 1h2a1 1 0 110 2h-2a1 1 0 01-1-1v-2a1 1 0 011-1zm-2.757 5.657a1 1 0 011.414 1.414l-.506.506a1 1 0 11-1.414-1.414l.506-.506zM12 18a1 1 0 011 1v2a1 1 0 11-2 0v-2a1 1 0 011-1zm-5.657-2.757a1 1 0 011.414 1.414l-.506.506a1 1 0 11-1.414-1.414l.506-.506zM4 12a1 1 0 011 1H3a1 1 0 110-2h2a1 1 0 01-1 1zm2.757-5.657a1 1 0 011.414-1.414l.506.506a1 1 0 11-1.414 1.414l-.506-.506zM12 8a4 4 0 100 8 4 4 0 000-8z"/>
-        </svg>
-        <!-- Moon Icon -->
-        <svg id="moon-icon" class="moon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M21.752 15.002A9 9 0 119 2.248a7 7 0 0012.752 12.754z"/>
-        </svg>
-      </button>
-    </div>
+    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
   </header>
 
   <!-- Hero Section -->
@@ -310,53 +285,9 @@
 
   <!-- JavaScript for Dark Mode Toggle -->
   <script>
-    // Function to toggle dark mode
     function toggleDarkMode() {
-      const body = document.body;
-      const sunIcon = document.getElementById('sun-icon');
-      const moonIcon = document.getElementById('moon-icon');
-      body.classList.toggle('dark-mode');
-
-      // Toggle visibility of icons
-      if (body.classList.contains('dark-mode')) {
-        sunIcon.classList.add('hidden');
-        sunIcon.classList.remove('visible');
-        moonIcon.classList.add('visible');
-        moonIcon.classList.remove('hidden');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        sunIcon.classList.add('visible');
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
-        moonIcon.classList.remove('visible');
-        localStorage.setItem('theme', 'light');
-      }
+      document.body.classList.toggle('dark-mode');
     }
-
-    // Function to load theme based on localStorage
-    function loadTheme() {
-      const theme = localStorage.getItem('theme');
-      const body = document.body;
-      const sunIcon = document.getElementById('sun-icon');
-      const moonIcon = document.getElementById('moon-icon');
-
-      if(theme === 'dark'){
-        body.classList.add('dark-mode');
-        sunIcon.classList.add('hidden');
-        sunIcon.classList.remove('visible');
-        moonIcon.classList.add('visible');
-        moonIcon.classList.remove('hidden');
-      } else {
-        body.classList.remove('dark-mode');
-        sunIcon.classList.add('visible');
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
-        moonIcon.classList.remove('visible');
-      }
-    }
-
-    // Load theme on initial render
-    window.onload = loadTheme;
   </script>
 </body>
 </html>
