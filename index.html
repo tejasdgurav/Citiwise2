@@ -19,6 +19,10 @@
       --color-link-hover: #2f3437;
       --color-card-bg: #ffffff;
       --color-card-hover-bg: #f9f9f9;
+      --toggle-bg-light: #e2e8f0; /* Tailwind's gray-300 */
+      --toggle-bg-dark: #4f46e5; /* Tailwind's indigo-600 */
+      --toggle-knob-bg: #ffffff;
+      --toggle-knob-dark-bg: #ffffff;
     }
 
     /* Dark Mode Overrides */
@@ -185,7 +189,7 @@
       right: 1.5rem;
       width: 50px;
       height: 25px;
-      background-color: #ccc;
+      background-color: var(--toggle-bg-light);
       border-radius: 9999px;
       cursor: pointer;
       transition: background-color 0.3s ease;
@@ -199,18 +203,50 @@
       content: '';
       width: 19px;
       height: 19px;
-      background-color: #fff;
+      background-color: var(--toggle-knob-bg);
       border-radius: 50%;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, background-color 0.3s ease;
       transform: translateX(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     body.dark-mode .dark-mode-toggle {
-      background-color: #4f46e5; /* Indigo-600 */
+      background-color: var(--toggle-bg-dark);
     }
 
     body.dark-mode .dark-mode-toggle::after {
       transform: translateX(25px);
+      background-color: var(--toggle-knob-dark-bg);
+    }
+
+    /* Optional: Sun and Moon Icons Inside Toggle */
+    .dark-mode-toggle svg {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      fill: #ffffff;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    /* Show Sun Icon in Light Mode */
+    .dark-mode-toggle .sun-icon {
+      opacity: 1;
+    }
+
+    /* Hide Sun Icon in Dark Mode */
+    body.dark-mode .dark-mode-toggle .sun-icon {
+      opacity: 0;
+    }
+
+    /* Hide Moon Icon in Light Mode */
+    .dark-mode-toggle .moon-icon {
+      opacity: 0;
+    }
+
+    /* Show Moon Icon in Dark Mode */
+    body.dark-mode .dark-mode-toggle .moon-icon {
+      opacity: 1;
     }
 
   </style>
@@ -218,7 +254,17 @@
 <body class="antialiased leading-relaxed">
 
   <!-- Dark Mode Toggle Switch -->
-  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode"></div>
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+    <!-- Sun Icon -->
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6.76 4.84l-1.8-1.79-1.42 1.42 1.79 1.8 1.43-1.43zm10.48 0l1.43 1.43 1.8-1.8-1.42-1.42-1.81 1.79zM12 4.5a.75.75 0 0 1 .75.75V6a.75.75 0 0 1-1.5 0V5.25A.75.75 0 0 1 12 4.5zm0 13.5a.75.75 0 0 1 .75.75V18a.75.75 0 0 1-1.5 0v-1.25a.75.75 0 0 1 .75-.75zm8.25-6a.75.75 0 0 1 .75.75h1.25a.75.75 0 0 1 0 1.5H20.25a.75.75 0 0 1-.75-.75zm-16.5 0a.75.75 0 0 1 .75.75H4a.75.75 0 0 1 0-1.5h1.25a.75.75 0 0 1 .75.75zm12.03 4.22a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm-8.49 0a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
+    </svg>
+
+    <!-- Moon Icon -->
+    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M21.75 15a9.75 9.75 0 1 1-9.75-9.75 7.5 7.5 0 0 0 0 15zm0-9a9 9 0 1 0-9 9 8.955 8.955 0 0 0 9-9z"/>
+    </svg>
+  </div>
 
   <!-- Header -->
   <header class="flex justify-between items-center p-6 shadow-sm transition-colors duration-500">
