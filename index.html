@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Citiwise - Smarter Pre-Construction</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
@@ -122,7 +122,7 @@
       color: #2f3437;
     }
 
-    /* Restored Dark Mode Styling */
+    /* Dark Mode Styling */
     body.dark-mode {
       background-color: #1c1c1e;
       color: #e4e4e4;
@@ -171,27 +171,41 @@
     }
 
     .dark-mode-toggle svg {
+      width: 24px;
+      height: 24px;
       fill: #2f3437;
-      transition: fill 0.3s ease-in-out;
+      transition: fill 0.3s ease-in-out, display 0.3s ease;
     }
-    .dark-mode .dark-mode-toggle svg {
+
+    /* Icon Visibility Based on Dark Mode */
+    #darkIcon {
+      display: none;
+    }
+
+    body.dark-mode #lightIcon {
+      display: none;
+    }
+
+    body.dark-mode #darkIcon {
+      display: block;
       fill: #eaeaea;
     }
   </style>
 </head>
 <body class="antialiased leading-relaxed">
 
-<div class="dark-mode-toggle" onclick="toggleDarkMode()" id="darkModeToggle" style="cursor: pointer;">
-  <!-- Sun Icon for Light Mode -->
-  <svg id="lightIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-    <path fill="currentColor" d="M6.76 4.84l-1.8-1.79-1.42 1.42 1.79 1.8 1.43-1.43zm10.48 0l1.43 1.43 1.8-1.8-1.42-1.42-1.81 1.79zM12 4.5a.75.75 0 0 1 .75.75V6a.75.75 0 0 1-1.5 0V5.25A.75.75 0 0 1 12 4.5zm0 13.5a.75.75 0 0 1 .75.75V18a.75.75 0 0 1-1.5 0v-1.25a.75.75 0 0 1 .75-.75zm8.25-6a.75.75 0 0 1 .75.75h1.25a.75.75 0 0 1 0 1.5H20.25a.75.75 0 0 1-.75-.75zm-16.5 0a.75.75 0 0 1 .75.75H4a.75.75 0 0 1 0-1.5h1.25a.75.75 0 0 1 .75.75zm12.03 4.22a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm-8.49 0a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
-  </svg>
-  
-  <!-- Moon Icon for Dark Mode -->
-  <svg id="darkIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="display: none;">
-    <path fill="currentColor" d="M21.75 15a9.75 9.75 0 1 1-9.75-9.75 7.5 7.5 0 0 0 0 15zm0-9a9 9 0 1 0-9 9 8.955 8.955 0 0 0 9-9z"/>
-  </svg>
-</div>
+  <!-- Dark Mode Toggle Button -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()" id="darkModeToggle">
+    <!-- Sun Icon for Light Mode -->
+    <svg id="lightIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6.76 4.84l-1.8-1.79-1.42 1.42 1.79 1.8 1.43-1.43zm10.48 0l1.43 1.43 1.8-1.8-1.42-1.42-1.81 1.79zM12 4.5a.75.75 0 0 1 .75.75V6a.75.75 0 0 1-1.5 0V5.25A.75.75 0 0 1 12 4.5zm0 13.5a.75.75 0 0 1 .75.75V18a.75.75 0 0 1-1.5 0v-1.25a.75.75 0 0 1 .75-.75zm8.25-6a.75.75 0 0 1 .75.75h1.25a.75.75 0 0 1 0 1.5H20.25a.75.75 0 0 1-.75-.75zm-16.5 0a.75.75 0 0 1 .75.75H4a.75.75 0 0 1 0-1.5h1.25a.75.75 0 0 1 .75.75zm12.03 4.22a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm-8.49 0a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
+    </svg>
+    
+    <!-- Moon Icon for Dark Mode -->
+    <svg id="darkIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M21.75 15a9.75 9.75 0 1 1-9.75-9.75 7.5 7.5 0 0 0 0 15zm0-9a9 9 0 1 0-9 9 8.955 8.955 0 0 0 9-9z"/>
+    </svg>
+  </div>
 
   <!-- Header -->
   <header class="flex justify-between items-center p-6 shadow-sm">
