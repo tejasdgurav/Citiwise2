@@ -207,7 +207,6 @@
       transform: translateX(25px);
     }
 
-  /* Neon Button Styles */
   .btn-neon {
     position: relative;
     display: inline-block;
@@ -219,37 +218,25 @@
     border-radius: 6px;
     text-align: center;
     text-decoration: none;
-    overflow: hidden;
-    z-index: 1;
     transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 0 0 10px rgba(255, 153, 102, 0.8), 
-                0 0 20px rgba(255, 102, 204, 0.8),
-                0 0 30px rgba(255, 153, 102, 0.8);
+    border: 2px solid transparent; /* Placeholder for the outline */
+    background-clip: padding-box; /* Ensures the inner area isn't filled by the outline */
   }
 
   .btn-neon::before {
     content: '';
     position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: 10px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 8px;
     background: linear-gradient(
-      45deg,
-      rgba(255, 153, 102, 0.8),
-      rgba(255, 102, 204, 0.8),
-      rgba(255, 153, 102, 0.8)
+      90deg,
+      rgba(255, 102, 204, 1),
+      rgba(255, 153, 102, 1)
     );
     z-index: -1;
-  }
-
-  .btn-neon:hover {
-    background-color: #3f4a4f; /* Slightly darker background on hover */
-    color: #ffffff;
-    box-shadow: 0 0 15px rgba(255, 153, 102, 1),
-                0 0 25px rgba(255, 102, 204, 1),
-                0 0 40px rgba(255, 153, 102, 1);
   }
 
   </style>
