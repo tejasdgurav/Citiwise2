@@ -207,6 +207,7 @@
       transform: translateX(25px);
     }
 
+  /* Neon Button Styles */
   .btn-neon {
     position: relative;
     display: inline-block;
@@ -226,23 +227,39 @@
   .btn-neon::before {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+    padding: 2px;
     background: conic-gradient(
       from 0deg,
       rgba(255, 153, 102, 0.8),
       rgba(255, 102, 204, 0.8),
-      rgba(255, 153, 102, 0.8)
+      rgba(255, 153, 102, 0.8),
+      rgba(255, 102, 204, 0.8)
     );
-    z-index: -1;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    /* Removed animation to stop circular motion */
   }
 
   .btn-neon:hover {
-    background-color: var(--color-button-hover-bg); /* Darker on hover */
-    color: var(--color-button-text); /* Keep text color consistent */
+    background-color: #3f4a4f; /* Slightly different on hover */
+    color: #ffffff;
+  }
+
+  /* No rotation animation */
+  @keyframes neon-glow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 
   </style>
