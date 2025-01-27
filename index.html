@@ -218,9 +218,9 @@
     border-radius: 6px;
     text-align: center;
     text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 2px solid transparent; /* Placeholder for the outline */
-    background-clip: padding-box; /* Ensures the inner area isn't filled by the outline */
   }
 
   .btn-neon::before {
@@ -231,12 +231,18 @@
     right: -2px;
     bottom: -2px;
     border-radius: 8px;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 102, 204, 1),
-      rgba(255, 153, 102, 1)
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 153, 102, 0.8),
+      rgba(255, 102, 204, 0.8),
+      rgba(255, 153, 102, 0.8)
     );
     z-index: -1;
+  }
+
+  .btn-neon:hover {
+    background-color: var(--color-button-hover-bg); /* Darker on hover */
+    color: var(--color-button-text); /* Keep text color consistent */
   }
 
   </style>
