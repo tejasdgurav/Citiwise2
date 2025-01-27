@@ -207,6 +207,62 @@
       transform: translateX(25px);
     }
 
+      /* Neon Button Styles */
+  .btn-neon {
+    position: relative;
+    display: inline-block;
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn-neon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+    padding: 2px;
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 153, 102, 0.8),
+      rgba(255, 102, 204, 0.8),
+      rgba(255, 153, 102, 0.8),
+      rgba(255, 102, 204, 0.8)
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: neon-glow 2s linear infinite;
+    z-index: -1;
+  }
+
+  .btn-neon:hover {
+    background-color: #3f4a4f; /* Slightly different on hover */
+    color: #ffffff;
+  }
+
+  /* Neon Animation */
+  @keyframes neon-glow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   </style>
 </head>
 <body class="antialiased leading-relaxed">
@@ -225,7 +281,8 @@
     <p class="subtle-headline">AI-Powered Real Estate Development Research</p>
     <h1 class="section-title">Build Profitable Projects with Data-Driven Insights</h1>
     <p class="description">Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.</p>
-    <a href="project-input.html" class="btn-primary mt-8" target="_blank" rel="noopener noreferrer">Start Your Project</a>
+    <a href="project-input.html" class="btn-neon mt-8" target="_blank" rel="noopener noreferrer">Start Your Project</a>
+
   </section>
 
   <!-- Footer -->
