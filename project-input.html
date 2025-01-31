@@ -507,19 +507,37 @@
 
     <script src="assets/js/input.js"></script>
 
-    <script type="module">
-    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
-    
-    const auth = getAuth();
-    document.getElementById('logout-button').addEventListener('click', async () => {
-        try {
-            await signOut(auth);
-            window.location.href = 'index.html';
-        } catch (error) {
-            console.error('Sign-out failed:', error);
-        }
-    });
+<!-- New Firebase Script Section (Replace the above script) -->
+<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js"></script>
+
+<script type="module">
+  // Firebase config from your project
+  const firebaseConfig = {
+    apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
+    authDomain: "citiwise-f7e38.firebaseapp.com",
+    projectId: "citiwise-f7e38",
+    storageBucket: "citiwise-f7e38.firebasestorage.app",
+    messagingSenderId: "379568339904",
+    appId: "1:379568339904:web:00819ecce5db8b3d96e625",
+    measurementId: "G-8RSL6C77Z5"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  // Logout button functionality
+  document.getElementById('logout-button').addEventListener('click', async () => {
+    try {
+      await auth.signOut();
+      window.location.href = 'index.html'; // Redirect to home page after logout
+    } catch (error) {
+      console.error('Sign-out failed:', error);
+    }
+  });
 </script>
+
 
 </body>
 </html>
