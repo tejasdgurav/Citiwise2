@@ -7,7 +7,6 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
-    /* CSS Variables for Light and Dark Modes */
     :root {
       --color-text: #2f3437;
       --color-background: #fafbfc;
@@ -18,7 +17,6 @@
       --color-button-hover-bg: #3f4a4f;
     }
 
-    /* Dark Mode Overrides */
     body.dark-mode {
       --color-text: #e4e4e4;
       --color-background: #1c1c1e;
@@ -29,7 +27,6 @@
       --color-button-hover-bg: #e0e0e0;
     }
 
-    /* Base Styles */
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       color: var(--color-text);
@@ -47,7 +44,6 @@
       border-radius: 6px;
       font-size: 1rem;
       transition: background-color 0.3s ease, color 0.3s ease;
-      display: inline-block;
       text-align: center;
     }
 
@@ -88,7 +84,7 @@
   </style>
 </head>
 
-<body class="antialiased leading-relaxed bg-gray-50 text-gray-800">
+<body class="antialiased leading-relaxed">
 
   <!-- Header Section -->
   <header class="flex justify-between items-center p-6 shadow-sm">
@@ -104,13 +100,13 @@
 
   <!-- Hero Section -->
   <section class="hero text-center mt-8">
-    <p class="text-gray-600">AI-Powered Real Estate Development Research</p>
-    <h1 class="text-3xl font-bold mt-4">Build Profitable Projects with Data-Driven Insights</h1>
-    <p class="mt-4 text-lg">Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.</p>
+    <p class="subtle-headline text-gray-600">AI-Powered Real Estate Development Research</p>
+    <h1 class="section-title text-3xl font-bold mt-4">Build Profitable Projects with Data-Driven Insights</h1>
+    <p class="description mt-4 text-lg">Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.</p>
     <button id="start-project-btn" class="btn-primary inline-block mt-8">Start Your Project</button>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer class="footer text-center mt-12">
     <p class="text-sm">Citiwise - The Smart Way to Start Your Real Estate Projects</p>
     <div class="mt-4 space-x-4">
@@ -135,6 +131,7 @@
       measurementId: "G-8RSL6C77Z5"
     };
 
+    // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
