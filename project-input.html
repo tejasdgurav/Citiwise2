@@ -527,17 +527,19 @@
   const auth = firebase.auth();
 
   // Logout functionality
-  document.getElementById('logout-button').addEventListener('click', async () => {
-    try {
-      // Log out of Firebase
-      await auth.signOut();
+document.getElementById('logout-button').addEventListener('click', async () => {
+  try {
+    const user = firebase.auth().currentUser;  // Check if a user is logged in
+    if (user) {
+      await firebase.auth().signOut();  // Sign the user out of Firebase
       window.location.href = 'index.html'; // Redirect to homepage after logging out
-    } catch (error) {
-      console.error('Sign-out failed:', error);
+    } else {
+      alert('No user is logged in.'); // Alert if no user is logged in
     }
-  });
+  } catch (error) {
+    console.error('Sign-out failed:', error); // Log any errors
+  }
+});
 </script>
-
-
 </body>
 </html>
