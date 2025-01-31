@@ -510,7 +510,7 @@
 <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js"></script>
 
-<script type="module">
+<script>
   // Firebase config from your project
   const firebaseConfig = {
     apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
@@ -526,17 +526,17 @@
   const app = firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
 
-  // Logout button functionality
+  // Logout functionality
   document.getElementById('logout-button').addEventListener('click', async () => {
     try {
+      // Log out of Firebase
       await auth.signOut();
-      window.location.href = 'index.html'; // Redirect to home page after logout
+      window.location.href = 'index.html'; // Redirect to homepage after logging out
     } catch (error) {
       console.error('Sign-out failed:', error);
     }
   });
 </script>
-
 
 
 </body>
