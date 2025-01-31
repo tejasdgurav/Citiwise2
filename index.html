@@ -6,9 +6,7 @@
   <title>Citiwise - Smarter Real Estate Development</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-
   <style>
-    /* CSS Variables for Light and Dark Modes */
     :root {
       --color-text: #2f3437;
       --color-background: #fafbfc;
@@ -17,14 +15,8 @@
       --color-button-bg: #2f3437;
       --color-button-text: #ffffff;
       --color-button-hover-bg: #3f4a4f;
-      --color-footer-text: #555;
-      --color-link-hover: #2f3437;
-      --color-card-bg: #ffffff;
-      --color-card-hover-bg: #f9f9f9;
     }
 
-
-    /* Dark Mode Overrides */
     body.dark-mode {
       --color-text: #e4e4e4;
       --color-background: #1c1c1e;
@@ -33,12 +25,8 @@
       --color-button-bg: #ffffff;
       --color-button-text: #2f3437;
       --color-button-hover-bg: #e0e0e0;
-      --color-footer-text: #e4e4e4;
-      --color-link-hover: #f0f0f3;
-      --color-card-bg: #2a2a2c;
     }
 
-    /* Base Styles */
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       color: var(--color-text);
@@ -49,132 +37,25 @@
       transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
     }
 
-    /* Headers */
     h1, h2, h3 {
       font-weight: 600;
       color: var(--color-heading);
-      margin: 0;
-      padding: 0;
       letter-spacing: -0.5px;
-      transition: color 0.5s ease-in-out;
     }
 
-    /* Paragraphs and List Items */
-    p, li {
-      color: var(--color-subtext);
-      margin: 0;
-      padding: 0;
-      letter-spacing: -0.2px;
-      transition: color 0.5s ease-in-out;
-    }
-
-    /* Primary Button */
     .btn-primary {
       background-color: var(--color-button-bg);
       color: var(--color-button-text);
       padding: 12px 26px;
       font-weight: 500;
       border-radius: 6px;
-      font-size: 1rem;
-      border: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      display: inline-block;
-      text-align: center;
+      transition: background-color 0.3s ease;
     }
 
     .btn-primary:hover {
       background-color: var(--color-button-hover-bg);
-      color: var(--color-button-text);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Layout Sections */
-    .hero, .section, .footer {
-      padding: 3rem 1.5rem;
-      max-width: 750px;
-      margin: auto;
-    }
-
-    .subtle-headline {
-      font-size: 1rem;
-      color: #7d7d7d;
-      margin-top: 1rem;
-      letter-spacing: 0.1px;
-    }
-
-    .section-title {
-      font-size: 2.15rem;
-      font-weight: 600;
-      line-height: 1.3;
-      margin-top: 0.75rem;
-      color: var(--color-heading);
-      transition: color 0.5s ease-in-out;
-    }
-
-    .description {
-      font-size: 1.125rem;
-      color: var(--color-subtext);
-      margin-top: 1rem;
-      transition: color 0.5s ease-in-out;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 2rem;
-      }
-      .btn-primary {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-      }
-      .hero, .section, .footer {
-        padding: 2.5rem 1rem;
-      }
-    }
-
-  /* Adjustments for larger screens (laptop/desktop) */
-@media (min-width: 1024px) {
-  body {
-    font-size: 1.25rem; /* Scale up base font size */
-    line-height: 1.8;   /* Slightly increase line height */
-  }
-
-  .hero, .section, .footer {
-    max-width: 900px; /* Increase content width */
-    padding: 4rem 2rem; /* Increase padding */
-  }
-
-  .section-title {
-    font-size: 2.5rem; /* Scale up titles */
-  }
-
-  .description {
-    font-size: 1.25rem; /* Increase description font size */
-  }
-
-  .btn-primary {
-    font-size: 1.1rem; /* Increase button font size */
-    padding: 14px 30px; /* Adjust button padding */
-  }
-
-  header {
-    padding: 2rem 6rem; /* Increase header padding */
-  }
-}
-
-
-    /* Footer Links */
-    .footer a {
-      color: var(--color-subtext);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .footer a:hover {
-      color: var(--color-link-hover);
-    }
-
-    /* Dark Mode Toggle Switch */
     .dark-mode-toggle {
       position: fixed;
       bottom: 1.5rem;
@@ -183,12 +64,11 @@
       height: 25px;
       background-color: #ccc;
       border-radius: 9999px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
       display: flex;
       align-items: center;
       padding: 3px;
-      z-index: 1000; /* Ensures the toggle is above all other elements */
+      cursor: pointer;
+      z-index: 1000;
     }
 
     .dark-mode-toggle::after {
@@ -198,109 +78,36 @@
       background-color: #fff;
       border-radius: 50%;
       transition: transform 0.3s ease;
-      transform: translateX(0);
     }
 
     body.dark-mode .dark-mode-toggle {
-      background-color: #4f46e5; /* Indigo-600 */
+      background-color: #4f46e5;
     }
 
     body.dark-mode .dark-mode-toggle::after {
       transform: translateX(25px);
     }
-
   </style>
 </head>
+<body class="antialiased leading-relaxed bg-gray-50 text-gray-800">
 
-
-<script type="module">
-  // Import Firebase functions
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
-  import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
-
-  // Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
-    authDomain: "citiwise-f7e38.firebaseapp.com",
-    projectId: "citiwise-f7e38",
-    storageBucket: "citiwise-f7e38.firebasestorage.app",
-    messagingSenderId: "379568339904",
-    appId: "1:379568339904:web:00819ecce5db8b3d96e625",
-    measurementId: "G-8RSL6C77Z5"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const provider = new GoogleAuthProvider();
-
-  document.getElementById('google-signin-button').addEventListener('click', async () => {
-    try {
-      const result = await signInWithPopup(auth, provider);
-      const user = result.user;
-
-      // Display user information on successful sign-in
-      document.getElementById('user-info').classList.remove('hidden');
-      document.getElementById('user-name').innerText = `Hello, ${user.displayName}`;
-      document.getElementById('user-photo').src = user.photoURL;
-      document.getElementById('google-signin-button').classList.add('hidden');
-    } catch (error) {
-      console.error('Sign-in failed:', error);
-      alert('Sign-in failed. Please try again.');
-    }
-  });
-
-  // Log Out functionality
-  document.getElementById('logout-button').addEventListener('click', async () => {
-    try {
-      await signOut(auth);
-      document.getElementById('user-info').classList.add('hidden');
-      document.getElementById('google-signin-button').classList.remove('hidden');
-    } catch (error) {
-      console.error('Sign-out failed:', error);
-      alert('Sign-out failed. Please try again.');
-    }
-  });
-
-// Redirect after successful sign-in
-document.getElementById('google-signin-button').addEventListener('click', async () => {
-  try {
-    await signInWithPopup(auth, provider);
-    window.location.href = 'project-input.html';
-  } catch (error) {
-    console.error('Sign-in failed:', error);
-    alert('Sign-in failed. Please try again.');
-  }
-});
-
-// Redirect for Start Your Project button
-document.getElementById('start-project-btn').addEventListener('click', () => {
-  window.location.href = 'project-input.html';
-});  
-</script>
-
-
-  <!-- Dark Mode Toggle Switch -->
-  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode"></div>
-
-  <!-- Header -->
-  <header class="flex justify-between items-center p-6 shadow-sm transition-colors duration-500">
-  <div class="text-2xl font-bold">Citiwise</div>
-  <div class="flex items-center space-x-4">
-    <button id="google-signin-button" class="text-sm text-white font-medium bg-blue-600 hover:bg-blue-700 rounded-lg px-4 py-2 flex items-center space-x-2 shadow-md transition">
-      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4">
-      <span>Sign in with Google</span>
-    </button>
-    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
-  </div>
+  <!-- Header Section -->
+  <header class="flex justify-between items-center p-6 shadow-sm">
+    <div class="text-2xl font-bold">Citiwise</div>
+    <div class="flex items-center space-x-4">
+      <button id="google-signin-button" class="text-sm text-white font-medium bg-blue-600 hover:bg-blue-700 rounded-lg px-4 py-2 flex items-center space-x-2 shadow-md transition">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4">
+        <span>Sign in with Google</span>
+      </button>
+      <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
+    </div>
   </header>
-
 
   <!-- Hero Section -->
   <section class="hero text-center mt-8">
-    <p class="subtle-headline">AI-Powered Real Estate Development Research</p>
-    <h1 class="section-title">Build Profitable Projects with Data-Driven Insights</h1>
-    <p class="description">Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.</p>
+    <p class="subtle-headline text-gray-600">AI-Powered Real Estate Development Research</p>
+    <h1 class="section-title text-3xl font-bold mt-4">Build Profitable Projects with Data-Driven Insights</h1>
+    <p class="description mt-4 text-lg">Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.</p>
     <a id="start-project-btn" class="btn-primary inline-block mt-8">Start Your Project</a>
   </section>
 
@@ -308,17 +115,56 @@ document.getElementById('start-project-btn').addEventListener('click', () => {
   <footer class="footer text-center mt-12">
     <p class="text-sm">Citiwise - The Smart Way to Start Your Real Estate Projects</p>
     <div class="mt-4 space-x-4">
-      <a href="https://www.linkedin.com/company/citiwise/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-700">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/citiwise/" target="_blank" class="hover:text-gray-700">LinkedIn</a>
       <a href="mailto:admin@citiwise.in" class="hover:text-gray-700">Contact Us</a>
     </div>
     <p class="text-sm mt-4">© 2025 Citiwise.in</p>
   </footer>
 
-  <!-- JavaScript for Dark Mode Toggle -->
+  <!-- Firebase and JavaScript -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
+      authDomain: "citiwise-f7e38.firebaseapp.com",
+      projectId: "citiwise-f7e38",
+      storageBucket: "citiwise-f7e38.firebasestorage.app",
+      messagingSenderId: "379568339904",
+      appId: "1:379568339904:web:00819ecce5db8b3d96e625",
+      measurementId: "G-8RSL6C77Z5"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    // Google Sign-In functionality
+    document.getElementById('google-signin-button').addEventListener('click', async () => {
+      try {
+        await signInWithPopup(auth, provider);
+        window.location.href = 'project-input.html';
+      } catch (error) {
+        console.error('Sign-in failed:', error);
+        alert('Sign-in failed. Please try again.');
+      }
+    });
+
+    // Start Project button click event
+    document.getElementById('start-project-btn').addEventListener('click', () => {
+      window.location.href = 'project-input.html';
+    });
+  </script>
+
+  <!-- Dark Mode Toggle -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode"></div>
   <script>
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
     }
   </script>
+
 </body>
 </html>
