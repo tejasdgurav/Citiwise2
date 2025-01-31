@@ -212,20 +212,30 @@
   </style>
 </head>
 <body class="antialiased leading-relaxed">
+<body class="antialiased leading-relaxed bg-gray-50 text-gray-800">
 
-  <button id="google-signin-button">Sign in with Google</button>
-    <div id="user-info" style="display: none;">
-      <p id="user-name"></p>
-      <img id="user-photo" alt="User Photo" style="width: 50px; height: 50px; border-radius: 50%;" />
-      <button id="logout-button">Log Out</button>
+  <!-- Google Sign-In Section -->
+  <section class="flex flex-col items-center mt-12 space-y-6">
+    <!-- Styled Sign-In Button -->
+    <button id="google-signin-button" class="px-6 py-3 text-white font-medium bg-blue-600 hover:bg-blue-700 rounded-lg flex items-center space-x-3 shadow-md transition">
+      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-6 h-6">
+      <span>Sign in with Google</span>
+    </button>
+
+    <!-- User Info Section -->
+    <div id="user-info" class="hidden flex flex-col items-center space-y-4">
+      <p id="user-name" class="text-lg font-semibold"></p>
+      <img id="user-photo" alt="User Photo" class="w-16 h-16 rounded-full shadow-lg">
+      <button id="logout-button" class="px-6 py-2 font-medium text-gray-700 bg-gray-200 hover:bg-gray-300 rounded-lg shadow-sm transition">
+        Log Out
+      </button>
     </div>
+  </section>
 
 <script type="module">
   // Import Firebase functions
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
   import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
-
 
   // Firebase configuration
   const firebaseConfig = {
@@ -240,10 +250,7 @@
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
   const auth = getAuth(app);
-
-  // Google Sign-In functionality
   const provider = new GoogleAuthProvider();
 
   document.getElementById('google-signin-button').addEventListener('click', async () => {
@@ -252,10 +259,10 @@
       const user = result.user;
 
       // Display user information on successful sign-in
-      document.getElementById('user-info').style.display = 'block';
+      document.getElementById('user-info').classList.remove('hidden');
       document.getElementById('user-name').innerText = `Hello, ${user.displayName}`;
       document.getElementById('user-photo').src = user.photoURL;
-      document.getElementById('google-signin-button').style.display = 'none';
+      document.getElementById('google-signin-button').classList.add('hidden');
     } catch (error) {
       console.error('Sign-in failed:', error);
       alert('Sign-in failed. Please try again.');
@@ -266,14 +273,15 @@
   document.getElementById('logout-button').addEventListener('click', async () => {
     try {
       await signOut(auth);
-      document.getElementById('user-info').style.display = 'none';
-      document.getElementById('google-signin-button').style.display = 'block';
+      document.getElementById('user-info').classList.add('hidden');
+      document.getElementById('google-signin-button').classList.remove('hidden');
     } catch (error) {
       console.error('Sign-out failed:', error);
       alert('Sign-out failed. Please try again.');
     }
   });
 </script>
+
 
   <!-- Dark Mode Toggle Switch -->
   <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode"></div>
