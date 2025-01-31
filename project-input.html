@@ -532,6 +532,7 @@ document.getElementById('logout-button').addEventListener('click', async () => {
     const user = firebase.auth().currentUser;  // Check if a user is logged in
     if (user) {
       await firebase.auth().signOut();  // Sign the user out of Firebase
+      console.log('User signed out');
       window.location.href = 'index.html'; // Redirect to homepage after logging out
     } else {
       alert('No user is logged in.'); // Alert if no user is logged in
