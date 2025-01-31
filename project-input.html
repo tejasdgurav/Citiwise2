@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: http: data:;">
     <title>Project Input Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/input.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,6 +14,12 @@
 
     <div class="container">
         <h1>Project Input Form</h1>
+
+        <div class="space-x-4">
+          <a href="index.html" class="btn-primary text-sm">Home</a>
+          <button id="logout-button" class="btn-primary text-sm">Log Out</button>
+        </div>
+
         
         <form id="project-input-form" method="POST" enctype="multipart/form-data">
             
@@ -498,5 +505,20 @@
     </div>
 
     <script src="assets/js/input.js"></script>
+
+    <script type="module">
+    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+    
+    const auth = getAuth();
+    document.getElementById('logout-button').addEventListener('click', async () => {
+        try {
+            await signOut(auth);
+            window.location.href = 'index.html';
+        } catch (error) {
+            console.error('Sign-out failed:', error);
+        }
+    });
+</script>
+
 </body>
 </html>

@@ -352,3 +352,16 @@ input[type="email"]:focus {
     border-color: var(--focus-color); /* Highlight border on focus */
     box-shadow: 0 0 5px rgba(51, 102, 255, 0.3); /* Add shadow for better visibility */
 }
+
+/* Example for styling logout button */
+#logout-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#logout-button:hover {
+  background-color: #e64a19;
+}
+
