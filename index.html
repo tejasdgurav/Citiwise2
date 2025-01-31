@@ -280,7 +280,26 @@
       alert('Sign-out failed. Please try again.');
     }
   });
+
+// Redirect after successful sign-in
+document.getElementById('google-signin-button').addEventListener('click', async () => {
+  try {
+    await signInWithPopup(auth, provider);
+    window.location.href = 'project-input.html';
+  } catch (error) {
+    console.error('Sign-in failed:', error);
+    alert('Sign-in failed. Please try again.');
+  }
+});
+
+// Redirect for Start Your Project button
+document.getElementById('start-project-btn').addEventListener('click', () => {
+  window.location.href = 'project-input.html';
+});
+
+  
 </script>
+
 
 
   <!-- Dark Mode Toggle Switch -->
@@ -288,16 +307,24 @@
 
   <!-- Header -->
   <header class="flex justify-between items-center p-6 shadow-sm transition-colors duration-500">
-    <div class="text-2xl font-bold">Citiwise</div>
-    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
+  <div class="text-2xl font-bold">Citiwise</div>
+  <div class="flex items-center space-x-4">
+    <button id="google-signin-button" class="text-sm text-white font-medium bg-blue-600 hover:bg-blue-700 rounded-lg px-4 py-2 flex items-center space-x-2 shadow-md transition">
+      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4">
+      <span>Sign in with Google</span>
+    </button>
+    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
+  </div>
   </header>
+
 
   <!-- Hero Section -->
   <section class="hero text-center mt-8">
     <p class="subtle-headline">AI-Powered Real Estate Development Research</p>
     <h1 class="section-title">Build Profitable Projects with Data-Driven Insights</h1>
     <p class="description">Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.</p>
-    <a href="project-input.html" class="btn-primary mt-8" target="_blank" rel="noopener noreferrer">Start Your Project</a>
+    <a id="start-project-btn" class="btn-primary inline-block mt-8">Start Your Project</a>
+
 
   </section>
 
