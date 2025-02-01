@@ -534,19 +534,24 @@
   }
 });
 
-  // Logout functionality
+// Logout functionality with enhanced logging
 document.getElementById('logout-button').addEventListener('click', async () => {
   try {
     const user = firebase.auth().currentUser;  // Check if a user is logged in
+    console.log('Current user:', user); // Log the current user
+
     if (user) {
+      console.log('User is signed in. Proceeding to sign out...');
       await firebase.auth().signOut();  // Sign the user out of Firebase
       console.log('User signed out');
       window.location.href = 'index.html'; // Redirect to homepage after logging out
     } else {
+      console.log('No user is logged in.');
       alert('No user is logged in.'); // Alert if no user is logged in
     }
   } catch (error) {
     console.error('Sign-out failed:', error); // Log any errors
+    alert('Sign-out failed. Please try again.'); // Provide user-friendly feedback
   }
 });
 </script>
