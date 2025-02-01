@@ -365,3 +365,22 @@ input[type="email"]:focus {
   background-color: #e64a19;
 }
 
+
+.btn-primary, #logout-button {
+  width: auto;
+  max-width: 100%;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* For smaller screens, make sure buttons span the full width */
+@media (max-width: 600px) {
+  .btn-primary, #logout-button {
+    width: 100%; /* Full width on mobile */
+    padding: 10px; /* Reduce padding */
+  }
+}
+
