@@ -284,13 +284,71 @@
     }
   }
 
+  /* Button base styles */
+.btn-primary {
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  padding: 12px 26px;
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-button-hover-bg);
+  color: var(--color-button-text);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Larger screens (desktop) styling */
+@media (min-width: 1024px) {
+  .flex {
+    display: flex;
+    justify-content: flex-end; /* Right-align the buttons */
+    align-items: center;
+    width: 100%;
+  }
+
+  .flex a, .flex button {
+    margin-right: 20px; /* Space between buttons */
+  }
+}
+
+/* Smaller screens (mobile/tablet) styling */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align them */
+    width: 100%;
+  }
+
+  .btn-primary {
+    width: 100%; /* Full width buttons on mobile */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 0.875rem; /* Adjust font size */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+
+  /* Make the 'Schedule a Call' button appear at the bottom of the screen on small devices */
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 
   </style>
 </head>
 
 <body class="antialiased leading-relaxed">
 <!-- Header Section -->
-<div class="flex items-center space-x-4 sm:flex-col sm:space-x-0 sm:space-y-4">
+<div class="flex items-center justify-end space-x-4 sm:space-x-0 sm:flex-col sm:space-y-4 sm:items-center sm:w-full">
   <!-- Sign in with Google button -->
   <button id="google-signin-button" class="btn-primary bg-blue-600 hover:bg-blue-700">
     <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4 mr-2">
