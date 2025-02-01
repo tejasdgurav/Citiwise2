@@ -97,10 +97,12 @@ body {
   .section-title {
     font-size: 2rem;
   }
+
   .btn-primary {
     font-size: 0.9rem;
     padding: 10px 20px;
   }
+
   .hero, .section, .footer {
     padding: 2.5rem 1rem;
   }
@@ -116,6 +118,19 @@ body {
     padding: 10px 20px;
     font-size: 0.875rem;
     margin-bottom: 10px;
+  }
+
+  /* Align Sign in with Google button to top-right */
+  #google-signin-button {
+    align-self: flex-start; /* Position on the right side */
+  }
+
+  /* Make 'Schedule a Call' button appear at the bottom of the screen on small devices */
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -136,18 +151,18 @@ body {
     font-size: 2.5rem;
   }
 }
+
   </style>
 </head>
 
 <body class="antialiased leading-relaxed">
 <!-- Header Section -->
-<div class="flex items-center justify-end space-x-4 sm:space-x-0 sm:flex-col sm:space-y-4 sm:items-center sm:w-full">
+<div class="flex justify-end items-center space-x-4 sm:flex-col sm:space-y-4 sm:items-center sm:w-full">
   <!-- Sign in with Google button -->
   <button id="google-signin-button" class="btn-primary bg-blue-600 hover:bg-blue-700">
     <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4 mr-2">
     <span>Sign in with Google</span>
   </button>
-
   <!-- Schedule a Call button -->
   <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
 </div>
@@ -215,6 +230,5 @@ body {
       document.body.classList.toggle('dark-mode');
     }
   </script>
-
 </body>
 </html>
