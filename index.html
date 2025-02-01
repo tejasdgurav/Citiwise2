@@ -48,10 +48,10 @@ body {
 .btn-primary {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
-  padding: 12px 24px;  /* Adjusted padding to be identical for both buttons */
+  padding: 12px 24px;  /* Adjusted padding to match */
   font-weight: 500;
   border-radius: 6px;
-  font-size: 1rem;   /* Same font size for both buttons */
+  font-size: 1rem;   /* Consistent font size for both buttons */
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-block;
@@ -115,7 +115,7 @@ body {
   /* Button Adjustments for smaller screens */
   .btn-primary {
     font-size: 1rem;  /* Slightly smaller font size for mobile */
-    padding: 12px 24px;  /* Identical padding for both buttons */
+    padding: 12px 24px;  /* Slightly reduced padding */
   }
 
   .hero, .section, .footer {
@@ -181,6 +181,27 @@ body {
   .section-title {
     font-size: 2.5rem;
   }
+}
+
+/* Google Sign-In Button Specific Styles */
+#google-signin-button {
+  background-color: #4285f4;  /* Original Google button color */
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;  /* Same padding as other buttons */
+  font-size: 1rem;      /* Same font size */
+}
+
+#google-signin-button img {
+  margin-right: 8px;  /* Space between the Google logo and the text */
+}
+
+#google-signin-button:hover {
+  background-color: #357ae8;  /* Darker Google blue on hover */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
   </style>
 </head>
