@@ -7,284 +7,44 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
-    /* CSS Variables for Light and Dark Modes */
-    :root {
-      --color-text: #2f3437;
-      --color-background: #fafbfc;
-      --color-heading: #2f3437;
-      --color-subtext: #555;
-      --color-button-bg: #2f3437;
-      --color-button-text: #ffffff;
-      --color-button-hover-bg: #3f4a4f;
-      --color-footer-text: #555;
-      --color-link-hover: #2f3437;
-      --color-card-bg: #ffffff;
-      --color-card-hover-bg: #f9f9f9;
-    }
-
-    /* Dark Mode Overrides */
-    body.dark-mode {
-      --color-text: #e4e4e4;
-      --color-background: #1c1c1e;
-      --color-heading: #f0f0f3;
-      --color-subtext: #cccccc;
-      --color-button-bg: #ffffff;
-      --color-button-text: #2f3437;
-      --color-button-hover-bg: #e0e0e0;
-      --color-footer-text: #e4e4e4;
-      --color-link-hover: #f0f0f3;
-      --color-card-bg: #2a2a2c;
-    }
-
-    /* Base Styles */
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      color: var(--color-text);
-      background-color: var(--color-background);
-      line-height: 1.7;
-      margin: 0;
-      padding: 0;
-      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-    }
-
-    /* Headers */
-    h1, h2, h3 {
-      font-weight: 600;
-      color: var(--color-heading);
-      margin: 0;
-      padding: 0;
-      letter-spacing: -0.5px;
-      transition: color 0.5s ease-in-out;
-    }
-
-    /* Paragraphs and List Items */
-    p, li {
-      color: var(--color-subtext);
-      margin: 0;
-      padding: 0;
-      letter-spacing: -0.2px;
-      transition: color 0.5s ease-in-out;
-    }
-
-    /* Primary Button */
-    .btn-primary {
-      background-color: var(--color-button-bg);
-      color: var(--color-button-text);
-      padding: 12px 26px;
-      font-weight: 500;
-      border-radius: 6px;
-      font-size: 1rem;
-      border: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      display: inline-block;
-      text-align: center;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--color-button-hover-bg);
-      color: var(--color-button-text);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Layout Sections */
-    .hero, .section, .footer {
-      padding: 3rem 1.5rem;
-      max-width: 750px;
-      margin: auto;
-    }
-
-    .subtle-headline {
-      font-size: 1rem;
-      color: #7d7d7d;
-      margin-top: 1rem;
-      letter-spacing: 0.1px;
-    }
-
-    .section-title {
-      font-size: 2.15rem;
-      font-weight: 600;
-      line-height: 1.3;
-      margin-top: 0.75rem;
-      color: var(--color-heading);
-      transition: color 0.5s ease-in-out;
-    }
-
-    .description {
-      font-size: 1.125rem;
-      color: var(--color-subtext);
-      margin-top: 1rem;
-      transition: color 0.5s ease-in-out;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 2rem;
-      }
-      .btn-primary {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-      }
-      .hero, .section, .footer {
-        padding: 2.5rem 1rem;
-      }
-    }
-
-    /* Adjustments for larger screens (laptop/desktop) */
-    @media (min-width: 1024px) {
-      body {
-        font-size: 1.25rem; /* Scale up base font size */
-        line-height: 1.8;   /* Slightly increase line height */
-      }
-
-      .hero, .section, .footer {
-        max-width: 900px; /* Increase content width */
-        padding: 4rem 2rem; /* Increase padding */
-      }
-
-      .section-title {
-        font-size: 2.5rem; /* Scale up titles */
-      }
-
-      .description {
-        font-size: 1.25rem; /* Increase description font size */
-      }
-
-      .btn-primary {
-        font-size: 1.1rem; /* Increase button font size */
-        padding: 14px 30px; /* Adjust button padding */
-      }
-
-      header {
-        padding: 2rem 6rem; /* Increase header padding */
-      }
-    }
-
-    /* Footer Links */
-    .footer a {
-      color: var(--color-subtext);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .footer a:hover {
-      color: var(--color-link-hover);
-    }
-
-    /* Dark Mode Toggle Switch */
-    .dark-mode-toggle {
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      width: 50px;
-      height: 25px;
-      background-color: #ccc;
-      border-radius: 9999px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      display: flex;
-      align-items: center;
-      padding: 3px;
-      z-index: 1000; /* Ensures the toggle is above all other elements */
-    }
-
-    .dark-mode-toggle::after {
-      content: '';
-      width: 19px;
-      height: 19px;
-      background-color: #fff;
-      border-radius: 50%;
-      transition: transform 0.3s ease;
-      transform: translateX(0);
-    }
-
-    body.dark-mode .dark-mode-toggle {
-      background-color: #4f46e5; /* Indigo-600 */
-    }
-
-    body.dark-mode .dark-mode-toggle::after {
-      transform: translateX(25px);
-    }
-
-
-  /* Adjust for smaller screens */
-@media (max-width: 768px) {
-  /* 'Sign in with Google' button */
-  #google-signin-button {
-    width: 100%; /* Full width on small screens */
-    padding: 8px 16px; /* Reduced padding */
-    font-size: 0.875rem; /* Smaller font size */
-    margin-bottom: 10px; /* Space between buttons */
-  }
-
-  /* 'Schedule a Call' button */
-  a.btn-primary {
-    width: 100%; /* Full width on small screens */
-    padding: 8px 16px; /* Reduced padding */
-    font-size: 0.875rem; /* Smaller font size */
-    margin-bottom: 10px; /* Space between buttons */
-  }
-
-  /* Stack buttons vertically on smaller screens */
-  header .flex {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: stretch; /* Ensure buttons take full width */
-  }
+/* CSS Variables for Light and Dark Modes */
+:root {
+  --color-text: #2f3437;
+  --color-background: #fafbfc;
+  --color-heading: #2f3437;
+  --color-subtext: #555;
+  --color-button-bg: #2f3437;
+  --color-button-text: #ffffff;
+  --color-button-hover-bg: #3f4a4f;
+  --color-footer-text: #555;
+  --color-link-hover: #2f3437;
 }
 
-  /* Button base styles */
-  .btn-primary {
-    background-color: var(--color-button-bg);
-    color: var(--color-button-text);
-    padding: 12px 26px;
-    font-weight: 500;
-    border-radius: 6px;
-    font-size: 1rem;
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-block;
-    text-align: center;
-  }
+/* Dark Mode Overrides */
+body.dark-mode {
+  --color-text: #e4e4e4;
+  --color-background: #1c1c1e;
+  --color-heading: #f0f0f3;
+  --color-subtext: #cccccc;
+  --color-button-bg: #ffffff;
+  --color-button-text: #2f3437;
+  --color-button-hover-bg: #e0e0e0;
+  --color-footer-text: #e4e4e4;
+  --color-link-hover: #f0f0f3;
+}
 
-  .btn-primary:hover {
-    background-color: var(--color-button-hover-bg);
-    color: var(--color-button-text);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
+/* Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
 
-  /* Large screen styling (no change in alignment) */
-  @media (min-width: 1024px) {
-    .flex {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    .flex a, .flex button {
-      margin-right: 20px; /* Space between buttons */
-    }
-  }
-
-  /* Mobile screen (stack buttons vertically) */
-  @media (max-width: 768px) {
-    .flex {
-      flex-direction: column; /* Stack buttons vertically */
-      align-items: stretch; /* Ensure full width */
-    }
-
-    .btn-primary {
-      width: 100%; /* Full width on mobile */
-      padding: 10px 20px; /* Adjust padding */
-      font-size: 0.875rem; /* Adjust font size */
-      margin-bottom: 10px; /* Space between buttons */
-    }
-
-    #google-signin-button img {
-      margin-right: 0; /* Remove margin for better alignment */
-    }
-  }
-
-  /* Button base styles */
+/* Primary Button */
 .btn-primary {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
@@ -304,7 +64,62 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Larger screens (desktop) styling */
+/* Layout Sections */
+.hero, .section, .footer {
+  padding: 3rem 1.5rem;
+  max-width: 750px;
+  margin: auto;
+}
+
+.subtle-headline {
+  font-size: 1rem;
+  color: #7d7d7d;
+  margin-top: 1rem;
+  letter-spacing: 0.1px;
+}
+
+.section-title {
+  font-size: 2.15rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0.75rem;
+  color: var(--color-heading);
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--color-subtext);
+  margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .hero, .section, .footer {
+    padding: 2.5rem 1rem;
+  }
+
+  .flex {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* Larger screens (laptop/desktop) styling */
 @media (min-width: 1024px) {
   .flex {
     display: flex;
@@ -316,33 +131,11 @@
   .flex a, .flex button {
     margin-right: 20px; /* Space between buttons */
   }
-}
 
-/* Smaller screens (mobile/tablet) styling */
-@media (max-width: 768px) {
-  .flex {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center align them */
-    width: 100%;
-  }
-
-  .btn-primary {
-    width: 100%; /* Full width buttons on mobile */
-    padding: 10px 20px; /* Adjust padding */
-    font-size: 0.875rem; /* Adjust font size */
-    margin-bottom: 10px; /* Space between buttons */
-  }
-
-  /* Make the 'Schedule a Call' button appear at the bottom of the screen on small devices */
-  .footer {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
+  .section-title {
+    font-size: 2.5rem;
   }
 }
-
-
-
   </style>
 </head>
 
