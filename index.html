@@ -7,7 +7,44 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
-/* Base Button Styles (Both Buttons) */
+/* CSS Variables for Light and Dark Modes */
+:root {
+  --color-text: #2f3437;
+  --color-background: #fafbfc;
+  --color-heading: #2f3437;
+  --color-subtext: #555;
+  --color-button-bg: #2f3437;
+  --color-button-text: #ffffff;
+  --color-button-hover-bg: #3f4a4f;
+  --color-footer-text: #555;
+  --color-link-hover: #2f3437;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+  --color-text: #e4e4e4;
+  --color-background: #1c1c1e;
+  --color-heading: #f0f0f3;
+  --color-subtext: #cccccc;
+  --color-button-bg: #ffffff;
+  --color-button-text: #2f3437;
+  --color-button-hover-bg: #e0e0e0;
+  --color-footer-text: #e4e4e4;
+  --color-link-hover: #f0f0f3;
+}
+
+/* Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Primary Button (both buttons) */
 .btn-primary {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
@@ -168,6 +205,7 @@
     font-size: 2.5rem;
   }
 }
+
   </style>
 </head>
 
