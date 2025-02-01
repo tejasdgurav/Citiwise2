@@ -7,205 +7,228 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
-/* CSS Variables for Light and Dark Modes */
-:root {
-  --color-text: #2f3437;
-  --color-background: #fafbfc;
-  --color-heading: #2f3437;
-  --color-subtext: #555;
-  --color-button-bg: #2f3437;
-  --color-button-text: #ffffff;
-  --color-button-hover-bg: #3f4a4f;
-  --color-footer-text: #555;
-  --color-link-hover: #2f3437;
-}
+    /*--------------------------------------------------------------
+    # CSS Variables
+    --------------------------------------------------------------*/
+    /* Light Mode Variables */
+    :root {
+      --color-text: #2f3437;
+      --color-background: #fafbfc;
+      --color-heading: #2f3437;
+      --color-subtext: #555;
+      
+      /* Button styling (Notion-inspired) */
+      --button-bg: #fff;
+      --button-text: #2f3437;
+      --button-border: #ddd;
+      --button-hover-bg: #f7f7f7;
+      --button-hover-border: #ccc;
+      --button-box-shadow-hover: 0 1px 3px rgba(0, 0, 0, 0.1);
+      
+      --footer-text: #555;
+      --link-hover: #2f3437;
+    }
 
-/* Dark Mode Overrides */
-body.dark-mode {
-  --color-text: #e4e4e4;
-  --color-background: #1c1c1e;
-  --color-heading: #f0f0f3;
-  --color-subtext: #cccccc;
-  --color-button-bg: #ffffff;
-  --color-button-text: #2f3437;
-  --color-button-hover-bg: #e0e0e0;
-  --color-footer-text: #e4e4e4;
-  --color-link-hover: #f0f0f3;
-}
+    /* Dark Mode Overrides */
+    body.dark-mode {
+      --color-text: #e4e4e4;
+      --color-background: #1c1c1e;
+      --color-heading: #f0f0f3;
+      --color-subtext: #cccccc;
+      
+      /* Button styling for dark mode */
+      --button-bg: #2f3437;
+      --button-text: #fafbfc;
+      --button-border: #444;
+      --button-hover-bg: #3f4a4f;
+      --button-hover-border: #555;
+      --button-box-shadow-hover: 0 1px 3px rgba(0, 0, 0, 0.2);
+      
+      --footer-text: #e4e4e4;
+      --link-hover: #f0f0f3;
+    }
 
-/* Base Styles */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  color: var(--color-text);
-  background-color: var(--color-background);
-  line-height: 1.7;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
+    /*--------------------------------------------------------------
+    # Global Base Styles
+    --------------------------------------------------------------*/
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: var(--color-text);
+      background-color: var(--color-background);
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
 
-/* Primary Button (both buttons) */
-.btn-primary {
-  background-color: var(--color-button-bg);
-  color: var(--color-button-text);
-  padding: 12px 24px;  /* Adjusted padding to match Schedule a Call */
-  font-weight: 500;
-  border-radius: 6px;
-  font-size: 1rem;   /* Ensuring consistent font size for both buttons */
-  border: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;   /* Adds pointer cursor for buttons */
-}
+    /*--------------------------------------------------------------
+    # Button Styles (Notion-inspired)
+    --------------------------------------------------------------*/
+    /* Primary button style used for “Schedule a Call” and “Start Your Project” */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.2;
+      border: 1px solid var(--button-border);
+      border-radius: 4px;
+      background-color: var(--button-bg);
+      color: var(--button-text);
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.btn-primary:hover {
-  background-color: var(--color-button-hover-bg);
-  color: var(--color-button-text);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+    .btn-primary:hover {
+      background-color: var(--button-hover-bg);
+      border-color: var(--button-hover-border);
+      box-shadow: var(--button-box-shadow-hover);
+    }
 
-/* Google Sign-In Button Specific Styling */
-#google-signin-button {
-  background-color: #4285f4;  /* Original Google button color */
-  color: white;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;  /* Same padding as other buttons */
-  font-size: 1rem;      /* Same font size */
-  width: 100%;          /* Ensure the button spans full width */
-  border: none;         /* Remove the default border */
-}
+    /* Google Sign-In Button – keeping the signature blue while adopting our layout/spacings */
+    #google-signin-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px 24px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.2;
+      border: none;
+      border-radius: 4px;
+      background-color: #4285f4;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
 
-#google-signin-button img {
-  margin-right: 8px;  /* Space between the Google logo and the text */
-}
+    #google-signin-button:hover {
+      background-color: #357ae8;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
 
-#google-signin-button:hover {
-  background-color: #357ae8;  /* Darker Google blue on hover */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+    #google-signin-button img {
+      margin-right: 8px;
+    }
 
-/* Layout Sections */
-.hero, .section, .footer {
-  padding: 3rem 1.5rem;
-  max-width: 750px;
-  margin: auto;
-}
+    /*--------------------------------------------------------------
+    # Layout Sections (unchanged)
+    --------------------------------------------------------------*/
+    .hero, .section, .footer {
+      padding: 3rem 1.5rem;
+      max-width: 750px;
+      margin: auto;
+    }
 
-.subtle-headline {
-  font-size: 1rem;
-  color: #7d7d7d;
-  margin-top: 1rem;
-  letter-spacing: 0.1px;
-}
+    .subtle-headline {
+      font-size: 1rem;
+      color: #7d7d7d;
+      margin-top: 1rem;
+      letter-spacing: 0.1px;
+    }
 
-.section-title {
-  font-size: 2.15rem;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-top: 0.75rem;
-  color: var(--color-heading);
-}
+    .section-title {
+      font-size: 2.15rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-top: 0.75rem;
+      color: var(--color-heading);
+    }
 
-.description {
-  font-size: 1.125rem;
-  color: var(--color-subtext);
-  margin-top: 1rem;
-}
+    .description {
+      font-size: 1.125rem;
+      color: var(--color-subtext);
+      margin-top: 1rem;
+    }
 
-/* Footer Links */
-.footer a {
-  color: var(--color-subtext);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+    /* Footer Links */
+    .footer a {
+      color: var(--color-subtext);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
-.footer a:hover {
-  color: var(--color-link-hover);
-}
+    .footer a:hover {
+      color: var(--link-hover);
+    }
 
-/* Responsive Adjustments */
+    /*--------------------------------------------------------------
+    # Responsive Adjustments
+    --------------------------------------------------------------*/
+    /* Smaller Screens */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
 
-/* Smaller Screens */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
+      .hero, .section, .footer {
+        padding: 2rem 1rem;
+      }
 
-  /* Button Adjustments for smaller screens */
-  .btn-primary {
-    font-size: 1rem;  /* Slightly smaller font size for mobile */
-    padding: 12px 24px;  /* Same padding for both buttons */
-  }
+      /* Header layout on mobile */
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding-right: 20px;
+      }
 
-  .hero, .section, .footer {
-    padding: 2rem 1rem;
-  }
+      /* Adjust Google button alignment */
+      #google-signin-button {
+        align-self: flex-end;
+        margin-bottom: 10px;
+      }
 
-  /* Stack buttons vertically on smaller screens */
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding-right: 20px; /* Ensure space on the right side */
-  }
+      /* Fixed footer for “Schedule a Call” */
+      .footer {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+      }
 
-  /* Align 'Sign in with Google' button to top-right */
-  #google-signin-button {
-    align-self: flex-end;
-    margin-bottom: 10px;
-    display: flex; /* Ensures the image and text stay aligned */
-    justify-content: center;
-    align-items: center;
-  }
+      .footer .btn-primary {
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 1rem;
+      }
+    }
 
-  /* Center 'Schedule a Call' button at the bottom of the screen */
-  .footer {
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
+    /* Larger Screens */
+    @media (min-width: 1024px) {
+      .header-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        margin-right: 20px;
+      }
 
-  .footer .btn-primary {
-    width: 100%; /* Full width on mobile */
-    padding: 12px 24px;  /* Adjusted padding */
-    font-size: 1rem; /* Consistent font size */
-  }
-}
+      .header-container button,
+      .header-container a {
+        margin-left: 20px;
+      }
 
-/* Larger Screens (laptop/desktop) styling */
-@media (min-width: 1024px) {
-  .header-container {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    align-items: center;
-    width: 100%;
-    margin-right: 20px; /* Add some right margin */
-  }
+      .btn-primary {
+        padding: 12px 24px;
+        font-size: 1rem;
+      }
 
-  .header-container button, .header-container a {
-    margin-left: 20px; /* Space between buttons */
-  }
-
-  /* Button sizing for larger screens */
-  .btn-primary {
-    padding: 12px 24px; /* Consistent padding */
-    font-size: 1rem;   /* Same font size for both buttons */
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-}
-
+      .section-title {
+        font-size: 2.5rem;
+      }
+    }
   </style>
 </head>
 
