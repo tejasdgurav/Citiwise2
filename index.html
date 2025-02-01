@@ -7,44 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
-/* CSS Variables for Light and Dark Modes */
-:root {
-  --color-text: #2f3437;
-  --color-background: #fafbfc;
-  --color-heading: #2f3437;
-  --color-subtext: #555;
-  --color-button-bg: #2f3437;
-  --color-button-text: #ffffff;
-  --color-button-hover-bg: #3f4a4f;
-  --color-footer-text: #555;
-  --color-link-hover: #2f3437;
-}
-
-/* Dark Mode Overrides */
-body.dark-mode {
-  --color-text: #e4e4e4;
-  --color-background: #1c1c1e;
-  --color-heading: #f0f0f3;
-  --color-subtext: #cccccc;
-  --color-button-bg: #ffffff;
-  --color-button-text: #2f3437;
-  --color-button-hover-bg: #e0e0e0;
-  --color-footer-text: #e4e4e4;
-  --color-link-hover: #f0f0f3;
-}
-
-/* Base Styles */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  color: var(--color-text);
-  background-color: var(--color-background);
-  line-height: 1.7;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-/* Primary Button */
+/* Base Button Styles */
 .btn-primary {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
@@ -64,106 +27,66 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout Sections */
-.hero, .section, .footer {
-  padding: 3rem 1.5rem;
-  max-width: 750px;
-  margin: auto;
-}
-
-.subtle-headline {
-  font-size: 1rem;
-  color: #7d7d7d;
-  margin-top: 1rem;
-  letter-spacing: 0.1px;
-}
-
-.section-title {
-  font-size: 2.15rem;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-top: 0.75rem;
-  color: var(--color-heading);
-}
-
-.description {
-  font-size: 1.125rem;
-  color: var(--color-subtext);
-  margin-top: 1rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .btn-primary {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-
-  .hero, .section, .footer {
-    padding: 2.5rem 1rem;
-  }
-
-  .flex {
-    flex-direction: column; /* Stack buttons vertically */
+/* Larger Screens */
+@media (min-width: 1024px) {
+  .header-container {
+    display: flex;
+    justify-content: flex-end;  /* Align buttons to the right */
     align-items: center;
     width: 100%;
   }
 
-  .btn-primary {
+  .header-container button, .header-container a {
+    margin-left: 20px; /* Space between buttons */
+  }
+}
+
+/* Smaller Screens */
+@media (max-width: 768px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the buttons */
+    position: fixed;
+    top: 20px;
+    right: 20px;
     width: 100%;
+  }
+
+  /* For 'Sign in with Google' button */
+  #google-signin-button {
+    align-self: flex-end;  /* Align this button to the top-right */
+    margin-bottom: 20px;
+  }
+
+  /* For 'Schedule a Call' button */
+  .footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .btn-primary {
+    width: 100%; /* Full width on mobile */
     padding: 10px 20px;
     font-size: 0.875rem;
-    margin-bottom: 10px;
-  }
-
-  /* Align Sign in with Google button to top-right */
-  #google-signin-button {
-    align-self: flex-start; /* Position on the right side */
-  }
-
-  /* Make 'Schedule a Call' button appear at the bottom of the screen on small devices */
-  .footer {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
 }
 
-/* Larger screens (laptop/desktop) styling */
-@media (min-width: 1024px) {
-  .flex {
-    display: flex;
-    justify-content: flex-end; /* Right-align the buttons */
-    align-items: center;
-    width: 100%;
-  }
-
-  .flex a, .flex button {
-    margin-right: 20px; /* Space between buttons */
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-}
 
   </style>
 </head>
 
 <body class="antialiased leading-relaxed">
 <!-- Header Section -->
-<div class="flex justify-end items-center space-x-4 sm:flex-col sm:space-y-4 sm:items-center sm:w-full">
+<div class="header-container">
   <!-- Sign in with Google button -->
   <button id="google-signin-button" class="btn-primary bg-blue-600 hover:bg-blue-700">
     <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4 mr-2">
     <span>Sign in with Google</span>
   </button>
-  <!-- Schedule a Call button -->
+ <!-- Schedule a Call button -->
   <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
 </div>
 </header>
