@@ -207,30 +207,31 @@
     }
 
 
-  /* Adjust Button Styles for Smaller Screens */
-  @media (max-width: 768px) {
-    /* 'Sign in with Google' button */
-    #google-signin-button {
-      width: 100%; /* Full width on small screens */
-      padding: 8px 16px; /* Reduced padding */
-      font-size: 0.875rem; /* Smaller font size */
-      margin-bottom: 10px; /* Space between buttons */
-    }
-
-    /* 'Schedule a Call' button */
-    a.btn-primary {
-      width: 100%; /* Full width on small screens */
-      padding: 8px 16px; /* Reduced padding */
-      font-size: 0.875rem; /* Smaller font size */
-      margin-bottom: 10px; /* Space between buttons */
-    }
-
-    /* Stack buttons vertically on smaller screens */
-    header .flex {
-      flex-direction: column; /* Stack buttons vertically */
-      align-items: stretch; /* Ensure buttons take full width */
-    }
+  /* Adjust for smaller screens */
+@media (max-width: 768px) {
+  /* 'Sign in with Google' button */
+  #google-signin-button {
+    width: 100%; /* Full width on small screens */
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 0.875rem; /* Smaller font size */
+    margin-bottom: 10px; /* Space between buttons */
   }
+
+  /* 'Schedule a Call' button */
+  a.btn-primary {
+    width: 100%; /* Full width on small screens */
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 0.875rem; /* Smaller font size */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+
+  /* Stack buttons vertically on smaller screens */
+  header .flex {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Ensure buttons take full width */
+  }
+}
+
 
   </style>
 </head>
@@ -238,18 +239,17 @@
 <body class="antialiased leading-relaxed">
 
   <!-- Header Section -->
-  <header class="flex justify-between items-center p-6 shadow-sm">
-  <div class="text-2xl font-bold">Citiwise</div>
   <div class="flex items-center space-x-4 sm:flex-col sm:space-x-0 sm:space-y-4">
-    <!-- Sign in with Google button -->
-    <button id="google-signin-button" class="text-sm text-white font-medium bg-blue-600 hover:bg-blue-700 rounded-lg px-4 py-2 flex items-center space-x-2 shadow-md transition">
-      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4">
-      <span>Sign in with Google</span>
-    </button>
+  <!-- Sign in with Google button -->
+  <button id="google-signin-button" class="text-sm text-white font-medium bg-blue-600 hover:bg-blue-700 rounded-lg px-4 py-2 flex items-center space-x-2 shadow-md transition">
+    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4">
+    <span>Sign in with Google</span>
+  </button>
 
-    <!-- Schedule a Call button -->
-    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
-  </div>
+  <!-- Schedule a Call button -->
+  <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
+</div>
+
 </header>
 
 
