@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Citiwise - Smarter Real Estate Development</title>
-  <!-- Tailwind is loaded for utility classes (if needed) but our custom CSS governs the core look -->
+  <!-- Tailwind loaded for utility classes if needed -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
   <style>
@@ -18,7 +18,7 @@
       --color-heading: #2f3437;
       --color-subtext: #555;
 
-      /* Button (Notion-inspired) */
+      /* Button Styling (Notion-inspired) */
       --btn-bg: #ffffff;
       --btn-text: #2f3437;
       --btn-border: #ddd;
@@ -31,13 +31,14 @@
       --link-hover: #2f3437;
     }
 
+    /* Dark Mode Overrides */
     body.dark-mode {
       --color-text: #e4e4e4;
       --color-background: #1c1c1e;
       --color-heading: #f0f0f3;
       --color-subtext: #cccccc;
 
-      /* Dark mode button style */
+      /* Dark Mode Button Styling */
       --btn-bg: #2f3437;
       --btn-text: #fafbfc;
       --btn-border: #444;
@@ -67,14 +68,42 @@
     }
 
     /*--------------------------------------------------------------
-      Header & Button Layout
+      Header Layout & Logo
     --------------------------------------------------------------*/
     .header-container {
       max-width: 750px;
       margin: 0 auto;
       padding: 1rem 1.5rem;
       display: flex;
-      justify-content: flex-end;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      color: var(--color-heading);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Theme toggle button – shows moon for light mode, sun for dark mode */
+    .theme-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--color-text);
+      padding: 4px;
+    }
+
+    .header-buttons {
+      display: flex;
       align-items: center;
       gap: 1rem;
     }
@@ -104,7 +133,7 @@
       box-shadow: var(--btn-hover-shadow);
     }
 
-    /* Google Sign-In Button: Retains its signature blue while sharing layout and spacing */
+    /* Google Sign-In Button: Retains its blue identity */
     #google-signin-button {
       background-color: #4285f4;
       border: 1px solid transparent;
@@ -118,6 +147,8 @@
 
     #google-signin-button img {
       margin-right: 8px;
+      width: 20px;
+      height: 20px;
     }
 
     /*--------------------------------------------------------------
@@ -176,31 +207,30 @@
       Responsive Adjustments
     --------------------------------------------------------------*/
     @media (max-width: 768px) {
+      /* Header becomes a vertical stack on mobile */
       .header-container {
         flex-direction: column;
-        align-items: stretch;
-        padding: 1rem;
+        align-items: center;
+        text-align: center;
       }
-
-      .header-container > * {
+      .header-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+      }
+      .header-buttons {
+        flex-direction: column;
         width: 100%;
+        gap: 0.5rem;
       }
-
-      .hero {
-        padding: 3rem 1rem;
-      }
-
-      .section-title {
-        font-size: 2rem;
-      }
-
       .btn-primary {
         width: 100%;
       }
     }
 
     @media (min-width: 1024px) {
-      .header-container > * {
+      /* On larger screens add extra horizontal spacing */
+      .header-actions > *:not(:first-child) {
         margin-left: 20px;
       }
     }
@@ -209,15 +239,22 @@
 <body class="antialiased leading-relaxed">
   <!-- Header Section -->
   <header class="header-container">
-    <!-- Sign in with Google Button -->
-    <button id="google-signin-button" class="btn-primary">
-      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4" />
-      <span>Sign in with Google</span>
-    </button>
-    <!-- Schedule a Call Button -->
-    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
-      Schedule a Call
-    </a>
+    <div class="logo">Citiwise</div>
+    <div class="header-actions">
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+      <div class="header-buttons">
+        <!-- Sign in with Google Button -->
+        <button id="google-signin-button" class="btn-primary">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" />
+          <span>Sign in with Google</span>
+        </button>
+        <!-- Schedule a Call Button -->
+        <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Schedule a Call
+        </a>
+      </div>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -277,14 +314,19 @@
     document.getElementById('start-project-btn').addEventListener('click', signInAndRedirect);
   </script>
 
-  <!-- Dark Mode Toggle (positioned at bottom-right) -->
-  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
-    <span style="font-size: 1.5rem;">🌙</span>
-  </div>
+  <!-- Dark Mode Toggle Script -->
   <script>
+    const themeToggle = document.getElementById('theme-toggle');
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
+      // Update toggle icon: show sun (☀️) in dark mode, moon (🌙) in light mode.
+      if (document.body.classList.contains('dark-mode')) {
+        themeToggle.textContent = '☀️';
+      } else {
+        themeToggle.textContent = '🌙';
+      }
     }
+    themeToggle.addEventListener('click', toggleDarkMode);
   </script>
 </body>
 </html>
