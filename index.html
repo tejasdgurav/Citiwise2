@@ -44,18 +44,38 @@ body {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
+/* Headers */
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--color-heading);
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.5px;
+  transition: color 0.5s ease-in-out;
+}
+
+/* Paragraphs and List Items */
+p, li {
+  color: var(--color-subtext);
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.2px;
+  transition: color 0.5s ease-in-out;
+}
+
 /* Primary Button */
 .btn-primary {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
-  padding: 12px 26px;
+  padding: 14px 28px;  /* Adjusted padding for better button size */
   font-weight: 500;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 1.1rem;   /* Slightly larger font size */
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-block;
   text-align: center;
+  cursor: pointer;   /* Adds pointer cursor for buttons */
 }
 
 .btn-primary:hover {
@@ -113,8 +133,8 @@ body {
 
   /* Button Adjustments for smaller screens */
   .btn-primary {
-    font-size: 0.875rem; /* Slightly smaller font size */
-    padding: 10px 20px;  /* Adjust padding */
+    font-size: 1rem;  /* Slightly smaller font size for mobile */
+    padding: 12px 24px;  /* Slightly reduced padding */
   }
 
   .hero, .section, .footer {
@@ -130,6 +150,7 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
+    padding-right: 20px; /* Ensure space on the right side */
   }
 
   /* Align 'Sign in with Google' button to top-right */
@@ -149,7 +170,7 @@ body {
   .footer .btn-primary {
     width: 100%; /* Full width on mobile */
     padding: 12px 20px;  /* Adjusted padding */
-    font-size: 0.875rem; /* Font size adjustment */
+    font-size: 0.875rem; /* Slightly smaller font size for mobile */
   }
 }
 
@@ -160,16 +181,17 @@ body {
     justify-content: flex-end; /* Align buttons to the right */
     align-items: center;
     width: 100%;
+    margin-right: 20px; /* Add some right margin */
   }
 
   .header-container button, .header-container a {
     margin-left: 20px; /* Space between buttons */
   }
 
-  /* Ensure button sizing is not too large on larger screens */
+  /* Button sizing for larger screens */
   .btn-primary {
-    padding: 12px 26px;  /* Adjust padding */
-    font-size: 1rem;      /* Default font size */
+    padding: 14px 28px; /* Consistent padding */
+    font-size: 1.1rem;   /* Slightly larger font size */
   }
 
   .section-title {
