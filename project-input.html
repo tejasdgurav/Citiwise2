@@ -509,7 +509,7 @@
 
 <script type="module">
   import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js';
-  import { getAuth, signInWithPopup, GoogleAuthProvider } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js';
+  import { getAuth, signOut } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js';
 
   const firebaseConfig = {
     apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
@@ -524,21 +524,25 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
-  
-  // Handle sign-out and sign-in
+
+  // Handle sign-out
   document.getElementById('logout-button').addEventListener('click', async () => {
     try {
       const user = auth.currentUser;
+      console.log('Current user:', user);  // Debugging: Log current user
+
       if (user) {
-        await firebase.auth().signOut(); // Firebase sign-out logic
+        console.log('User is signed in. Proceeding to sign out...');
+        await signOut(auth);  // Sign the user out of Firebase
         console.log('User signed out');
         window.location.href = 'index.html'; // Redirect after sign-out
       } else {
-        alert('No user is signed in.');
+        console.log('No user is logged in.');
+        alert('No user is logged in.');  // Alert if no user is logged in
       }
     } catch (error) {
-      console.error('Sign-out failed:', error);
-      alert('Sign-out failed. Please try again.');
+      console.error('Sign-out failed:', error);  // Log any errors
+      alert('Sign-out failed. Please try again.');  // Provide user-friendly feedback
     }
   });
 </script>
