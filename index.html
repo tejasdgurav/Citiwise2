@@ -44,25 +44,6 @@ body {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-/* Headers */
-h1, h2, h3 {
-  font-weight: 600;
-  color: var(--color-heading);
-  margin: 0;
-  padding: 0;
-  letter-spacing: -0.5px;
-  transition: color 0.5s ease-in-out;
-}
-
-/* Paragraphs and List Items */
-p, li {
-  color: var(--color-subtext);
-  margin: 0;
-  padding: 0;
-  letter-spacing: -0.2px;
-  transition: color 0.5s ease-in-out;
-}
-
 /* Primary Button */
 .btn-primary {
   background-color: var(--color-button-bg);
@@ -157,6 +138,9 @@ p, li {
   #google-signin-button {
     align-self: flex-end;
     margin-bottom: 10px;
+    display: flex; /* Ensures the image and text stay aligned */
+    justify-content: center;
+    align-items: center;
   }
 
   /* Center 'Schedule a Call' button at the bottom of the screen */
