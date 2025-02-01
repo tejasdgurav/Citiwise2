@@ -7,51 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
-/* CSS Variables for Light and Dark Modes */
-:root {
-  --color-text: #2f3437;
-  --color-background: #fafbfc;
-  --color-heading: #2f3437;
-  --color-subtext: #555;
-  --color-button-bg: #2f3437;
-  --color-button-text: #ffffff;
-  --color-button-hover-bg: #3f4a4f;
-  --color-footer-text: #555;
-  --color-link-hover: #2f3437;
-}
-
-/* Dark Mode Overrides */
-body.dark-mode {
-  --color-text: #e4e4e4;
-  --color-background: #1c1c1e;
-  --color-heading: #f0f0f3;
-  --color-subtext: #cccccc;
-  --color-button-bg: #ffffff;
-  --color-button-text: #2f3437;
-  --color-button-hover-bg: #e0e0e0;
-  --color-footer-text: #e4e4e4;
-  --color-link-hover: #f0f0f3;
-}
-
-/* Base Styles */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  color: var(--color-text);
-  background-color: var(--color-background);
-  line-height: 1.7;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-/* Primary Button (both buttons) */
+/* Base Button Styles (Both Buttons) */
 .btn-primary {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
-  padding: 12px 24px;  /* Adjusted padding to match */
+  padding: 12px 24px;  /* Adjusted padding to match Schedule a Call */
   font-weight: 500;
   border-radius: 6px;
-  font-size: 1rem;   /* Consistent font size for both buttons */
+  font-size: 1rem;   /* Ensuring consistent font size for both buttons */
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-block;
@@ -62,6 +25,29 @@ body {
 .btn-primary:hover {
   background-color: var(--color-button-hover-bg);
   color: var(--color-button-text);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Google Sign-In Button Specific Styling */
+#google-signin-button {
+  background-color: #4285f4;  /* Original Google button color */
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;  /* Same padding as other buttons */
+  font-size: 1rem;      /* Same font size */
+  width: 100%;          /* Ensure the button spans full width */
+  border: none;         /* Remove the default border */
+}
+
+#google-signin-button img {
+  margin-right: 8px;  /* Space between the Google logo and the text */
+}
+
+#google-signin-button:hover {
+  background-color: #357ae8;  /* Darker Google blue on hover */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -115,7 +101,7 @@ body {
   /* Button Adjustments for smaller screens */
   .btn-primary {
     font-size: 1rem;  /* Slightly smaller font size for mobile */
-    padding: 12px 24px;  /* Slightly reduced padding */
+    padding: 12px 24px;  /* Same padding for both buttons */
   }
 
   .hero, .section, .footer {
@@ -181,27 +167,6 @@ body {
   .section-title {
     font-size: 2.5rem;
   }
-}
-
-/* Google Sign-In Button Specific Styles */
-#google-signin-button {
-  background-color: #4285f4;  /* Original Google button color */
-  color: white;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;  /* Same padding as other buttons */
-  font-size: 1rem;      /* Same font size */
-}
-
-#google-signin-button img {
-  margin-right: 8px;  /* Space between the Google logo and the text */
-}
-
-#google-signin-button:hover {
-  background-color: #357ae8;  /* Darker Google blue on hover */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
   </style>
 </head>
