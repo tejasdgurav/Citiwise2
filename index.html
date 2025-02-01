@@ -1,112 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Citiwise - Smarter Real Estate Development</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Tailwind is loaded for utility classes (if needed) but our custom CSS governs the core look -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
   <style>
     /*--------------------------------------------------------------
-    # CSS Variables
+      CSS Variables for Light & Dark Modes
     --------------------------------------------------------------*/
-    /* Light Mode Variables */
     :root {
+      /* Global Colors */
       --color-text: #2f3437;
       --color-background: #fafbfc;
       --color-heading: #2f3437;
       --color-subtext: #555;
-      
-      /* Button styling (Notion-inspired) */
-      --button-bg: #fff;
-      --button-text: #2f3437;
-      --button-border: #ddd;
-      --button-hover-bg: #f7f7f7;
-      --button-hover-border: #ccc;
-      --button-box-shadow-hover: 0 1px 3px rgba(0, 0, 0, 0.1);
-      
+
+      /* Button (Notion-inspired) */
+      --btn-bg: #ffffff;
+      --btn-text: #2f3437;
+      --btn-border: #ddd;
+      --btn-hover-bg: #f7f7f7;
+      --btn-hover-border: #ccc;
+      --btn-hover-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+      /* Footer & Links */
       --footer-text: #555;
       --link-hover: #2f3437;
     }
 
-    /* Dark Mode Overrides */
     body.dark-mode {
       --color-text: #e4e4e4;
       --color-background: #1c1c1e;
       --color-heading: #f0f0f3;
       --color-subtext: #cccccc;
-      
-      /* Button styling for dark mode */
-      --button-bg: #2f3437;
-      --button-text: #fafbfc;
-      --button-border: #444;
-      --button-hover-bg: #3f4a4f;
-      --button-hover-border: #555;
-      --button-box-shadow-hover: 0 1px 3px rgba(0, 0, 0, 0.2);
-      
+
+      /* Dark mode button style */
+      --btn-bg: #2f3437;
+      --btn-text: #fafbfc;
+      --btn-border: #444;
+      --btn-hover-bg: #3f4a4f;
+      --btn-hover-border: #555;
+      --btn-hover-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
       --footer-text: #e4e4e4;
       --link-hover: #f0f0f3;
     }
 
     /*--------------------------------------------------------------
-    # Global Base Styles
+      Base Styles
     --------------------------------------------------------------*/
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       color: var(--color-text);
       background-color: var(--color-background);
       line-height: 1.7;
       margin: 0;
       padding: 0;
-      transition: background-color 0.5s ease, color 0.5s ease;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    h1, p {
+      margin: 0;
     }
 
     /*--------------------------------------------------------------
-    # Button Styles (Notion-inspired)
+      Header & Button Layout
     --------------------------------------------------------------*/
-    /* Primary button style used for “Schedule a Call” and “Start Your Project” */
+    .header-container {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /*--------------------------------------------------------------
+      Button Styles (Notion-Inspired)
+    --------------------------------------------------------------*/
     .btn-primary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       padding: 12px 24px;
-      font-family: inherit;
       font-size: 1rem;
       font-weight: 500;
-      line-height: 1.2;
-      border: 1px solid var(--button-border);
-      border-radius: 4px;
-      background-color: var(--button-bg);
-      color: var(--button-text);
+      border: 1px solid var(--btn-border);
+      border-radius: 6px;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
       text-decoration: none;
       cursor: pointer;
       transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .btn-primary:hover {
-      background-color: var(--button-hover-bg);
-      border-color: var(--button-hover-border);
-      box-shadow: var(--button-box-shadow-hover);
+      background-color: var(--btn-hover-bg);
+      border-color: var(--btn-hover-border);
+      box-shadow: var(--btn-hover-shadow);
     }
 
-    /* Google Sign-In Button – keeping the signature blue while adopting our layout/spacings */
+    /* Google Sign-In Button: Retains its signature blue while sharing layout and spacing */
     #google-signin-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding: 12px 24px;
-      font-family: inherit;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.2;
-      border: none;
-      border-radius: 4px;
       background-color: #4285f4;
-      color: #fff;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid transparent;
+      color: #ffffff;
     }
 
     #google-signin-button:hover {
@@ -119,40 +121,51 @@
     }
 
     /*--------------------------------------------------------------
-    # Layout Sections (unchanged)
+      Hero Section
     --------------------------------------------------------------*/
-    .hero, .section, .footer {
-      padding: 3rem 1.5rem;
+    .hero {
       max-width: 750px;
-      margin: auto;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+      text-align: center;
     }
 
     .subtle-headline {
       font-size: 1rem;
       color: #7d7d7d;
-      margin-top: 1rem;
-      letter-spacing: 0.1px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
     }
 
     .section-title {
-      font-size: 2.15rem;
+      font-size: 2.5rem;
       font-weight: 600;
-      line-height: 1.3;
-      margin-top: 0.75rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
       color: var(--color-heading);
     }
 
     .description {
       font-size: 1.125rem;
       color: var(--color-subtext);
-      margin-top: 1rem;
+      margin-bottom: 2rem;
     }
 
-    /* Footer Links */
+    /*--------------------------------------------------------------
+      Footer Section
+    --------------------------------------------------------------*/
+    .footer {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--footer-text);
+    }
+
     .footer a {
       color: var(--color-subtext);
       text-decoration: none;
-      transition: color 0.3s ease;
+      transition: color 0.2s;
     }
 
     .footer a:hover {
@@ -160,110 +173,72 @@
     }
 
     /*--------------------------------------------------------------
-    # Responsive Adjustments
+      Responsive Adjustments
     --------------------------------------------------------------*/
-    /* Smaller Screens */
     @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+      }
+
+      .header-container > * {
+        width: 100%;
+      }
+
+      .hero {
+        padding: 3rem 1rem;
+      }
+
       .section-title {
         font-size: 2rem;
       }
 
-      .hero, .section, .footer {
-        padding: 2rem 1rem;
-      }
-
-      /* Header layout on mobile */
-      .header-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      .btn-primary {
         width: 100%;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding-right: 20px;
-      }
-
-      /* Adjust Google button alignment */
-      #google-signin-button {
-        align-self: flex-end;
-        margin-bottom: 10px;
-      }
-
-      /* Fixed footer for “Schedule a Call” */
-      .footer {
-        position: fixed;
-        bottom: 20px;
-        width: 100%;
-        text-align: center;
-      }
-
-      .footer .btn-primary {
-        width: 100%;
-        padding: 12px 24px;
-        font-size: 1rem;
       }
     }
 
-    /* Larger Screens */
     @media (min-width: 1024px) {
-      .header-container {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        margin-right: 20px;
-      }
-
-      .header-container button,
-      .header-container a {
+      .header-container > * {
         margin-left: 20px;
-      }
-
-      .btn-primary {
-        padding: 12px 24px;
-        font-size: 1rem;
-      }
-
-      .section-title {
-        font-size: 2.5rem;
       }
     }
   </style>
 </head>
-
 <body class="antialiased leading-relaxed">
   <!-- Header Section -->
-  <div class="header-container">
-    <!-- Sign in with Google button -->
+  <header class="header-container">
+    <!-- Sign in with Google Button -->
     <button id="google-signin-button" class="btn-primary">
-      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4 mr-2">
+      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="w-4 h-4" />
       <span>Sign in with Google</span>
     </button>
-    <!-- Schedule a Call button -->
-    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary text-sm" target="_blank" rel="noopener noreferrer">
+    <!-- Schedule a Call Button -->
+    <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
       Schedule a Call
     </a>
-  </div>
+  </header>
 
   <!-- Hero Section -->
-  <section class="hero text-center mt-8">
-    <p class="subtle-headline text-gray-600">AI-Powered Real Estate Development Research</p>
-    <h1 class="section-title text-3xl font-bold mt-4">Build Profitable Projects with Data-Driven Insights</h1>
-    <p class="description mt-4 text-lg">
+  <section class="hero">
+    <p class="subtle-headline">AI-Powered Real Estate Development Research</p>
+    <h1 class="section-title">Build Profitable Projects with Data-Driven Insights</h1>
+    <p class="description">
       Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.
     </p>
-    <button id="start-project-btn" class="btn-primary inline-block mt-8">Start Your Project</button>
+    <button id="start-project-btn" class="btn-primary">Start Your Project</button>
   </section>
 
   <!-- Footer Section -->
-  <footer class="footer text-center mt-12">
-    <p class="text-sm">Citiwise - The Smart Way to Start Your Real Estate Projects</p>
-    <div class="mt-4 space-x-4">
-      <a href="https://www.linkedin.com/company/citiwise/" target="_blank" class="hover:text-gray-700">LinkedIn</a>
-      <a href="mailto:admin@citiwise.in" class="hover:text-gray-700">Contact Us</a>
+  <footer class="footer">
+    <p>Citiwise - The Smart Way to Start Your Real Estate Projects</p>
+    <div class="mt-4">
+      <a href="https://www.linkedin.com/company/citiwise/" target="_blank">LinkedIn</a>
+      &nbsp;|&nbsp;
+      <a href="mailto:admin@citiwise.in">Contact Us</a>
     </div>
-    <p class="text-sm mt-4">© 2025 Citiwise.in</p>
+    <p class="mt-4">© 2025 Citiwise.in</p>
   </footer>
 
   <!-- Firebase and JavaScript -->
@@ -302,8 +277,10 @@
     document.getElementById('start-project-btn').addEventListener('click', signInAndRedirect);
   </script>
 
-  <!-- Dark Mode Toggle -->
-  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode"></div>
+  <!-- Dark Mode Toggle (positioned at bottom-right) -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
+    <span style="font-size: 1.5rem;">🌙</span>
+  </div>
   <script>
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
