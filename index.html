@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Citiwise - Smarter Real Estate Development</title>
-  <!-- Tailwind loaded for utility classes if needed -->
+  <!-- Tailwind CSS is loaded for utility classes if needed -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-
   <style>
     /*--------------------------------------------------------------
       CSS Variables for Light & Dark Modes
@@ -31,7 +30,6 @@
       --link-hover: #2f3437;
     }
 
-    /* Dark Mode Overrides */
     body.dark-mode {
       --color-text: #e4e4e4;
       --color-background: #1c1c1e;
@@ -68,7 +66,7 @@
     }
 
     /*--------------------------------------------------------------
-      Header Layout & Logo
+      Header Layout
     --------------------------------------------------------------*/
     .header-container {
       max-width: 750px;
@@ -84,22 +82,6 @@
       font-weight: bold;
       letter-spacing: 0.05em;
       color: var(--color-heading);
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    /* Theme toggle button – shows moon for light mode, sun for dark mode */
-    .theme-toggle {
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: var(--color-text);
-      padding: 4px;
     }
 
     .header-buttons {
@@ -207,53 +189,67 @@
       Responsive Adjustments
     --------------------------------------------------------------*/
     @media (max-width: 768px) {
-      /* Header becomes a vertical stack on mobile */
       .header-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-      }
-      .header-actions {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 0.75rem;
+        padding: 1rem;
       }
       .header-buttons {
         flex-direction: column;
         width: 100%;
         gap: 0.5rem;
+        margin-top: 0.75rem;
       }
       .btn-primary {
         width: 100%;
       }
+      .hero {
+        padding: 3rem 1rem;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
     }
 
     @media (min-width: 1024px) {
-      /* On larger screens add extra horizontal spacing */
-      .header-actions > *:not(:first-child) {
-        margin-left: 20px;
+      .header-container {
+        padding: 1rem 2rem;
       }
+    }
+
+    /*--------------------------------------------------------------
+      Dark/Light Mode Toggle fixed at bottom right
+    --------------------------------------------------------------*/
+    .theme-toggle {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 1.75rem;
+      cursor: pointer;
+      color: var(--color-text);
+      z-index: 1000;
     }
   </style>
 </head>
 <body class="antialiased leading-relaxed">
   <!-- Header Section -->
   <header class="header-container">
+    <!-- Citiwise Logo on Left -->
     <div class="logo">Citiwise</div>
-    <div class="header-actions">
-      <!-- Theme Toggle Button -->
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
-      <div class="header-buttons">
-        <!-- Sign in with Google Button -->
-        <button id="google-signin-button" class="btn-primary">
-          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" />
-          <span>Sign in with Google</span>
-        </button>
-        <!-- Schedule a Call Button -->
-        <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
-          Schedule a Call
-        </a>
-      </div>
+    <!-- Header Buttons on Upper Right -->
+    <div class="header-buttons">
+      <!-- Sign in with Google Button -->
+      <button id="google-signin-button" class="btn-primary">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" />
+        <span>Sign in with Google</span>
+      </button>
+      <!-- Schedule a Call Button -->
+      <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
+        Schedule a Call
+      </a>
     </div>
   </header>
 
@@ -277,6 +273,9 @@
     </div>
     <p class="mt-4">© 2025 Citiwise.in</p>
   </footer>
+
+  <!-- Dark/Light Mode Toggle (Fixed at Bottom Right) -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
 
   <!-- Firebase and JavaScript -->
   <script type="module">
@@ -319,12 +318,8 @@
     const themeToggle = document.getElementById('theme-toggle');
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
-      // Update toggle icon: show sun (☀️) in dark mode, moon (🌙) in light mode.
-      if (document.body.classList.contains('dark-mode')) {
-        themeToggle.textContent = '☀️';
-      } else {
-        themeToggle.textContent = '🌙';
-      }
+      // Update the icon: show sun (☀️) when dark mode is active, moon (🌙) when in light mode.
+      themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
     }
     themeToggle.addEventListener('click', toggleDarkMode);
   </script>
