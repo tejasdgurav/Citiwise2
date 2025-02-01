@@ -44,25 +44,6 @@ body {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-/* Headers */
-h1, h2, h3 {
-  font-weight: 600;
-  color: var(--color-heading);
-  margin: 0;
-  padding: 0;
-  letter-spacing: -0.5px;
-  transition: color 0.5s ease-in-out;
-}
-
-/* Paragraphs and List Items */
-p, li {
-  color: var(--color-subtext);
-  margin: 0;
-  padding: 0;
-  letter-spacing: -0.2px;
-  transition: color 0.5s ease-in-out;
-}
-
 /* Primary Button */
 .btn-primary {
   background-color: var(--color-button-bg);
@@ -123,18 +104,21 @@ p, li {
 }
 
 /* Responsive Adjustments */
+
+/* Smaller Screens */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
   }
 
+  /* Button Adjustments for smaller screens */
   .btn-primary {
-    font-size: 0.9rem;
-    padding: 10px 20px;
+    font-size: 0.875rem; /* Slightly smaller font size */
+    padding: 10px 20px;  /* Adjust padding */
   }
 
   .hero, .section, .footer {
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   /* Stack buttons vertically on smaller screens */
@@ -151,7 +135,7 @@ p, li {
   /* Align 'Sign in with Google' button to top-right */
   #google-signin-button {
     align-self: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   /* Center 'Schedule a Call' button at the bottom of the screen */
@@ -164,12 +148,12 @@ p, li {
 
   .footer .btn-primary {
     width: 100%; /* Full width on mobile */
-    padding: 10px 20px;
-    font-size: 0.875rem;
+    padding: 12px 20px;  /* Adjusted padding */
+    font-size: 0.875rem; /* Font size adjustment */
   }
 }
 
-/* Larger screens (laptop/desktop) styling */
+/* Larger Screens (laptop/desktop) styling */
 @media (min-width: 1024px) {
   .header-container {
     display: flex;
@@ -180,6 +164,12 @@ p, li {
 
   .header-container button, .header-container a {
     margin-left: 20px; /* Space between buttons */
+  }
+
+  /* Ensure button sizing is not too large on larger screens */
+  .btn-primary {
+    padding: 12px 26px;  /* Adjust padding */
+    font-size: 1rem;      /* Default font size */
   }
 
   .section-title {
