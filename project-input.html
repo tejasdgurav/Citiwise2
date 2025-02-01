@@ -507,11 +507,10 @@
 
     <script src="assets/js/input.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js"></script>
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js';
+  import { getAuth, signInWithPopup, GoogleAuthProvider } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js';
 
-<script>
-  // Firebase config from your project
   const firebaseConfig = {
     apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
     authDomain: "citiwise-f7e38.firebaseapp.com",
@@ -523,37 +522,25 @@
   };
 
   // Initialize Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
-
-  firebase.auth().onAuthStateChanged(user => {
-  if (user) {
-    console.log('User is signed in');
-  } else {
-    console.log('No user is signed in');
-  }
-});
-
-// Logout functionality with enhanced logging
-document.getElementById('logout-button').addEventListener('click', async () => {
-  try {
-    const user = firebase.auth().currentUser;  // Check if a user is logged in
-    console.log('Current user:', user); // Log the current user
-
-    if (user) {
-      console.log('User is signed in. Proceeding to sign out...');
-      await firebase.auth().signOut();  // Sign the user out of Firebase
-      console.log('User signed out');
-      window.location.href = 'index.html'; // Redirect to homepage after logging out
-    } else {
-      console.log('No user is logged in.');
-      alert('No user is logged in.'); // Alert if no user is logged in
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  
+  // Handle sign-out and sign-in
+  document.getElementById('logout-button').addEventListener('click', async () => {
+    try {
+      const user = auth.currentUser;
+      if (user) {
+        await firebase.auth().signOut(); // Firebase sign-out logic
+        console.log('User signed out');
+        window.location.href = 'index.html'; // Redirect after sign-out
+      } else {
+        alert('No user is signed in.');
+      }
+    } catch (error) {
+      console.error('Sign-out failed:', error);
+      alert('Sign-out failed. Please try again.');
     }
-  } catch (error) {
-    console.error('Sign-out failed:', error); // Log any errors
-    alert('Sign-out failed. Please try again.'); // Provide user-friendly feedback
-  }
-});
+  });
 </script>
 </body>
 </html>
