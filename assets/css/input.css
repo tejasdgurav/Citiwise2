@@ -384,3 +384,26 @@ input[type="email"]:focus {
   }
 }
 
+/* Responsive Button Sizes */
+@media (max-width: 768px) {
+  /* For 'Sign in with Google' button */
+  #google-signin-button {
+    width: 100%; /* Make button full-width on small screens */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 0.875rem; /* Adjust font size */
+  }
+
+  /* For 'Schedule a Call' button */
+  a.btn-primary {
+    width: 100%; /* Make button full-width on small screens */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 0.875rem; /* Adjust font size */
+  }
+
+  /* Adjust header to stack buttons vertically */
+  header .flex {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Ensure buttons take full width */
+  }
+}
+
