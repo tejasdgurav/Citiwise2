@@ -4,96 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Citiwise - Smarter Real Estate Development</title>
-  <!-- Tailwind CSS is loaded for utility classes if needed -->
+  <!-- Tailwind CSS is loaded for optional utility classes -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-
   <style>
     /*--------------------------------------------------------------
-      CSS Variables for Light & Dark Modes
+      CSS Variables for Light & Dark Modes (Notion-Inspired)
     --------------------------------------------------------------*/
     :root {
       /* Global Colors */
-      --color-bg: #fafbfc;
-      --color-text: #2f3437;
-      --color-heading: #2f3437;
-      --color-subtext: #555;
-
-      /* Button Styling (Notion-inspired) */
+      --background: #fafbfc;
+      --text: #2f3437;
+      --heading: #2f3437;
+      --subtext: #555;
+      
+      /* Button Base (Minimal & Elegant) */
       --btn-bg: #ffffff;
       --btn-text: #2f3437;
       --btn-border: #ddd;
       --btn-hover-bg: #f7f7f7;
       --btn-hover-border: #ccc;
-      --btn-shadow-hover: 0 1px 3px rgba(0, 0, 0, 0.1);
-
-      /* Accent for Google Button */
-      --accent-blue: #4285f4;
-      --accent-blue-hover: #357ae8;
+      --btn-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      
+      /* Accent Colors for Brand-specific buttons */
+      --google-blue: #4285f4;
+      --google-blue-hover: #357ae8;
     }
-
     body.dark-mode {
-      --color-bg: #1c1c1e;
-      --color-text: #e4e4e4;
-      --color-heading: #f0f0f3;
-      --color-subtext: #cccccc;
+      --background: #1c1c1e;
+      --text: #e4e4e4;
+      --heading: #f0f0f3;
+      --subtext: #cccccc;
       --btn-bg: #2f3437;
       --btn-text: #fafbfc;
       --btn-border: #444;
       --btn-hover-bg: #3f4a4f;
       --btn-hover-border: #555;
-      --btn-shadow-hover: 0 1px 3px rgba(0, 0, 0, 0.2);
+      --btn-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
-
+    
     /*--------------------------------------------------------------
-      Base Styles
+      Base Styles & Typography
     --------------------------------------------------------------*/
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background-color: var(--color-bg);
-      color: var(--color-text);
       margin: 0;
-      padding: 0;
-      transition: background-color 0.5s ease, color 0.5s ease;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      transition: background 0.5s ease, color 0.5s ease;
     }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
+    a { text-decoration: none; color: inherit; }
+    
     /*--------------------------------------------------------------
-      Container
+      Container: Centralize Content with Adequate Margins
     --------------------------------------------------------------*/
     .container {
       max-width: 750px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 0 1rem;
     }
-
+    
     /*--------------------------------------------------------------
-      Header
+      Header: Logo Left, Conversion Buttons Right
     --------------------------------------------------------------*/
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 1.5rem;
+      padding: 1.5rem 0;
     }
-
     .logo {
       font-size: 1.75rem;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-      color: var(--color-heading);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: var(--heading);
     }
-
-    .header-buttons {
+    .header-actions {
       display: flex;
       gap: 1rem;
     }
-
+    
     /*--------------------------------------------------------------
-      Button Styles (Notion-Inspired)
+      Button Styles (Minimal, Elegant & Notion-Inspired)
     --------------------------------------------------------------*/
     .btn-primary {
       display: inline-flex;
@@ -104,76 +95,75 @@
       font-weight: 500;
       border: 1px solid var(--btn-border);
       border-radius: 6px;
-      background-color: var(--btn-bg);
+      background: var(--btn-bg);
       color: var(--btn-text);
-      transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
     }
     .btn-primary:hover {
-      background-color: var(--btn-hover-bg);
+      background: var(--btn-hover-bg);
       border-color: var(--btn-hover-border);
-      box-shadow: var(--btn-shadow-hover);
+      box-shadow: var(--btn-shadow);
     }
-
-    /* Google Sign-In Button: Retains its blue identity */
+    /* Google Button: Retains the iconic blue */
     #google-signin-button {
-      background-color: var(--accent-blue);
+      background: var(--google-blue);
       border: none;
       color: #fff;
     }
     #google-signin-button:hover {
-      background-color: var(--accent-blue-hover);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      background: var(--google-blue-hover);
     }
     #google-signin-button img {
       margin-right: 8px;
       width: 20px;
       height: 20px;
     }
-
+    
     /*--------------------------------------------------------------
-      Hero Section
+      Hero Section: Bold, Centered & Conversion Focused
     --------------------------------------------------------------*/
-    .hero {
+    main {
       text-align: center;
-      padding: 4rem 1.5rem;
+      padding: 4rem 0;
     }
-    .subtle-headline {
+    .subheadline {
       font-size: 1rem;
       color: #7d7d7d;
       margin-bottom: 1rem;
       letter-spacing: 0.05em;
     }
-    .section-title {
+    .title {
       font-size: 2.5rem;
       font-weight: 600;
       line-height: 1.2;
       margin-bottom: 1rem;
-      color: var(--color-heading);
+      color: var(--heading);
     }
     .description {
       font-size: 1.125rem;
-      color: var(--color-subtext);
+      color: var(--subtext);
       margin-bottom: 2rem;
     }
-
+    
     /*--------------------------------------------------------------
-      Footer
+      Footer: Trust & Minimalism
     --------------------------------------------------------------*/
     footer {
       text-align: center;
-      padding: 2rem 1.5rem;
+      padding: 2rem 0;
       font-size: 0.875rem;
-      color: var(--color-subtext);
+      color: var(--subtext);
     }
     footer a {
-      color: var(--color-subtext);
-      transition: color 0.2s ease;
+      color: var(--subtext);
+      transition: color 0.2s;
     }
     footer a:hover {
-      color: var(--color-heading);
+      color: var(--heading);
     }
-
+    
     /*--------------------------------------------------------------
       Dark/Light Mode Toggle (Fixed at Bottom Right)
     --------------------------------------------------------------*/
@@ -185,82 +175,77 @@
       border: none;
       font-size: 1.75rem;
       cursor: pointer;
-      color: var(--color-text);
       z-index: 1000;
+      color: var(--text);
     }
-
+    
     /*--------------------------------------------------------------
-      Responsive Adjustments
+      Responsive Adjustments: Optimized for Every Screen
     --------------------------------------------------------------*/
     @media (max-width: 768px) {
       header {
         flex-direction: column;
         text-align: center;
       }
-      .header-buttons {
+      .header-actions {
         margin-top: 1rem;
         flex-direction: column;
         gap: 0.5rem;
         width: 100%;
       }
-      .btn-primary {
-        width: 100%;
-      }
-      .hero {
-        padding: 3rem 1rem;
-      }
-      .section-title {
-        font-size: 2rem;
-      }
+      .btn-primary { width: 100%; }
+      main { padding: 3rem 0; }
+      .title { font-size: 2rem; }
     }
   </style>
 </head>
-<body class="antialiased">
-  <!-- Header Section -->
-  <header class="container">
-    <!-- Citiwise Logo on Left -->
-    <div class="logo">Citiwise</div>
-    <!-- Header Buttons on Upper Right -->
-    <div class="header-buttons">
-      <button id="google-signin-button" class="btn-primary">
-        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
-        <span>Sign in with Google</span>
-      </button>
-      <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
-        Schedule a Call
-      </a>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <main class="hero container">
-    <p class="subtle-headline">AI-Powered Real Estate Development Research</p>
-    <h1 class="section-title">Build Profitable Projects with Data-Driven Insights</h1>
-    <p class="description">
-      Citiwise helps real estate developers in India make better decisions, faster. Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.
-    </p>
-    <button id="start-project-btn" class="btn-primary">Start Your Project</button>
-  </main>
-
-  <!-- Footer Section -->
-  <footer class="container">
-    <p>Citiwise - The Smart Way to Start Your Real Estate Projects</p>
-    <div>
-      <a href="https://www.linkedin.com/company/citiwise/" target="_blank">LinkedIn</a>
-      &nbsp;|&nbsp;
-      <a href="mailto:admin@citiwise.in">Contact Us</a>
-    </div>
-    <p class="mt-4">© 2025 Citiwise.in</p>
-  </footer>
-
+<body>
+  <div class="container">
+    <!-- Header: Logo on the Left; Conversion Buttons on the Right -->
+    <header>
+      <div class="logo">Citiwise</div>
+      <div class="header-actions">
+        <button id="google-signin-button" class="btn-primary">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
+          <span>Sign in with Google</span>
+        </button>
+        <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Schedule a Call
+        </a>
+      </div>
+    </header>
+    
+    <!-- Main Hero Section: Clear Messaging & CTA -->
+    <main>
+      <p class="subheadline">AI-Powered Real Estate Development Research</p>
+      <h1 class="title">Build Profitable Projects with Data-Driven Insights</h1>
+      <p class="description">
+        Citiwise helps real estate developers in India make better decisions, faster.
+        Evaluate site potential, project financial outcomes, and plan profitable projects—all in one place.
+      </p>
+      <button id="start-project-btn" class="btn-primary">Start Your Project</button>
+    </main>
+    
+    <!-- Footer: Minimal Trust Signals & Navigation -->
+    <footer>
+      <p>Citiwise - The Smart Way to Start Your Real Estate Projects</p>
+      <div>
+        <a href="https://www.linkedin.com/company/citiwise/" target="_blank">LinkedIn</a>
+        &nbsp;|&nbsp;
+        <a href="mailto:admin@citiwise.in">Contact Us</a>
+      </div>
+      <p>© 2025 Citiwise.in</p>
+    </footer>
+  </div>
+  
   <!-- Dark/Light Mode Toggle (Fixed at Bottom Right) -->
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
-
-  <!-- Firebase and JavaScript -->
+  
+  <!-- Firebase & Conversion Logic -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
     import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
-
+    
     const firebaseConfig = {
       apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
       authDomain: "citiwise-f7e38.firebaseapp.com",
@@ -270,12 +255,11 @@
       appId: "1:379568339904:web:00819ecce5db8b3d96e625",
       measurementId: "G-8RSL6C77Z5"
     };
-
-    // Initialize Firebase
+    
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
-
+    
     async function signInAndRedirect() {
       try {
         const result = await signInWithPopup(auth, provider);
@@ -287,11 +271,11 @@
         alert('Sign-in failed. Please try again.');
       }
     }
-
+    
     document.getElementById('google-signin-button').addEventListener('click', signInAndRedirect);
     document.getElementById('start-project-btn').addEventListener('click', signInAndRedirect);
   </script>
-
+  
   <!-- Dark/Light Mode Toggle Script -->
   <script>
     const themeToggle = document.getElementById('theme-toggle');
