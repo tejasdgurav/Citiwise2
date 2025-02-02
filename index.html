@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Citiwise - Smarter Real Estate Development</title>
-  <!-- Tailwind CSS is loaded for optional utility classes -->
+  <!-- Tailwind CSS for optional utility classes -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     /*--------------------------------------------------------------
@@ -52,7 +52,10 @@
       color: var(--text);
       transition: background 0.5s ease, color 0.5s ease;
     }
-    a { text-decoration: none; color: inherit; }
+    a { 
+      text-decoration: none; 
+      color: inherit; 
+    }
     
     /*--------------------------------------------------------------
       Container: Centralize Content with Adequate Margins
@@ -292,7 +295,7 @@
   <script>
     (function() {
       const themeToggle = document.getElementById('theme-toggle');
-      // Check for stored theme preference
+      // Check and apply stored theme preference
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
