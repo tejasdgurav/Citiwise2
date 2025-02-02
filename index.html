@@ -99,12 +99,20 @@
       color: var(--btn-text);
       cursor: pointer;
       text-decoration: none;
-      transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+      transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.1s;
     }
     .btn-primary:hover {
       background: var(--btn-hover-bg);
       border-color: var(--btn-hover-border);
       box-shadow: var(--btn-shadow);
+      transform: translateY(-1px);
+    }
+    .btn-primary:focus {
+      outline: 2px solid var(--btn-hover-border);
+      outline-offset: 2px;
+    }
+    .btn-primary:active {
+      transform: scale(0.98);
     }
     /* Google Button: Retains the iconic blue */
     #google-signin-button {
@@ -205,7 +213,7 @@
     <header>
       <div class="logo">Citiwise</div>
       <div class="header-actions">
-        <button id="google-signin-button" class="btn-primary">
+        <button id="google-signin-button" class="btn-primary" aria-label="Sign in with Google">
           <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
           <span>Sign in with Google</span>
         </button>
@@ -226,23 +234,20 @@
       <button id="start-project-btn" class="btn-primary">Start Your Project</button>
     </main>
     
-    <!-- Footer: Minimal Trust Signals & Navigation -->
-    <footer class="mt-10 text-center text-sm text-gray-600">
-    <p class="mb-4 font-semibold">Citiwise - The Smart Way to Start Your Real Estate Projects</p>
-    
-    <div class="space-x-4">
-        <a href="contact-us.html" target="_blank" class="text-blue-500 underline hover:text-blue-600">Contact Us</a>
-        <span>|</span>
-        <a href="privacy-policy.html" target="_blank" class="text-blue-500 underline hover:text-blue-600">Privacy Policy</a>
-        <span>|</span>
-        <a href="terms-and-conditions.html" target="_blank" class="text-blue-500 underline hover:text-blue-600">Terms & Conditions</a>
-    </div>
-
-    <p class="mt-4">© 2025 Citiwise.in</p>
-</footer>
-
-
-
+    <!-- Footer: Trust & Minimalism -->
+    <footer>
+      <p class="mb-4 font-semibold">Citiwise - The Smart Way to Start Your Real Estate Projects</p>
+      
+      <div class="space-x-4">
+          <a href="contact-us.html" target="_blank" class="underline hover:text-blue-600">Contact Us</a>
+          <span>|</span>
+          <a href="privacy-policy.html" target="_blank" class="underline hover:text-blue-600">Privacy Policy</a>
+          <span>|</span>
+          <a href="terms-and-conditions.html" target="_blank" class="underline hover:text-blue-600">Terms & Conditions</a>
+      </div>
+  
+      <p class="mt-4">© 2025 Citiwise.in</p>
+    </footer>
   </div>
   
   <!-- Dark/Light Mode Toggle (Fixed at Bottom Right) -->
@@ -283,14 +288,27 @@
     document.getElementById('start-project-btn').addEventListener('click', signInAndRedirect);
   </script>
   
-  <!-- Dark/Light Mode Toggle Script -->
+  <!-- Dark/Light Mode Toggle Script with Persistent Preference -->
   <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    }
-    themeToggle.addEventListener('click', toggleDarkMode);
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      // Check for stored theme preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeToggle.textContent = '☀️';
+      } else {
+        document.body.classList.remove('dark-mode');
+        themeToggle.textContent = '🌙';
+      }
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        themeToggle.textContent = isDark ? '☀️' : '🌙';
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      }
+      themeToggle.addEventListener('click', toggleDarkMode);
+    })();
   </script>
 </body>
 </html>
