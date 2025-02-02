@@ -535,10 +535,12 @@ async function initializeForm() {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         const result = await res.json();
         if (result.status === 'success') {
-          alert("Payment details have been updated successfully. Thank you!");
+        alert("Payment details have been updated successfully. Thank you!");
+        document.getElementById('project-input-form').reset(); // This clears the form
         } else {
-          throw new Error(result.message || 'Unknown error during payment update.');
+        throw new Error(result.message || 'Unknown error during payment update.');
         }
+
       } catch (error) {
         console.error('Error updating payment details:', error);
         alert(`An error occurred while updating payment details: ${error.message}`);
