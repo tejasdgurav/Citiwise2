@@ -1,6 +1,6 @@
-/* Updated JavaScript for Enhanced Form Functionality */
-
-// Utility Functions
+/* ================================
+   Utility Functions
+=================================== */
 function toTitleCase(str) {
   return str.replace(/\w\S*/g, function (txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
@@ -63,7 +63,9 @@ function showFeedback(input, isValid, message) {
   input.classList.toggle('invalid-input', !isValid);
 }
 
-// Data Loading & Dropdown Population
+/* ================================
+   Data Loading & Dropdown Population
+=================================== */
 async function loadJSONData(filename) {
   try {
     const response = await fetch(`assets/data/${filename}`);
@@ -103,7 +105,9 @@ function populateDropdown(selectElement, data, valueKey, textKey, idKey = null, 
   });
 }
 
-// Enhanced Toggle Function (with ARIA)
+/* ================================
+   Enhanced Toggle Function (with ARIA)
+=================================== */
 function toggleElement(elementId, show) {
   const element = document.getElementById(elementId);
   if (element) {
@@ -112,7 +116,9 @@ function toggleElement(elementId, show) {
   }
 }
 
-// Main Initialization Function
+/* ================================
+   Main Initialization Function
+=================================== */
 async function initializeForm() {
   try {
     console.log('Initializing form...');
@@ -500,12 +506,17 @@ async function initializeForm() {
     setupBoundaryListeners();
     initializeBoundarySelects();
 
-    // Form Submission Handling
-    const form = document.querySelector('form');
-    if (form) {
-      form.addEventListener('submit', async function (e) {
+    /* ================================
+       Form Submission Handling with Razorpay Checkout
+    =================================== */
+    // Use the form with id "project-input-form"
+    const formElement = document.getElementById('project-input-form');
+    if (formElement) {
+      formElement.addEventListener('submit', async function (e) {
         e.preventDefault();
         console.log('Form submission initiated.');
+  
+        // Run validations
         let isValid = true;
         inputValidations.forEach(({ id, validate, errorMsg }) => {
           const input = document.getElementById(id);
@@ -518,111 +529,149 @@ async function initializeForm() {
             }
           }
         });
+  
         if (!isValid) {
           alert('Please correct the errors in the form before submitting.');
           console.warn('Form validation failed.');
           return;
         }
-        const formData = new FormData(this);
-        // Append extra details from selected options
-        const selectedOption = ulbDropdown.options[ulbDropdown.selectedIndex];
-        const talukaId = selectedOption.getAttribute('data-taluka-id');
-        const councilId = selectedOption.getAttribute('data-council-id');
-        console.log('Selected talukaId:', talukaId);
-        console.log('Selected councilId:', councilId);
-        formData.append('taluka_id', talukaId || '');
-        formData.append('council_id', councilId || '');
-
-        const zoneSelect = document.getElementById('zone');
-        const selectedZone = zoneSelect.options[zoneSelect.selectedIndex];
-        const zoneId = selectedZone.getAttribute('data-zone-id');
-        const zoneName = selectedZone.value;
-        const zoneLanduserId = selectedZone.getAttribute('data-landuser-id');
-        formData.append('zone_id', zoneId || '');
-        formData.append('zone', zoneName || '');
-        formData.append('zone_landuser_id', zoneLanduserId || '');
-
-        const ulbTypeInput = document.getElementById('ulb_type');
-        const ulbTypeValue = ulbTypeInput ? ulbTypeInput.value : '';
-        formData.append('ulb_type', ulbTypeValue);
-
-        const usesSelect = document.getElementById('uses');
-        const selectedUsesOption = usesSelect.options[usesSelect.selectedIndex];
-        const usesId = selectedUsesOption.value;
-        const usesName = selectedUsesOption.textContent;
-        formData.append('uses_id', usesId || '');
-        formData.append('uses_name', usesName || '');
-        formData.append('uses_zone_id', zoneId || '');
-
-        const citySpecificAreaSelect = document.getElementById('city_specific_area');
-        const selectedCityAreaOption = citySpecificAreaSelect.options[citySpecificAreaSelect.selectedIndex];
-        const citySpecificAreaId = selectedCityAreaOption.value;
-        const citySpecificAreaName = selectedCityAreaOption.textContent;
-        const citySpecificAreaAreaCode = selectedCityAreaOption.getAttribute('data-area-code');
-        const citySpecificAreaCouncilId = selectedCityAreaOption.getAttribute('data-council-id');
-        formData.append('city_specific_area_id', citySpecificAreaId || '');
-        formData.append('city_specific_area_name', citySpecificAreaName || '');
-        formData.append('city_specific_area_areaCode', citySpecificAreaAreaCode || '');
-        formData.append('city_specific_area_councilId', citySpecificAreaCouncilId || '');
-
-        const buildingTypeSelectElement = document.getElementById('building_type');
-        const selectedBuildingTypeOption = buildingTypeSelectElement.options[buildingTypeSelectElement.selectedIndex];
-        const buildingTypeId = selectedBuildingTypeOption.value;
-        const buildingTypeName = selectedBuildingTypeOption.getAttribute('data-name');
-        const buildingTypeProposalId = selectedBuildingTypeOption.getAttribute('data-proposal-id');
-        formData.append('building_type_id', buildingTypeId || '');
-        formData.append('building_type_name', buildingTypeName || '');
-        formData.append('building_type_proposalId', buildingTypeProposalId || '');
-
-        const buildingSubtypeSelectElement = document.getElementById('building_subtype');
-        const selectedBuildingSubtypeOption = buildingSubtypeSelectElement.options[buildingSubtypeSelectElement.selectedIndex];
-        const buildingSubtypeId = selectedBuildingSubtypeOption.value;
-        const buildingSubtypeName = selectedBuildingSubtypeOption.getAttribute('data-name');
-        const buildingSubtypeBldgtypeID = selectedBuildingSubtypeOption.getAttribute('data-bldgtypeID');
-        formData.append('building_subtype_id', buildingSubtypeId || '');
-        formData.append('building_subtype_name', buildingSubtypeName || '');
-        formData.append('building_subtype_bldgtypeID', buildingSubtypeBldgtypeID || '');
-
-        // Log form data for debugging
-        const formEntries = {};
-        formData.forEach((value, key) => {
-          formEntries[key] = value;
-        });
-        console.log('Form Data:', formEntries);
-
-        try {
-          // Submit data to the Google Apps Script endpoint
-          const response = await fetch(
-            'https://script.google.com/macros/s/AKfycbxAHO8e42CAnHyqFPn2m5Hsml5CJ0Hw2wjILBmqG4SETe6iMV0MV3ubqLH4A7XHtDon/exec',
-            {
-              method: 'POST',
-              mode: 'cors',
-              credentials: 'omit',
-              body: formData,
+  
+        // ----- Launch Razorpay Checkout -----
+        // Set your payment amount in paise (e.g., Rs. 500.00 = 50000 paise)
+        const amount = 50000;
+        const options = {
+          key: "rzp_live_ewrzTufDiddrHg", // REPLACE with your Razorpay key
+          amount: amount,
+          currency: "INR",
+          name: "Your Company / Project Name",
+          description: "Payment for project submission",
+          prefill: {
+            name: document.getElementById('applicant_name').value,
+            email: document.getElementById('email').value,
+            contact: "+91" + document.getElementById('contact_no').value
+          },
+          handler: function (response) {
+            // On successful payment, fill the hidden fields
+            document.getElementById('payment_status').value = 'paid';
+            document.getElementById('razorpay_payment_id').value = response.razorpay_payment_id;
+            document.getElementById('razorpay_order_id').value = response.razorpay_order_id;
+            document.getElementById('razorpay_signature').value = response.razorpay_signature;
+            // Proceed to submit the complete form data
+            submitFormData();
+          },
+          modal: {
+            ondismiss: function () {
+              alert("Payment was cancelled. Please complete the payment to submit the form.");
             }
-          );
-          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-          const result = await response.json();
-          if (result.status === 'success') {
-            alert('Form submitted successfully!');
-            this.reset();
-            document.querySelectorAll('.feedback').forEach(el => {
-              el.textContent = '';
-              el.className = 'feedback';
-            });
-            document.querySelectorAll('.invalid-input').forEach(el => el.classList.remove('invalid-input'));
-            initializeForm();
-            console.log('Form submitted and reset successfully.');
-          } else {
-            throw new Error(result.message || 'Unknown error occurred');
           }
-        } catch (error) {
-          console.error('Error:', error);
-          alert(`An error occurred: ${error.message}. Please try again later.`);
-        }
+        };
+  
+        const rzp = new Razorpay(options);
+        rzp.open();
       });
     } else {
       console.error('Form element not found.');
+    }
+  
+    async function submitFormData() {
+      const form = document.getElementById('project-input-form');
+      const formData = new FormData(form);
+  
+      // Append extra details from selected options as in your original code
+      const selectedOption = ulbDropdown.options[ulbDropdown.selectedIndex];
+      const talukaId = selectedOption.getAttribute('data-taluka-id');
+      const councilId = selectedOption.getAttribute('data-council-id');
+      console.log('Selected talukaId:', talukaId);
+      console.log('Selected councilId:', councilId);
+      formData.append('taluka_id', talukaId || '');
+      formData.append('council_id', councilId || '');
+  
+      const zoneSelect = document.getElementById('zone');
+      const selectedZone = zoneSelect.options[zoneSelect.selectedIndex];
+      const zoneId = selectedZone.getAttribute('data-zone-id');
+      const zoneName = selectedZone.value;
+      const zoneLanduserId = selectedZone.getAttribute('data-landuser-id');
+      formData.append('zone_id', zoneId || '');
+      formData.append('zone', zoneName || '');
+      formData.append('zone_landuser_id', zoneLanduserId || '');
+  
+      const ulbTypeInput = document.getElementById('ulb_type');
+      const ulbTypeValue = ulbTypeInput ? ulbTypeInput.value : '';
+      formData.append('ulb_type', ulbTypeValue);
+  
+      const usesSelect = document.getElementById('uses');
+      const selectedUsesOption = usesSelect.options[usesSelect.selectedIndex];
+      const usesId = selectedUsesOption.value;
+      const usesName = selectedUsesOption.textContent;
+      formData.append('uses_id', usesId || '');
+      formData.append('uses_name', usesName || '');
+      formData.append('uses_zone_id', zoneId || '');
+  
+      const citySpecificAreaSelect = document.getElementById('city_specific_area');
+      const selectedCityAreaOption = citySpecificAreaSelect.options[citySpecificAreaSelect.selectedIndex];
+      const citySpecificAreaId = selectedCityAreaOption.value;
+      const citySpecificAreaName = selectedCityAreaOption.textContent;
+      const citySpecificAreaAreaCode = selectedCityAreaOption.getAttribute('data-area-code');
+      const citySpecificAreaCouncilId = selectedCityAreaOption.getAttribute('data-council-id');
+      formData.append('city_specific_area_id', citySpecificAreaId || '');
+      formData.append('city_specific_area_name', citySpecificAreaName || '');
+      formData.append('city_specific_area_areaCode', citySpecificAreaAreaCode || '');
+      formData.append('city_specific_area_councilId', citySpecificAreaCouncilId || '');
+  
+      const buildingTypeSelectElement = document.getElementById('building_type');
+      const selectedBuildingTypeOption = buildingTypeSelectElement.options[buildingTypeSelectElement.selectedIndex];
+      const buildingTypeId = selectedBuildingTypeOption.value;
+      const buildingTypeName = selectedBuildingTypeOption.getAttribute('data-name');
+      const buildingTypeProposalId = selectedBuildingTypeOption.getAttribute('data-proposal-id');
+      formData.append('building_type_id', buildingTypeId || '');
+      formData.append('building_type_name', buildingTypeName || '');
+      formData.append('building_type_proposalId', buildingTypeProposalId || '');
+  
+      const buildingSubtypeSelectElement = document.getElementById('building_subtype');
+      const selectedBuildingSubtypeOption = buildingSubtypeSelectElement.options[buildingSubtypeSelectElement.selectedIndex];
+      const buildingSubtypeId = selectedBuildingSubtypeOption.value;
+      const buildingSubtypeName = selectedBuildingSubtypeOption.getAttribute('data-name');
+      const buildingSubtypeBldgtypeID = selectedBuildingSubtypeOption.getAttribute('data-bldgtypeID');
+      formData.append('building_subtype_id', buildingSubtypeId || '');
+      formData.append('building_subtype_name', buildingSubtypeName || '');
+      formData.append('building_subtype_bldgtypeID', buildingSubtypeBldgtypeID || '');
+  
+      // Log form data for debugging
+      const formEntries = {};
+      formData.forEach((value, key) => {
+        formEntries[key] = value;
+      });
+      console.log('Form Data:', formEntries);
+  
+      try {
+        const response = await fetch(
+          'https://script.google.com/macros/s/AKfycbzMsdYSlSKevfDBay7_Ds3M97cYIir9T8l2OMk8GtEfDNRG9Bv5j2JzRp-_EM4tBr8Q/exec',
+          {
+            method: 'POST',
+            mode: 'cors',
+            credentials: 'omit',
+            body: formData,
+          }
+        );
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const result = await response.json();
+        if (result.status === 'success') {
+          alert('Form submitted successfully!');
+          form.reset();
+          document.querySelectorAll('.feedback').forEach(el => {
+            el.textContent = '';
+            el.className = 'feedback';
+          });
+          document.querySelectorAll('.invalid-input').forEach(el => el.classList.remove('invalid-input'));
+          initializeForm();
+          console.log('Form submitted and reset successfully.');
+        } else {
+          throw new Error(result.message || 'Unknown error occurred');
+        }
+      } catch (error) {
+        console.error('Error submitting form data:', error);
+        alert(`An error occurred: ${error.message}. Please try again later.`);
+      }
     }
   } catch (error) {
     console.error('Initialization error:', error);
