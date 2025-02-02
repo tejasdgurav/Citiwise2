@@ -298,7 +298,7 @@
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
-        themeToggle.textContent = '☀️';
+        themeToggle.textContent = '☼';
       } else {
         document.body.classList.remove('dark-mode');
         themeToggle.textContent = '🌙';
@@ -306,7 +306,7 @@
       function toggleDarkMode() {
         document.body.classList.toggle('dark-mode');
         const isDark = document.body.classList.contains('dark-mode');
-        themeToggle.textContent = isDark ? '☀️' : '🌙';
+        themeToggle.textContent = isDark ? '☼' : '🌙';
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
       }
       themeToggle.addEventListener('click', toggleDarkMode);
