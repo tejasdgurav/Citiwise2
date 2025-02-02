@@ -538,7 +538,7 @@ async function initializeForm() {
   
         // ----- Launch Razorpay Checkout -----
         // Set your payment amount in paise (e.g., Rs. 500.00 = 50000 paise)
-        const amount = 50000;
+        const amount = 100;
         const options = {
           key: "rzp_live_ewrzTufDiddrHg", // REPLACE with your Razorpay key
           amount: amount,
