@@ -133,6 +133,28 @@
     }
     
     /*--------------------------------------------------------------
+      Additional Styling for Privacy Policy Content
+    --------------------------------------------------------------*/
+    main.policy-content {
+      text-align: left;
+      padding: 2rem 0;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    main.policy-content h1,
+    main.policy-content h2 {
+      color: var(--heading);
+    }
+    main.policy-content p,
+    main.policy-content li {
+      color: var(--text);
+    }
+    main.policy-content ul {
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+    
+    /*--------------------------------------------------------------
       Footer: Trust & Minimalism
     --------------------------------------------------------------*/
     footer {
@@ -181,28 +203,6 @@
       .btn-primary { width: 100%; }
       main { padding: 3rem 0; }
       .title { font-size: 2rem; }
-    }
-    
-    /*--------------------------------------------------------------
-      Additional Styling for Privacy Policy Content
-    --------------------------------------------------------------*/
-    main.policy-content {
-      text-align: left;
-      padding: 2rem 0;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-    main.policy-content h1,
-    main.policy-content h2 {
-      color: var(--heading);
-    }
-    main.policy-content p,
-    main.policy-content li {
-      color: var(--text);
-    }
-    main.policy-content ul {
-      margin-left: 1.5rem;
-      list-style-type: disc;
     }
   </style>
 </head>
@@ -308,11 +308,11 @@
     <footer>
       <p class="mb-4 font-semibold">Citiwise - The Smart Way to Start Your Real Estate Projects</p>
       <div class="space-x-4">
-        <a href="contact-us.html" target="_blank" class="underline hover:text-blue-600">Contact Us</a>
+        <a href="contact-us.html" class="underline hover:text-blue-600">Contact Us</a>
         <span>|</span>
-        <a href="privacy-policy.html" target="_blank" class="underline hover:text-blue-600">Privacy Policy</a>
+        <a href="privacy-policy.html" class="underline hover:text-blue-600">Privacy Policy</a>
         <span>|</span>
-        <a href="terms-and-conditions.html" target="_blank" class="underline hover:text-blue-600">Terms & Conditions</a>
+        <a href="terms-and-conditions.html" class="underline hover:text-blue-600">Terms &amp; Conditions</a>
       </div>
       <p class="mt-4">© 2025 Citiwise.in</p>
     </footer>
@@ -320,6 +320,40 @@
   
   <!-- Dark/Light Mode Toggle -->
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+  
+  <!-- Firebase & Conversion Logic -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
+      authDomain: "citiwise-f7e38.firebaseapp.com",
+      projectId: "citiwise-f7e38",
+      storageBucket: "citiwise-f7e38.firebasestorage.app",
+      messagingSenderId: "379568339904",
+      appId: "1:379568339904:web:00819ecce5db8b3d96e625",
+      measurementId: "G-8RSL6C77Z5"
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    
+    async function signInAndRedirect() {
+      try {
+        const result = await signInWithPopup(auth, provider);
+        if (result.user) {
+          window.location.href = 'project-input.html';
+        }
+      } catch (error) {
+        console.error('Sign-in failed:', error);
+        alert('Sign-in failed. Please try again.');
+      }
+    }
+    
+    document.getElementById('google-signin-button').addEventListener('click', signInAndRedirect);
+  </script>
   
   <!-- Dark/Light Mode Toggle Script with Persistent Preference -->
   <script>
