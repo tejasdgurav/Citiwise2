@@ -1,56 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions - Citiwise</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms and Conditions - Citiwise</title>
+  <!-- Tailwind CSS for optional utility classes -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    /*--------------------------------------------------------------
+      CSS Variables for Light & Dark Modes (Notion-Inspired)
+    --------------------------------------------------------------*/
+    :root {
+      /* Global Colors */
+      --background: #fafbfc;
+      --text: #2f3437;
+      --heading: #2f3437;
+      --subtext: #555;
+      
+      /* Button Base (Minimal & Elegant) */
+      --btn-bg: #ffffff;
+      --btn-text: #2f3437;
+      --btn-border: #ddd;
+      --btn-hover-bg: #f7f7f7;
+      --btn-hover-border: #ccc;
+      --btn-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      
+      /* Accent Colors for Brand-specific buttons */
+      --google-blue: #4285f4;
+      --google-blue-hover: #357ae8;
+    }
+    body.dark-mode {
+      --background: #1c1c1e;
+      --text: #e4e4e4;
+      --heading: #f0f0f3;
+      --subtext: #cccccc;
+      --btn-bg: #2f3437;
+      --btn-text: #fafbfc;
+      --btn-border: #444;
+      --btn-hover-bg: #3f4a4f;
+      --btn-hover-border: #555;
+      --btn-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    /*--------------------------------------------------------------
+      Base Styles & Typography
+    --------------------------------------------------------------*/
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      transition: background 0.5s ease, color 0.5s ease;
+    }
+    a { 
+      text-decoration: none; 
+      color: inherit; 
+    }
+    
+    /*--------------------------------------------------------------
+      Container: Centralize Content with Adequate Margins
+    --------------------------------------------------------------*/
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /*--------------------------------------------------------------
+      Header: Logo & Action Buttons
+    --------------------------------------------------------------*/
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: var(--heading);
+    }
+    .header-actions {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    /*--------------------------------------------------------------
+      Button Styles (Minimal, Elegant & Notion-Inspired)
+    --------------------------------------------------------------*/
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 500;
+      border: 1px solid var(--btn-border);
+      border-radius: 6px;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.1s;
+    }
+    .btn-primary:hover {
+      background: var(--btn-hover-bg);
+      border-color: var(--btn-hover-border);
+      box-shadow: var(--btn-shadow);
+      transform: translateY(-1px);
+    }
+    .btn-primary:focus {
+      outline: 2px solid var(--btn-hover-border);
+      outline-offset: 2px;
+    }
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+    /* Google Button: Retains the iconic blue */
+    #google-signin-button {
+      background: var(--google-blue);
+      border: none;
+      color: #fff;
+    }
+    #google-signin-button:hover {
+      background: var(--google-blue-hover);
+    }
+    #google-signin-button img {
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    /*--------------------------------------------------------------
+      Main Content: Terms and Conditions
+    --------------------------------------------------------------*/
+    main.terms-content {
+      text-align: left;
+      padding: 2rem 0;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    main.terms-content h1,
+    main.terms-content h2 {
+      color: var(--heading);
+    }
+    main.terms-content p,
+    main.terms-content li {
+      color: var(--text);
+    }
+    main.terms-content ul {
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+    
+    /*--------------------------------------------------------------
+      Footer: Trust & Minimalism
+    --------------------------------------------------------------*/
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.875rem;
+      color: var(--subtext);
+    }
+    footer a {
+      color: var(--subtext);
+      transition: color 0.2s;
+    }
+    footer a:hover {
+      color: var(--heading);
+    }
+    
+    /*--------------------------------------------------------------
+      Dark/Light Mode Toggle (Fixed at Bottom Right)
+    --------------------------------------------------------------*/
+    .theme-toggle {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 1.75rem;
+      cursor: pointer;
+      z-index: 1000;
+      color: var(--text);
+    }
+    
+    /*--------------------------------------------------------------
+      Responsive Adjustments
+    --------------------------------------------------------------*/
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-actions {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+      }
+      .btn-primary { width: 100%; }
+      main { padding: 3rem 0; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-200">
-    <div class="container mx-auto px-4 py-10">
-        <header class="mb-8">
-            <h1 class="text-3xl font-bold">Terms and Conditions</h1>
-        </header>
-
-        <p class="text-sm mb-6">Last updated on February 2, 2025</p>
-
-        <section>
-            <p>These Terms and Conditions govern the use of the Citiwise website and services. By accessing our website or using our services, you agree to these terms.</p>
-        </section>
-
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold">Changes to Terms</h2>
-            <p>The content of this website is subject to change without notice. Citiwise may update these Terms and Conditions periodically.</p>
-        </section>
-
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold">Warranty and Liability</h2>
-            <p>Neither we nor any third parties provide warranties or guarantees regarding the accuracy, timeliness, or completeness of the information on this website. Your use of this information is at your own risk.</p>
-        </section>
-
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold">Intellectual Property</h2>
-            <p>The content, design, and graphics on this website are owned by or licensed to Citiwise. Unauthorized reproduction is prohibited.</p>
-        </section>
-
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold">Unauthorized Use</h2>
-            <p>Unauthorized use of this website or its content may result in claims for damages or criminal charges.</p>
-        </section>
-
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold">Third-Party Links</h2>
-            <p>Our website may contain links to external websites. These links are provided for convenience, and we are not responsible for their content.</p>
-        </section>
-
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold">Governing Law</h2>
-            <p>These Terms and Conditions are governed by the laws of India. Disputes are subject to Indian jurisdiction.</p>
-        </section>
-
-        <footer class="mt-8 text-sm">
-            <p>For inquiries regarding these terms, please contact us at <strong>admin@citiwise.in</strong>.</p>
-        </footer>
-    </div>
+<body>
+  <div class="container">
+    <!-- Header: Logo & Action Buttons -->
+    <header>
+      <div class="logo">Citiwise</div>
+      <div class="header-actions">
+        <button id="google-signin-button" class="btn-primary" aria-label="Sign in with Google">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
+          <span>Sign in with Google</span>
+        </button>
+        <a href="https://calendly.com/tejasgurav/30min" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Book a Call
+        </a>
+      </div>
+    </header>
+    
+    <!-- Main Content: Terms and Conditions -->
+    <main class="terms-content">
+      <header>
+        <h1 class="text-3xl font-bold mb-4">Terms and Conditions</h1>
+      </header>
+      
+      <p class="text-sm mb-6">Last updated on February 2, 2025</p>
+      
+      <section class="mb-6">
+        <p>
+          These Terms and Conditions govern the use of the Citiwise website and services. By accessing our website or using our services, you agree to these terms.
+        </p>
+      </section>
+      
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Changes to Terms</h2>
+        <p>
+          The content of this website is subject to change without notice. Citiwise may update these Terms and Conditions periodically.
+        </p>
+      </section>
+      
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Warranty and Liability</h2>
+        <p>
+          Neither we nor any third parties provide warranties or guarantees regarding the accuracy, timeliness, or completeness of the information on this website. Your use of this information is at your own risk.
+        </p>
+      </section>
+      
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Intellectual Property</h2>
+        <p>
+          The content, design, and graphics on this website are owned by or licensed to Citiwise. Unauthorized reproduction is prohibited.
+        </p>
+      </section>
+      
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Unauthorized Use</h2>
+        <p>
+          Unauthorized use of this website or its content may result in claims for damages or criminal charges.
+        </p>
+      </section>
+      
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Third-Party Links</h2>
+        <p>
+          Our website may contain links to external websites. These links are provided for convenience, and we are not responsible for their content.
+        </p>
+      </section>
+      
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Governing Law</h2>
+        <p>
+          These Terms and Conditions are governed by the laws of India. Disputes are subject to Indian jurisdiction.
+        </p>
+      </section>
+      
+      <footer class="mt-8 text-sm">
+        <p>
+          For inquiries regarding these terms, please contact us at <strong>admin@citiwise.in</strong>.
+        </p>
+      </footer>
+    </main>
+    
+    <!-- Footer: Navigation Links -->
+    <footer>
+      <p class="mb-4 font-semibold">Citiwise - The Smart Way to Start Your Real Estate Projects</p>
+      <div class="space-x-4">
+        <a href="contact-us.html" class="underline hover:text-blue-600">Contact Us</a>
+        <span>|</span>
+        <a href="privacy-policy.html" class="underline hover:text-blue-600">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms-and-conditions.html" class="underline hover:text-blue-600">Terms & Conditions</a>
+      </div>
+      <p class="mt-4">© 2025 Citiwise.in</p>
+    </footer>
+  </div>
+  
+  <!-- Dark/Light Mode Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+  
+  <!-- Firebase & Conversion Logic -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyALOw9DW28VH_iu_OAFUG6bU9PSalI3Fz0",
+      authDomain: "citiwise-f7e38.firebaseapp.com",
+      projectId: "citiwise-f7e38",
+      storageBucket: "citiwise-f7e38.firebasestorage.app",
+      messagingSenderId: "379568339904",
+      appId: "1:379568339904:web:00819ecce5db8b3d96e625",
+      measurementId: "G-8RSL6C77Z5"
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    
+    async function signInAndRedirect() {
+      try {
+        const result = await signInWithPopup(auth, provider);
+        if (result.user) {
+          window.location.href = 'project-input.html';
+        }
+      } catch (error) {
+        console.error('Sign-in failed:', error);
+        alert('Sign-in failed. Please try again.');
+      }
+    }
+    
+    document.getElementById('google-signin-button').addEventListener('click', signInAndRedirect);
+  </script>
+  
+  <!-- Dark/Light Mode Toggle Script with Persistent Preference -->
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      // Check and apply stored theme preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeToggle.textContent = '☀️';
+      } else {
+        document.body.classList.remove('dark-mode');
+        themeToggle.textContent = '🌙';
+      }
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        themeToggle.textContent = isDark ? '☀️' : '🌙';
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      }
+      themeToggle.addEventListener('click', toggleDarkMode);
+    })();
+  </script>
 </body>
 </html>
