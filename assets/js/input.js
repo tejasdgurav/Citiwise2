@@ -2,7 +2,7 @@
    Utility Functions
 =================================== */
 function toTitleCase(str) {
-  return str.replace(/\w\S*/g, function (txt) {
+  return str.replace(/\w\S*/g, function(txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
@@ -51,7 +51,7 @@ function restrictToTitleCase(input) {
 }
 
 function showFeedback(input, isValid, message) {
-  console.log(`Showing feedback for ${input.id}: isValid=${isValid}, message="${message}"`);
+  console.log(`Feedback for ${input.id}: ${message}`);
   let feedbackEl = input.nextElementSibling;
   if (!feedbackEl || !feedbackEl.classList.contains('feedback')) {
     feedbackEl = document.createElement('div');
@@ -79,7 +79,7 @@ async function loadJSONData(filename) {
 
 function populateDropdown(selectElement, data, valueKey, textKey, idKey = null, councilIdKey = null) {
   selectElement.innerHTML = '<option value="">Select an option</option>';
-  data.forEach((item) => {
+  data.forEach(item => {
     const option = document.createElement('option');
     if (selectElement.id === 'zone') {
       option.value = item[textKey];
@@ -137,11 +137,11 @@ async function initializeForm() {
       loadJSONData('uses.json'),
       loadJSONData('city_specific_area.json'),
     ]);
-
+    
     if (!ulbData || !buildingTypeData || !buildingSubtypeData || !zoneData || !usesData || !citySpecificAreaData) {
       throw new Error('Failed to load one or more required data files');
     }
-
+    
     console.log('JSON data loaded successfully.');
     const sortedUlbData = ulbData.ulb_rp_special_authority.sort((a, b) => a.talukaName.localeCompare(b.talukaName));
     populateDropdown(document.getElementById('ulb_rp_special_authority'), sortedUlbData, 'talukaName', 'talukaName', 'id', 'councilId');
@@ -151,7 +151,7 @@ async function initializeForm() {
     const buildingSubtypeSelect = document.getElementById('building_subtype');
     buildingSubtypeSelect.innerHTML = '<option value="">Select Building Type first</option>';
     buildingSubtypeSelect.disabled = true;
-
+    
     // Hide conditional elements initially
     toggleElement('incentive_fsi_rating', false);
     toggleElement('electrical_line_voltage', false);
@@ -160,119 +160,26 @@ async function initializeForm() {
     ['front', 'left', 'right', 'rear'].forEach(side => {
       toggleElement(`road_container_${side}`, false);
     });
-
-    // Input Validations
+    
+    // Input Validations (using your original settings)
     const inputValidations = [
-      {
-        id: 'applicant_type',
-        validate: (value) => value !== '',
-        errorMsg: 'Please select an option',
-      },
-      {
-        id: 'applicant_name',
-        validate: (value) => value.trim().length > 0 && value.trim().length <= 100,
-        format: restrictToTitleCase,
-        errorMsg: 'Please enter a valid name (max 100 characters)',
-      },
-      {
-        id: 'contact_no',
-        validate: validatePhoneNumber,
-        format: (input) => restrictToNumbers(input),
-        errorMsg: 'Please enter a valid 10-digit Indian mobile number',
-      },
-      {
-        id: 'email',
-        validate: (value) => validateEmail(value) && value.length <= 100,
-        format: (input) => { input.value = input.value.toLowerCase(); },
-        errorMsg: 'Please enter a valid email address (max 100 characters)',
-      },
-      {
-        id: 'project_name',
-        validate: (value) => value.trim().length > 0 && value.trim().length <= 100,
-        format: restrictToTitleCase,
-        errorMsg: 'Please enter a valid project name (max 100 characters)',
-      },
-      {
-        id: 'site_address',
-        validate: (value) => value.trim().length > 0 && value.trim().length <= 200,
-        format: restrictToTitleCase,
-        errorMsg: 'Please enter a valid site address (max 200 characters)',
-      },
-      {
-        id: 'village_name',
-        validate: (value) => value.trim().length > 0 && value.trim().length <= 50,
-        format: restrictToTitleCase,
-        errorMsg: 'Please enter a valid village/mouje name (max 50 characters)',
-      },
-      {
-        id: 'reservation_area_sqm',
-        validate: (value) => {
-          if (!value || value.trim() === '') return true;
-          const numValue = parseFloat(value);
-          return !isNaN(numValue) && numValue > 0;
-        },
-        format: (input) => formatNumber(input, true),
-        errorMsg: 'Please enter a valid positive number for Reservation Area Affected',
-      },
-      {
-        id: 'dp_rp_road_area_sqm',
-        validate: (value) => {
-          if (!value || value.trim() === '') return true;
-          const numValue = parseFloat(value);
-          return !isNaN(numValue) && numValue > 0;
-        },
-        format: (input) => formatNumber(input, true),
-        errorMsg: 'Please enter a valid positive number for DP/RP Road Area Affected',
-      },
-      {
-        id: 'area_plot_site_sqm',
-        validate: (value) => {
-          const numValue = parseFloat(value);
-          return !isNaN(numValue) && numValue > 0 && numValue <= 999999.99;
-        },
-        format: (input) => formatNumber(input, true),
-        errorMsg: 'Please enter a valid number between 0.01 and 999,999.99',
-      },
-      {
-        id: 'area_plot_ownership_sqm',
-        validate: (value) => {
-          const numValue = parseFloat(value);
-          return !isNaN(numValue) && numValue > 0 && numValue <= 999999.99;
-        },
-        format: (input) => formatNumber(input, true),
-        errorMsg: 'Please enter a valid number between 0.01 and 999,999.99',
-      },
-      {
-        id: 'area_plot_measurement_sqm',
-        validate: (value) => {
-          const numValue = parseFloat(value);
-          return !isNaN(numValue) && numValue > 0 && numValue <= 999999.99;
-        },
-        format: (input) => formatNumber(input, true),
-        errorMsg: 'Please enter a valid number between 0.01 and 999,999.99',
-      },
-      {
-        id: 'pro_rata_fsi',
-        validate: (value) => {
-          if (!value || value.trim() === '') return true;
-          const numValue = parseFloat(value);
-          return !isNaN(numValue) && numValue >= 0 && numValue <= 999.99;
-        },
-        format: (input) => formatNumber(input, true),
-        errorMsg: 'Please enter a valid number between 0 and 999.99',
-      },
-      {
-        id: 'plot_width',
-        validate: (value) => {
-          const numValue = parseFloat(value);
-          return !isNaN(numValue) && numValue > 0 && numValue <= 999.99;
-        },
-        format: (input) => formatNumber(input, true),
-        errorMsg: 'Please enter a valid number between 0.01 and 999.99',
-      },
+      { id: 'applicant_type', validate: (value) => value !== '', errorMsg: 'Please select an option' },
+      { id: 'applicant_name', validate: (value) => value.trim().length > 0 && value.trim().length <= 100, format: restrictToTitleCase, errorMsg: 'Please enter a valid name (max 100 characters)' },
+      { id: 'contact_no', validate: validatePhoneNumber, format: (input) => restrictToNumbers(input), errorMsg: 'Please enter a valid 10-digit Indian mobile number' },
+      { id: 'email', validate: (value) => validateEmail(value) && value.length <= 100, format: (input) => { input.value = input.value.toLowerCase(); }, errorMsg: 'Please enter a valid email address (max 100 characters)' },
+      { id: 'project_name', validate: (value) => value.trim().length > 0 && value.trim().length <= 100, format: restrictToTitleCase, errorMsg: 'Please enter a valid project name (max 100 characters)' },
+      { id: 'site_address', validate: (value) => value.trim().length > 0 && value.trim().length <= 200, format: restrictToTitleCase, errorMsg: 'Please enter a valid site address (max 200 characters)' },
+      { id: 'village_name', validate: (value) => value.trim().length > 0 && value.trim().length <= 50, format: restrictToTitleCase, errorMsg: 'Please enter a valid village/mouje name (max 50 characters)' },
+      { id: 'reservation_area_sqm', validate: (value) => { if (!value || value.trim() === '') return true; const numValue = parseFloat(value); return !isNaN(numValue) && numValue > 0; }, format: (input) => formatNumber(input, true), errorMsg: 'Please enter a valid positive number for Reservation Area Affected' },
+      { id: 'dp_rp_road_area_sqm', validate: (value) => { if (!value || value.trim() === '') return true; const numValue = parseFloat(value); return !isNaN(numValue) && numValue > 0; }, format: (input) => formatNumber(input, true), errorMsg: 'Please enter a valid positive number for DP/RP Road Area Affected' },
+      { id: 'area_plot_site_sqm', validate: (value) => { const numValue = parseFloat(value); return !isNaN(numValue) && numValue > 0 && numValue <= 999999.99; }, format: (input) => formatNumber(input, true), errorMsg: 'Please enter a valid number between 0.01 and 999,999.99' },
+      { id: 'area_plot_ownership_sqm', validate: (value) => { const numValue = parseFloat(value); return !isNaN(numValue) && numValue > 0 && numValue <= 999999.99; }, format: (input) => formatNumber(input, true), errorMsg: 'Please enter a valid number between 0.01 and 999,999.99' },
+      { id: 'area_plot_measurement_sqm', validate: (value) => { const numValue = parseFloat(value); return !isNaN(numValue) && numValue > 0 && numValue <= 999999.99; }, format: (input) => formatNumber(input, true), errorMsg: 'Please enter a valid number between 0.01 and 999,999.99' },
+      { id: 'pro_rata_fsi', validate: (value) => { if (!value || value.trim() === '') return true; const numValue = parseFloat(value); return !isNaN(numValue) && numValue >= 0 && numValue <= 999.99; }, format: (input) => formatNumber(input, true), errorMsg: 'Please enter a valid number between 0 and 999.99' },
+      { id: 'plot_width', validate: (value) => { const numValue = parseFloat(value); return !isNaN(numValue) && numValue > 0 && numValue <= 999.99; }, format: (input) => formatNumber(input, true), errorMsg: 'Please enter a valid number between 0.01 and 999.99' }
     ];
-
-    // Handle Radio Button Changes (with conditional element toggling)
+    
+    // Handle radio button changes (unchanged from your original code)
     function handleRadioChange(name, elementToToggle) {
       const radioButtons = document.getElementsByName(name);
       radioButtons.forEach(radio => {
@@ -333,7 +240,7 @@ async function initializeForm() {
       setupInputValidation(element, validation);
     });
 
-    // File Input Validation
+    // File Input Validation (unchanged)
     ['dp_rp_part_plan', 'google_image'].forEach(id => {
       const fileInput = document.getElementById(id);
       if (fileInput) {
@@ -358,7 +265,7 @@ async function initializeForm() {
       }
     });
 
-    // Road Width Input Validation
+    // Road Width Input Validation (unchanged)
     const roadWidthInputs = document.querySelectorAll('.road-width-input');
     roadWidthInputs.forEach(input => {
       input.addEventListener('input', function () {
@@ -377,7 +284,7 @@ async function initializeForm() {
       });
     });
 
-    // Zone and Uses Dropdown Handling
+    // Zone and Uses Dropdown Handling (unchanged)
     const zoneSelect = document.getElementById('zone');
     if (zoneSelect) {
       zoneSelect.addEventListener('change', function () {
@@ -394,7 +301,7 @@ async function initializeForm() {
       });
     }
 
-    // ULB and City Specific Area Handling
+    // ULB and City Specific Area Handling (unchanged)
     const citySpecificAreaSelect = document.getElementById('city_specific_area');
     citySpecificAreaSelect.disabled = true;
     citySpecificAreaSelect.innerHTML = '<option value="">Select ULB/RP/Special Authority first</option>';
@@ -434,7 +341,7 @@ async function initializeForm() {
       });
     }
 
-    // Building Type & Subtype Handling
+    // Building Type & Subtype Handling (unchanged)
     const buildingTypeSelect = document.getElementById('building_type');
     if (buildingTypeSelect) {
       buildingTypeSelect.addEventListener('change', function () {
@@ -451,7 +358,7 @@ async function initializeForm() {
       });
     }
 
-    // Plot Boundaries Setup
+    // Plot Boundaries Setup (unchanged)
     const sides = ['front', 'left', 'right', 'rear'];
     function setupBoundaryListeners() {
       sides.forEach(side => {
@@ -506,17 +413,29 @@ async function initializeForm() {
     setupBoundaryListeners();
     initializeBoundarySelects();
 
-    /* ================================
-       Form Submission Handling with Razorpay Checkout
-    =================================== */
-    // Use the form with id "project-input-form"
+    /* =====================================================
+       FORM SUBMISSION FLOW:
+         Step 1: Insert temporary entry (status = "Pending Payment")
+         Step 2: Immediately launch Razorpay Checkout modal
+         Step 3: Upon successful payment, update the row with payment details
+    ===================================================== */
+    
+    // Set your Google Script URL – REPLACE with your actual deployed URL.
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxO_MNAVccboiQVt3udfdScbuZLQLQCjW_GvTd-0fvJF4ugHcjwYvkcz-90qsdI1vb7/exec";
+    
+    // Ensure a unique id exists (using the hidden input "unique_id")
+    const uniqueIdField = document.getElementById('unique_id');
+    if (uniqueIdField && !uniqueIdField.value) {
+      uniqueIdField.value = "order_" + Date.now() + Math.random().toString(36).substr(2, 5);
+    }
+    
     const formElement = document.getElementById('project-input-form');
     if (formElement) {
-      formElement.addEventListener('submit', async function (e) {
+      formElement.addEventListener('submit', async function(e) {
         e.preventDefault();
         console.log('Form submission initiated.');
   
-        // Run validations
+        // Validate form inputs
         let isValid = true;
         inputValidations.forEach(({ id, validate, errorMsg }) => {
           const input = document.getElementById(id);
@@ -532,147 +451,100 @@ async function initializeForm() {
   
         if (!isValid) {
           alert('Please correct the errors in the form before submitting.');
-          console.warn('Form validation failed.');
           return;
         }
   
-        // ----- Launch Razorpay Checkout -----
-        // Set your payment amount in paise (e.g., Rs. 500.00 = 50000 paise)
-        const amount = 100;
-        const options = {
-          key: "rzp_live_ewrzTufDiddrHg", // REPLACE with your Razorpay key
-          amount: amount,
-          currency: "INR",
-          name: "Your Company / Project Name",
-          description: "Payment for project submission",
-          prefill: {
-            name: document.getElementById('applicant_name').value,
-            email: document.getElementById('email').value,
-            contact: "+91" + document.getElementById('contact_no').value
-          },
-          handler: function (response) {
-            // On successful payment, fill the hidden fields
-            document.getElementById('payment_status').value = 'paid';
-            document.getElementById('razorpay_payment_id').value = response.razorpay_payment_id;
-            document.getElementById('razorpay_order_id').value = response.razorpay_order_id;
-            document.getElementById('razorpay_signature').value = response.razorpay_signature;
-            // Proceed to submit the complete form data
-            submitFormData();
-          },
-          modal: {
-            ondismiss: function () {
-              alert("Payment was cancelled. Please complete the payment to submit the form.");
-            }
-          }
-        };
+        // Create a FormData object from the form
+        const formData = new FormData(formElement);
+        // Set the status to "Pending Payment"
+        formData.set('payment_status', "Pending Payment");
   
-        const rzp = new Razorpay(options);
-        rzp.open();
-      });
-    } else {
-      console.error('Form element not found.');
-    }
-  
-    async function submitFormData() {
-      const form = document.getElementById('project-input-form');
-      const formData = new FormData(form);
-  
-      // Append extra details from selected options as in your original code
-      const selectedOption = ulbDropdown.options[ulbDropdown.selectedIndex];
-      const talukaId = selectedOption.getAttribute('data-taluka-id');
-      const councilId = selectedOption.getAttribute('data-council-id');
-      console.log('Selected talukaId:', talukaId);
-      console.log('Selected councilId:', councilId);
-      formData.append('taluka_id', talukaId || '');
-      formData.append('council_id', councilId || '');
-  
-      const zoneSelect = document.getElementById('zone');
-      const selectedZone = zoneSelect.options[zoneSelect.selectedIndex];
-      const zoneId = selectedZone.getAttribute('data-zone-id');
-      const zoneName = selectedZone.value;
-      const zoneLanduserId = selectedZone.getAttribute('data-landuser-id');
-      formData.append('zone_id', zoneId || '');
-      formData.append('zone', zoneName || '');
-      formData.append('zone_landuser_id', zoneLanduserId || '');
-  
-      const ulbTypeInput = document.getElementById('ulb_type');
-      const ulbTypeValue = ulbTypeInput ? ulbTypeInput.value : '';
-      formData.append('ulb_type', ulbTypeValue);
-  
-      const usesSelect = document.getElementById('uses');
-      const selectedUsesOption = usesSelect.options[usesSelect.selectedIndex];
-      const usesId = selectedUsesOption.value;
-      const usesName = selectedUsesOption.textContent;
-      formData.append('uses_id', usesId || '');
-      formData.append('uses_name', usesName || '');
-      formData.append('uses_zone_id', zoneId || '');
-  
-      const citySpecificAreaSelect = document.getElementById('city_specific_area');
-      const selectedCityAreaOption = citySpecificAreaSelect.options[citySpecificAreaSelect.selectedIndex];
-      const citySpecificAreaId = selectedCityAreaOption.value;
-      const citySpecificAreaName = selectedCityAreaOption.textContent;
-      const citySpecificAreaAreaCode = selectedCityAreaOption.getAttribute('data-area-code');
-      const citySpecificAreaCouncilId = selectedCityAreaOption.getAttribute('data-council-id');
-      formData.append('city_specific_area_id', citySpecificAreaId || '');
-      formData.append('city_specific_area_name', citySpecificAreaName || '');
-      formData.append('city_specific_area_areaCode', citySpecificAreaAreaCode || '');
-      formData.append('city_specific_area_councilId', citySpecificAreaCouncilId || '');
-  
-      const buildingTypeSelectElement = document.getElementById('building_type');
-      const selectedBuildingTypeOption = buildingTypeSelectElement.options[buildingTypeSelectElement.selectedIndex];
-      const buildingTypeId = selectedBuildingTypeOption.value;
-      const buildingTypeName = selectedBuildingTypeOption.getAttribute('data-name');
-      const buildingTypeProposalId = selectedBuildingTypeOption.getAttribute('data-proposal-id');
-      formData.append('building_type_id', buildingTypeId || '');
-      formData.append('building_type_name', buildingTypeName || '');
-      formData.append('building_type_proposalId', buildingTypeProposalId || '');
-  
-      const buildingSubtypeSelectElement = document.getElementById('building_subtype');
-      const selectedBuildingSubtypeOption = buildingSubtypeSelectElement.options[buildingSubtypeSelectElement.selectedIndex];
-      const buildingSubtypeId = selectedBuildingSubtypeOption.value;
-      const buildingSubtypeName = selectedBuildingSubtypeOption.getAttribute('data-name');
-      const buildingSubtypeBldgtypeID = selectedBuildingSubtypeOption.getAttribute('data-bldgtypeID');
-      formData.append('building_subtype_id', buildingSubtypeId || '');
-      formData.append('building_subtype_name', buildingSubtypeName || '');
-      formData.append('building_subtype_bldgtypeID', buildingSubtypeBldgtypeID || '');
-  
-      // Log form data for debugging
-      const formEntries = {};
-      formData.forEach((value, key) => {
-        formEntries[key] = value;
-      });
-      console.log('Form Data:', formEntries);
-  
-      try {
-        const response = await fetch(
-          'https://script.google.com/macros/s/AKfycbzMsdYSlSKevfDBay7_Ds3M97cYIir9T8l2OMk8GtEfDNRG9Bv5j2JzRp-_EM4tBr8Q/exec',
-          {
+        // Send form data to create the temporary entry in the Google Sheet
+        try {
+          const response = await fetch(GOOGLE_SCRIPT_URL, {
             method: 'POST',
             mode: 'cors',
             credentials: 'omit',
             body: formData,
-          }
-        );
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const result = await response.json();
-        if (result.status === 'success') {
-          alert('Form submitted successfully!');
-          form.reset();
-          document.querySelectorAll('.feedback').forEach(el => {
-            el.textContent = '';
-            el.className = 'feedback';
           });
-          document.querySelectorAll('.invalid-input').forEach(el => el.classList.remove('invalid-input'));
-          initializeForm();
-          console.log('Form submitted and reset successfully.');
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          const result = await response.json();
+          if (result.status === 'success') {
+            alert('Your information has been saved. Please complete the payment.');
+            // Launch Razorpay checkout modal
+            launchRazorpay();
+          } else {
+            throw new Error(result.message || 'Unknown error during data capture.');
+          }
+        } catch (error) {
+          console.error('Error during form submission:', error);
+          alert(`An error occurred: ${error.message}. Please try again later.`);
+        }
+      });
+    } else {
+      console.error('Form element not found.');
+    }
+    
+    function launchRazorpay() {
+      // Set your payment amount in paise (e.g., Rs. 500.00 = 50000 paise)
+      const amount = 50000;
+      const options = {
+        key: "rzp_live_ewrzTufDiddrHg", // REPLACE with your Razorpay key
+        amount: amount,
+        currency: "INR",
+        name: "Your Company / Project Name",
+        description: "Payment for project submission",
+        prefill: {
+          name: document.getElementById('applicant_name').value,
+          email: document.getElementById('email').value,
+          contact: "+91" + document.getElementById('contact_no').value
+        },
+        handler: function(response) {
+          // On successful payment, update the row with payment details
+          updatePayment(response);
+        },
+        modal: {
+          ondismiss: function() {
+            alert("Payment was cancelled. Your entry remains marked as Pending Payment.");
+          }
+        }
+      };
+      const rzp = new Razorpay(options);
+      rzp.open();
+    }
+    
+    async function updatePayment(response) {
+      // Prepare a FormData object with the unique id and payment details
+      const uniqueId = document.getElementById('unique_id').value;
+      const updateData = new FormData();
+      updateData.append('action', 'updatePayment');
+      updateData.append('unique_id', uniqueId);
+      updateData.append('payment_status', 'Payment Complete');
+      updateData.append('payment_date', new Date().toISOString());
+      updateData.append('razorpay_payment_id', response.razorpay_payment_id);
+      updateData.append('razorpay_order_id', response.razorpay_order_id);
+      updateData.append('razorpay_signature', response.razorpay_signature);
+  
+      try {
+        const res = await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'cors',
+          credentials: 'omit',
+          body: updateData,
+        });
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        const result = await res.json();
+        if (result.status === 'success') {
+          alert("Payment details have been updated successfully. Thank you!");
         } else {
-          throw new Error(result.message || 'Unknown error occurred');
+          throw new Error(result.message || 'Unknown error during payment update.');
         }
       } catch (error) {
-        console.error('Error submitting form data:', error);
-        alert(`An error occurred: ${error.message}. Please try again later.`);
+        console.error('Error updating payment details:', error);
+        alert(`An error occurred while updating payment details: ${error.message}`);
       }
     }
+    
   } catch (error) {
     console.error('Initialization error:', error);
   }

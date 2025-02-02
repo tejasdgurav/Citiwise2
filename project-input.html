@@ -24,10 +24,12 @@
 
         
         <form id="project-input-form" method="POST" enctype="multipart/form-data">
+            <input type="hidden" id="unique_id" name="unique_id" value="">
             <input type="hidden" id="payment_status" name="payment_status" value="">
             <input type="hidden" id="razorpay_payment_id" name="razorpay_payment_id" value="">
             <input type="hidden" id="razorpay_order_id" name="razorpay_order_id" value="">
             <input type="hidden" id="razorpay_signature" name="razorpay_signature" value="">
+
 
             
             <fieldset>
@@ -554,6 +556,7 @@
 </script>
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
 
 </body>
 </html>
