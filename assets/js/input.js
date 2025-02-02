@@ -492,7 +492,7 @@ async function initializeForm() {
         key: "rzp_live_ewrzTufDiddrHg", // REPLACE with your Razorpay key
         amount: amount,
         currency: "INR",
-        name: "Your Company / Project Name",
+        name: "Citiwise",
         description: "Payment for project submission",
         prefill: {
           name: document.getElementById('applicant_name').value,
