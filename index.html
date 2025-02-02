@@ -253,7 +253,7 @@
   </div>
   
   <!-- Dark/Light Mode Toggle (Fixed at Bottom Right) -->
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">☾</button>
   
   <!-- Firebase & Conversion Logic -->
   <script type="module">
@@ -301,12 +301,12 @@
         themeToggle.textContent = '☼';
       } else {
         document.body.classList.remove('dark-mode');
-        themeToggle.textContent = '❍';
+        themeToggle.textContent = '☾';
       }
       function toggleDarkMode() {
         document.body.classList.toggle('dark-mode');
         const isDark = document.body.classList.contains('dark-mode');
-        themeToggle.textContent = isDark ? '☼' : '❍';
+        themeToggle.textContent = isDark ? '☼' : '☾';
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
       }
       themeToggle.addEventListener('click', toggleDarkMode);
